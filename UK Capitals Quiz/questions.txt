@@ -1,0 +1,14 @@
+"What is the capital of England?"
+"London"
+    
+"What is the capital of Wales?"
+"Cardiff"
+
+"What is the capital of Scotland?"
+"Edinburgh"
+
+"What is the capital of Northern Ireland"
+"Belfast"
+
+"What is the capital of Ireland?"
+"Dublin"
