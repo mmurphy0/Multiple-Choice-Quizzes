@@ -3,28 +3,98 @@ from tkinter import messagebox, Toplevel
 import datetime
 from datetime import datetime
 
-score = 0
+score = int(0)
 
 def question_3():
     def correct():
+        global score
         messagebox.showinfo('Result','Correct!')
-        score = score + 1
+        score += 1
 
     def incorrect():
         messagebox.showinfo('Incorrect','The answer is Edinburgh')
 
+    global question3_win
+
+    question3_win = Toplevel()
+    question3_win.geometry('280x90')
+    question3_win.minsize(280,90)
+    question3_win.maxsize(280,90)
+
+    question3_label = tk.Label(
+        question3_win,
+        text='What is the capital of Scotland?',
+        font=('Arial',20)
+    )
+    question3_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question3_button_a = tk.Button(
+        question3_win,
+        text='Glasgow',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question3_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question3_button_b = tk.Button(
+        question3_win,
+        text='Edinburgh',
+        font=('Arial'),
+        width=10,
+        command=correct
+    )
+    question3_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question3_button_c = tk.Button(
+        question3_win,
+        text='Aberdeen',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question3_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question3_button_d = tk.Button(
+        question3_win,
+        text='Inverness',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question3_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question2_win.destroy()
 
 
 def question_2():
     def correct():
+        global score
         messagebox.showinfo('Result','Correct!')
-        score = score + 1
+        score += 1
         question_3()
     
     def incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Cardiff')
-        score = score + 1
         question_3()
+
+    global question2_win
 
     question2_win = Toplevel()
     question2_win.geometry('280x90')
@@ -90,16 +160,21 @@ def question_2():
         column=2
     )
 
+    question1_win.destroy()
+
 
 def question_1():
     def correct():
+        global score
         messagebox.showinfo('Result','Correct!')
-        score = score + 1
+        score += 1
         question_2()
     
     def incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is London')
         question_2()
+
+    global question1_win
 
     question1_win = Toplevel()
     question1_win.geometry('280x90')
@@ -167,9 +242,9 @@ def question_1():
 
 
 root = tk.Tk()
-root.geometry('155x60')
-root.minsize(155,60)
-root.maxsize(155,60)
+root.geometry('160x60')
+root.minsize(160,60)
+root.maxsize(160,60)
 root.title('Capital City Quiz')
 
 root_title = tk.Label(
