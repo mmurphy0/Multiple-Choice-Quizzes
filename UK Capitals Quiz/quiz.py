@@ -5,21 +5,75 @@ from datetime import datetime
 
 score = int(0)
 
+def save():
+    def reset():
+        global score
+        score = 0
+        results_win.destroy()
+    
+    time = datetime.now()
+
+    with open('UK Capitals Quiz/scorebook.txt','a') as file:
+        file.write(str(time) + '\n' + (f'Score: {score}/5') + '\n' + '--------------------' + '\n')
+        messagebox.showinfo('Confirmation','Results saved successfully')
+    
+    reset()
+
+
+
+def results():
+    global results_win
+
+    results_win = Toplevel()
+    results_win.geometry('200x82')
+    results_win.minsize(200,82)
+    results_win.maxsize(200,82)
+    results_win.title('UK Capitals Quiz - Results')
+
+    results_title = tk.Label(
+        results_win,
+        text='Results',
+        font=('Arial',20,'bold')
+    )
+    results_title.pack()
+
+    results_display = tk.Label(
+        results_win,
+        text=(f'Score: {score}/5'),
+        font=('Arial',15)
+    )
+    results_display.pack()
+
+    continue_button = tk.Button(
+        results_win,
+        text='Continue',
+        width=20,
+        command=save
+    )
+    continue_button.pack()
+
+    question5_win.destroy()
+
+
+
 def question_5():
     def correct():
         global score
         messagebox.showinfo('Result','Correct!')
-        socre += 1
+        score += 1
+        results()
 
     def incorrect():
         messagebox.showinfo('Incorrect','The Answer is Dublin')
+        results()
 
     global question5_win
 
     question5_win = Toplevel()
-    question1_win.geometry('280x90')
-    question5_win.minsize(280,90)
-    question5_win.maxsize(280,90)
+    question5_win.geometry('270x90')
+    question5_win.minsize(270,90)
+    question5_win.maxsize(270,90)
+    question5_win.title('UK Capitals Quiz - Question 5')
 
     question5_label = tk.Label(
         question5_win,
@@ -88,16 +142,19 @@ def question_4():
         global score
         messagebox.showinfo('Result','Correct!')
         score += 1
+        question_5()
 
     def incorrect():
         messagebox.showinfo('Incorrect','The answer is Belfast')
+        question_5()
 
     global question4_win
 
     question4_win = Toplevel()
-    question4_win.geometry('280x90')
-    question4_win.minsize(280,90)
-    question4_win.maxsize(280,90)
+    question4_win.geometry('352x90')
+    question4_win.minsize(352,90)
+    question4_win.maxsize(352,90)
+    question4_win.title('UK Capitals Quiz - Question 4')
 
     question4_label = tk.Label(
         question4_win,
@@ -165,16 +222,19 @@ def question_3():
         global score
         messagebox.showinfo('Result','Correct!')
         score += 1
+        question_4()
 
     def incorrect():
         messagebox.showinfo('Incorrect','The answer is Edinburgh')
+        question_4()
 
     global question3_win
 
     question3_win = Toplevel()
-    question3_win.geometry('280x90')
-    question3_win.minsize(280,90)
-    question3_win.maxsize(280,90)
+    question3_win.geometry('285x90')
+    question3_win.minsize(285,90)
+    question3_win.maxsize(285,90)
+    question3_win.title('UK Capitals Quiz - Question 3')
 
     question3_label = tk.Label(
         question3_win,
@@ -252,9 +312,10 @@ def question_2():
     global question2_win
 
     question2_win = Toplevel()
-    question2_win.geometry('280x90')
-    question2_win.minsize(280,90)
-    question2_win.maxsize(280,90)
+    question2_win.geometry('265x90')
+    question2_win.minsize(265,90)
+    question2_win.maxsize(265,90)
+    question2_win.title('UK Capitals Quiz - Question 2')
 
     question2_label = tk.Label(
         question2_win,
@@ -332,9 +393,10 @@ def question_1():
     global question1_win
 
     question1_win = Toplevel()
-    question1_win.geometry('280x90')
-    question1_win.minsize(280,90)
-    question1_win.minsize(280,90)
+    question1_win.geometry('282x90')
+    question1_win.minsize(282,90)
+    question1_win.minsize(282,90)
+    question1_win.title('UK Capitals Quiz - Question 1')
 
     question1_label = tk.Label(
         question1_win,
@@ -397,14 +459,14 @@ def question_1():
 
 
 root = tk.Tk()
-root.geometry('160x60')
-root.minsize(160,60)
-root.maxsize(160,60)
-root.title('Capital City Quiz')
+root.geometry('170x60')
+root.minsize(170,60)
+root.maxsize(170,60)
+root.title('UK Capitals Quiz')
 
 root_title = tk.Label(
     root,
-    text='Capital City Quiz',
+    text='UK Capitals Quiz',
     font=('Arial',20)
 )
 root_title.pack()
