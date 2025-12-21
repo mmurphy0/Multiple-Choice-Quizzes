@@ -21,10 +21,10 @@ git clone (repo)
 cd (repo)
 
 ### Windows
-python dnddiceroller.py
+python (quizname).py
 
 ### MacOS & Linux
-python3 dnddiceroller.py
+python3 (quizname).py
 
 ## Tech Stack
 -> Python
