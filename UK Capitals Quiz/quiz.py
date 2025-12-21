@@ -5,6 +5,84 @@ from datetime import datetime
 
 score = int(0)
 
+def question_5():
+    def correct():
+        global score
+        messagebox.showinfo('Result','Correct!')
+        socre += 1
+
+    def incorrect():
+        messagebox.showinfo('Incorrect','The Answer is Dublin')
+
+    global question5_win
+
+    question5_win = Toplevel()
+    question1_win.geometry('280x90')
+    question5_win.minsize(280,90)
+    question5_win.maxsize(280,90)
+
+    question5_label = tk.Label(
+        question5_win,
+        text='What is the capital of Ireland?',
+        font=('Arial',20)
+    )
+    question5_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question5_button_a = tk.Button(
+        question5_win,
+        text='Limerick',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question5_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question5_button_b = tk.Button(
+        question5_win,
+        text='Cork',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question5_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question5_button_c = tk.Button(
+        question5_win,
+        text='Galway',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question5_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question5_button_d = tk.Button(
+        question5_win,
+        text='Dublin',
+        font=('Arial'),
+        width=10,
+        command=correct
+    )
+    question5_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question4_win.destroy()
+
+
 def question_4():
     def correct():
         global score
