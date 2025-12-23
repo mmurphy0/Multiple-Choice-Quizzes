@@ -5,6 +5,84 @@ from datetime import datetime
 
 score = 0
 
+def question3():
+    def correct():
+        global score
+        messagebox.showinfo('Result','Correct!')
+        score += 1
+
+    def incorrect():
+        messagebox.showinfo('Incorrect',"The answer is You'll never walk alone")
+
+    global question3_win
+
+    question3_win = Toplevel()
+    question3_win.geometry('280x90')
+    question3_win.minsize(280,90)
+    question3_win.maxsize(280,90)
+    question3_win.title('Liverpool FC Quiz - Question 3')
+
+    question3_label = tk.Label(
+        question3_win,
+        text="What's Liverpool's Walkout Anthem?",
+        font=('Arial',20)
+    )
+    question3_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question3_button_a = tk.Button(
+        question3_win,
+        text='Blue Moon',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question3_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question3_button_b = tk.Button(
+        question3_win,
+        text="You'll Never Walk Alone",
+        font=('Arial'),
+        width=10,
+        command=correct
+    )
+    question3_button_b.grid(
+        row=3,
+        column=2
+    )
+    
+    question3_button_c = tk.Button(
+        question3_win,
+        text='Sweet Caroline',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question3_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question3_button_d = tk.Button(
+        question3_win,
+        text='Wonderwall',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question3_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question3_win.destroy()
+
 def question2():
     def correct():
         global score
