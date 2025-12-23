@@ -5,6 +5,85 @@ from datetime import datetime
 
 score = 0
 
+def question4():
+    def correct():
+        global score
+        messagebox.showinfo('Result','Correct!')
+        score += 1
+
+    def incorrect():
+        messagebox.showinfo('Incorrect','The answer is Jurgen Klopp')
+
+    global question4_win
+
+    question4_win = Toplevel()
+    question4_win.geometry('280x90')
+    question4_win.minsize(280,90)
+    question4_win.maxsize(280,90)
+    question4_win.title('Liverpool FC Quiz - Question 4')
+
+    question4_label = tk.Label(
+        question4_win,
+        text="Which Liverpool manager won the Champions League in 2019?",
+        font=('Arial',20),
+    )
+    question4_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question4_button_a = tk.Button(
+        question4_win,
+        text='Jurgen Klopp',
+        font=('Arial'),
+        width=10,
+        command=correct
+    )
+    question4_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question4_button_b = tk.Button(
+        question4_win,
+        text='Brendan Rogers',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question4_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question4_button_c = tk.Button(
+        question4_win,
+        text='Rafa Benítez',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question4_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question4_button_d = tk.Button(
+        question4_win,
+        text='Kenny Dalglish',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question4_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question3_win.destroy()
+
+
 def question3():
     def correct():
         global score
@@ -81,7 +160,7 @@ def question3():
         column=2
     )
 
-    question3_win.destroy()
+    question2_win.destroy()
 
 def question2():
     def correct():
