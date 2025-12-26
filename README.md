@@ -3,6 +3,10 @@
 ## Description
 This is a collection of multiple choice quizzes i have made using the python tkinter module
 
+-> UK Capitals Quiz
+
+-> Liverpool FC Quiz
+
 ## Usage
 -> The user is welcomed with a startup window which has the title of the quiz and start quiz button
 
