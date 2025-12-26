@@ -5,6 +5,83 @@ from datetime import datetime
 
 score = 0
 
+def question5():
+    def correct():
+        global score
+        messagebox.showinfo('Result','Correct!')
+        score += 1
+
+    def incorrect():
+        messagebox.showinfo('Incorrect','The answer is 6')
+
+    question5_win = Toplevel()
+    question5_win.geometry('280x90')
+    question5_win.minsize(280,90)
+    question5_win.maxsize(280,90)
+    question5_win.title('Liverpool FC Quiz - Question 5')
+
+    question5_label = tk.Label(
+        question5_win,
+        text='How many times have Liverpool won the Champions League? as of 2025',
+        font=('Arial',20),
+    )
+    question5_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question5_button_a = tk.Button(
+        question5_win,
+        text='4',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question5_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question5_button_b = tk.Button(
+        question5_win,
+        text='5',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question5_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question5_button_c = tk.Button(
+        question5_win,
+        text='6',
+        font=('Arial'),
+        width=10,
+        command=correct
+    )
+    question5_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question5_button_d = tk.Button(
+        question5_win,
+        text='7',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question5_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question4_win.destroy()
+
+
 def question4():
     def correct():
         global score
