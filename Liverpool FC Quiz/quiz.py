@@ -10,12 +10,13 @@ def result():
         global score
         score = 0
         result_win.destroy()
-
+    
+    def save():
         time = str(datetime.now())
         with open('Liverpool FC Quiz/scorebook.txt','a') as file:
-            file.write(time + '\n' + 'Score: ' + score + '\n' + '--------------------' + '\n')
-        
-        messagebox.showinfo('Confirmation','Results successfully saved')
+            file.write(time + '\n' + 'Score: ' + str(score) + '\n' + '--------------------' + '\n')
+            messagebox.showinfo('Confirmation','Results successfully saved')
+            reset()
 
     global result_win
 
@@ -50,7 +51,7 @@ def result():
         text='Continue',
         font=('Arial'),
         width=10,
-        command=reset
+        command=save
     )
     continue_button.grid(
         row=4,
