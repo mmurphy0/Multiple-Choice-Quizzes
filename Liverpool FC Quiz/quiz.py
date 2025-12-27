@@ -82,7 +82,6 @@ def question7():
     )
 
     question6_win.destroy()
-
     
 
 def question6():
