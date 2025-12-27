@@ -5,6 +5,63 @@ from datetime import datetime
 
 score = 0
 
+def result():
+    def reset():
+        global score
+        score = 0
+        result_win.destroy()
+
+        time = str(datetime.now())
+        with open('Liverpool FC Quiz/scorebook.txt','a') as file:
+            file.write(time + '\n' + 'Score: ' + score + '\n' + '--------------------' + '\n')
+        
+        messagebox.showinfo('Confirmation','Results successfully saved')
+
+    global result_win
+
+    result_win = Toplevel()
+    result_win.geometry('200x82')
+    result_win.minsize(200,80)
+    result_win.maxsize(200,80)
+    result_win.title('Liverpool FC Quiz - Results')
+
+    result_title = tk.Label(
+        result_win,
+        text='Results',
+        font=('Arial',20,'bold')
+    )
+    result_title.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    result_label = tk.Label(
+        result_win,
+        text=(f'Score: {score}/10'),
+        font=('Arial',20)
+    )
+    result_label.grid(
+        row=3,
+        column=1,
+        columnspan=2
+    )
+
+    continue_button = tk.Button(
+        result_win,
+        text='Continue',
+        font=('Arial'),
+        width=20,
+        command=reset
+    )
+    continue_button.grid(
+        row=3,
+        column=1
+    )
+
+    question10_win.destroy()
+
+
 def question10():
     def correct():
         global score
