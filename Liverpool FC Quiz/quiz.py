@@ -5,6 +5,85 @@ from datetime import datetime
 
 score = 0
 
+def question9():
+    def correct():
+        global score
+        messagebox.showinfo('Result','Correct!')
+        score += 1
+
+    def incorrect():
+        messagebox.showinfo('Incorrect','The answer is The Reds')
+
+    global question9_win
+
+    question9_win = Toplevel()
+    question9_win.geometry('280,90'),
+    question9_win.minsize(280,90)
+    question9_win.maxsize(280,90)
+    question9_win.title('Liverpool FC Quiz - Question 9')
+
+    question9_label = tk.Label(
+        question9_win,
+        text="What is Liverpool's nickname?",
+        font=('Arial',20)
+    )
+    question9_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question9_button_a = tk.Button(
+        question9_win,
+        text='The Red Devils',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question9_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question9_button_b = tk.Button(
+        question9_win,
+        text='The Gunners',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question9_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question9_button_c = tk.Button(
+        question9_win,
+        text='The Reds',
+        font=('Arial'),
+        width=10,
+        command=correct
+    )
+    question9_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question9_button_d = tk.Button(
+        question9_win,
+        text='The Foxes',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question9_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question8_win.destroy()
+
+
 def question8():
     def correct():
         global score
@@ -81,7 +160,7 @@ def question8():
         column=2
     )
 
-    question8_win.destroy()
+    question7_win.destroy()
 
 
 def question7():
