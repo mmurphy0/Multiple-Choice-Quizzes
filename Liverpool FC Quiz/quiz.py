@@ -67,9 +67,11 @@ def question10():
         global score
         messagebox.showinfo('Result','Correct!')
         score += 1
+        result()
 
     def incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Everton')
+        result()
 
     global question10_win
 
@@ -146,9 +148,11 @@ def question9():
         global score
         messagebox.showinfo('Result','Correct!')
         score += 1
+        question10()
 
     def incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is The Reds')
+        question10()
 
     global question9_win
 
@@ -225,9 +229,11 @@ def question8():
         global score
         messagebox.showinfo('Result','Correct!')
         score += 1
+        question9()
 
     def incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Red')
+        question9()
 
     global question8_win
 
@@ -304,9 +310,11 @@ def question7():
         global score
         messagebox.showinfo('Result','Correct!')
         score += 1
+        question8()
 
     def incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Red')
+        question8()
 
     global question7_win
 
@@ -383,9 +391,11 @@ def question6():
         global score
         messagebox.showinfo('Result','Correct!')
         score += 1
+        question7()
 
     def incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Ian Rush')
+        question7()
 
     global question6_win
 
@@ -462,9 +472,11 @@ def question5():
         global score
         messagebox.showinfo('Result','Correct!')
         score += 1
+        question6()
 
     def incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is 6')
+        question6()
 
     global question5_win
 
@@ -541,9 +553,11 @@ def question4():
         global score
         messagebox.showinfo('Result','Correct!')
         score += 1
+        question5()
 
     def incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Jurgen Klopp')
+        question5()
 
     global question4_win
 
@@ -620,9 +634,11 @@ def question3():
         global score
         messagebox.showinfo('Result','Correct!')
         score += 1
+        question4()
 
     def incorrect():
         messagebox.showinfo('Result',"Incorrect, The answer is You'll never walk alone")
+        question4()
 
     global question3_win
 
@@ -698,9 +714,11 @@ def question2():
         global score
         messagebox.showinfo('Result','Correct!')
         score += 1
+        question3()
 
     def incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Anfield')
+        question3()
 
     global question2_win
 
@@ -777,9 +795,11 @@ def question1():
         global score
         messagebox.showinfo('Result','Correct!')
         score += 1
+        question2()
     
     def incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is 1892')
+        question2()
 
     global question1_win
 
