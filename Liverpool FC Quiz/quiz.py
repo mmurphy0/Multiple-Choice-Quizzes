@@ -228,7 +228,7 @@ def question8():
         question9()
 
     def incorrect():
-        messagebox.showinfo('Result','Incorrect, The answer is Red')
+        messagebox.showinfo('Result','Incorrect, The answer is Steven Gerrard')
         question9()
 
     global question8_win
