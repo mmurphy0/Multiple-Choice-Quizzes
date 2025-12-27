@@ -20,7 +20,7 @@ def result():
     global result_win
 
     result_win = Toplevel()
-    result_win.geometry('200x82+0+0')
+    result_win.geometry('117x90+0+0')
     result_win.title('Liverpool FC Quiz - Results')
 
     result_title = tk.Label(
@@ -49,12 +49,13 @@ def result():
         result_win,
         text='Continue',
         font=('Arial'),
-        width=20,
+        width=10,
         command=reset
     )
     continue_button.grid(
-        row=3,
-        column=1
+        row=4,
+        column=1,
+        columnspan=1
     )
 
     question10_win.destroy()
@@ -74,7 +75,7 @@ def question10():
     global question10_win
 
     question10_win = Toplevel()
-    question10_win.geometry('280x90+0+0')
+    question10_win.geometry('312x90+0+0')
     question10_win.title('Liverpool FC Quiz - Question 10')
 
     question10_label = tk.Label(
@@ -153,7 +154,7 @@ def question9():
     global question9_win
 
     question9_win = Toplevel()
-    question9_win.geometry('280x90+0+0')
+    question9_win.geometry('312x90+0+0')
     question9_win.title('Liverpool FC Quiz - Question 9')
 
     question9_label = tk.Label(
@@ -232,12 +233,12 @@ def question8():
     global question8_win
 
     question8_win = Toplevel()
-    question8_win.geometry('280x90+0+0')
+    question8_win.geometry('372x90+0+0')
     question8_win.title('Liverpool FC Quiz - Question 8')
 
     question8_label = tk.Label(
         question8_win,
-        text='Which Liverpool player famously slipped during a match against Chelsea?',
+        text='Which Liverpool player famously slipped?',
         font=('Arial',20)
     )
     question8_label.grid(
@@ -311,7 +312,7 @@ def question7():
     global question7_win
 
     question7_win = Toplevel()
-    question7_win.geometry('280x90+0+0')
+    question7_win.geometry('325x90+0+0')
     question7_win.title('Liverpool FC Quiz - Question 7')
 
     question7_label = tk.Label(
@@ -390,13 +391,13 @@ def question6():
     global question6_win
 
     question6_win = Toplevel()
-    question6_win.geometry('280x90+0+0')
+    question6_win.geometry('390x90+0+0')
     question6_win.title('Liverpool FC Quiz - Question 6')
 
     question6_label = tk.Label(
         question6_win,
         text="Who is Liverpool's all-time top goal scorer?",
-        font=('Arial')
+        font=('Arial',20)
     )
     question6_label.grid(
         row=1,
