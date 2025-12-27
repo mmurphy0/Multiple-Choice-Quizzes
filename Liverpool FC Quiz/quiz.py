@@ -469,12 +469,12 @@ def question5():
     global question5_win
 
     question5_win = Toplevel()
-    question5_win.geometry('280x90+0+0')
+    question5_win.geometry('455x90+0+0')
     question5_win.title('Liverpool FC Quiz - Question 5')
 
     question5_label = tk.Label(
         question5_win,
-        text='How many times have Liverpool won the Champions League? as of 2025',
+        text='How many Champions League trophies as of 2025',
         font=('Arial',20),
     )
     question5_label.grid(
@@ -548,12 +548,12 @@ def question4():
     global question4_win
 
     question4_win = Toplevel()
-    question4_win.geometry('280x90+0+0')
+    question4_win.geometry('450x90+0+0')
     question4_win.title('Liverpool FC Quiz - Question 4')
 
     question4_label = tk.Label(
         question4_win,
-        text="Which Liverpool manager won the Champions League in 2019?",
+        text='Champions League 2019: Which Manager won it?',
         font=('Arial',20),
     )
     question4_label.grid(
@@ -627,7 +627,7 @@ def question3():
     global question3_win
 
     question3_win = Toplevel()
-    question3_win.geometry('280x90+0+0')
+    question3_win.geometry('330x90+0+0')
     question3_win.title('Liverpool FC Quiz - Question 3')
 
     question3_label = tk.Label(
