@@ -5,6 +5,86 @@ from datetime import datetime
 
 score = 0
 
+def question7():
+    def correct():
+        global score
+        messagebox.showinfo('Result','Correct!')
+        score += 1
+
+    def incorrect():
+        messagebox.showinfo('Incorrect','The answer is Red')
+
+    global question7_win
+
+    question7_win = Toplevel()
+    question7_win.geometry('280x90')
+    question7_win.maxsize(280,90)
+    question7_win.minsize(280,90)
+    question7_win.title('Liverpool FC Quiz - Question 7')
+
+    question7_label = tk.Label(
+        question7_win,
+        text="What colour is Liverpool's home kit?",
+        font=('Arial',20),
+    )
+    question7_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question7_button_a = tk.Button(
+        question7_win,
+        text='Blue',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question7_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question7_button_b = tk.Button(
+        question7_win,
+        text='White',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question7_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question7_button_c = tk.Button(
+        question7_win,
+        text='Red',
+        font=('Arial'),
+        width=10,
+        command=correct
+    )
+    question7_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question7_button_d = tk.Button(
+        question7_win,
+        text='Black',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question7_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question6_win.destroy()
+
+    
+
 def question6():
     def correct():
         global score
