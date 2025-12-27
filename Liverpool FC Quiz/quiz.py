@@ -723,9 +723,9 @@ def question2():
     global question2_win
 
     question2_win = Toplevel()
-    question2_win.geometry('280x90')
-    question2_win.minsize(280,90)
-    question2_win.maxsize(280,90)
+    question2_win.geometry('422x90')
+    question2_win.minsize(422,90)
+    question2_win.maxsize(422,90)
     question2_win.title('Liverpool FC Quiz - Question 2')
 
     question2_label = tk.Label(
@@ -772,7 +772,7 @@ def question2():
     )
     question2_button_c.grid(
         row=4,
-        column=2
+        column=1
     )
 
     question2_button_d = tk.Button(
