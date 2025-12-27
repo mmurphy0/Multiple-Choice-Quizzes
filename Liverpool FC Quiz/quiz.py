@@ -5,6 +5,85 @@ from datetime import datetime
 
 score = 0
 
+def question8():
+    def correct():
+        global score
+        messagebox.showinfo('Result','Correct!')
+        score += 1
+
+    def incorrect():
+        messagebox.showinfo('Incorrect','The answer is Red')
+
+    global question8_win
+
+    question8_win = Toplevel()
+    question8_win.geometry('280,90')
+    question8_win.minsize(280,90)
+    question8_win.maxsize(280,90)
+    question8_win.title('Liverpool FC Quiz - Question 8')
+
+    question8_label = tk.Label(
+        question8_win,
+        text='Which Liverpool player famously slipped during a match against Chelsea?',
+        font=('Arial',20)
+    )
+    question8_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question8_button_a = tk.Button(
+        question8_win,
+        text='Jamie Carragher',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question8_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question8_button_b = tk.Button(
+        question8_win,
+        text='Steven Gerrard',
+        font=('Arial'),
+        width=10,
+        command=correct
+    )
+    question8_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question8_button_c = tk.Button(
+        question8_win,
+        text='Jordan Henderson',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question8_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question8_button_d = tk.Button(
+        question8_win,
+        text='Xabi Alonso',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question8_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question8_win.destroy()
+
+
 def question7():
     def correct():
         global score
