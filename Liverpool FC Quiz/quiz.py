@@ -5,6 +5,85 @@ from datetime import datetime
 
 score = 0
 
+def question10():
+    def correct():
+        global score
+        messagebox.showinfo('Result','Correct!')
+        score += 1
+
+    def incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Everton')
+
+    global question10_win
+
+    question10_win = Toplevel()
+    question10_win.geometry('280,90')
+    question10_win.minsize(280,90)
+    question10_win.maxsize(280,90)
+    question10_win.title('Liverpool FC Quiz - Question 10')
+
+    question10_label = tk.Label(
+        question10_win,
+        text="Who is Liverpool's rival team?",
+        font=('Arial',20)
+    )
+    question10_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question10_button_a = tk.Button(
+        question10_win,
+        text='Manchester United',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question10_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question10_button_b = tk.Button(
+        question10_win,
+        text='Leeds United',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question10_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question10_button_c = tk.Button(
+        question10_win,
+        text='Manchester City',
+        font=('Arial'),
+        width=10,
+        command=incorrect
+    )
+    question10_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question10_button_d = tk.Button(
+        question10_win,
+        text='Everton',
+        font=('Arial'),
+        width=10,
+        command=correct
+    )
+    question10_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question9_win.destroy()
+
+
 def question9():
     def correct():
         global score
@@ -12,7 +91,7 @@ def question9():
         score += 1
 
     def incorrect():
-        messagebox.showinfo('Incorrect','The answer is The Reds')
+        messagebox.showinfo('Result','Incorrect, The answer is The Reds')
 
     global question9_win
 
@@ -91,7 +170,7 @@ def question8():
         score += 1
 
     def incorrect():
-        messagebox.showinfo('Incorrect','The answer is Red')
+        messagebox.showinfo('Result','Incorrect, The answer is Red')
 
     global question8_win
 
@@ -170,7 +249,7 @@ def question7():
         score += 1
 
     def incorrect():
-        messagebox.showinfo('Incorrect','The answer is Red')
+        messagebox.showinfo('Result','Incorrect, The answer is Red')
 
     global question7_win
 
@@ -249,7 +328,7 @@ def question6():
         score += 1
 
     def incorrect():
-        messagebox.showinfo('Incorrect','The answer is Ian Rush')
+        messagebox.showinfo('Result','Incorrect, The answer is Ian Rush')
 
     global question6_win
 
@@ -328,7 +407,7 @@ def question5():
         score += 1
 
     def incorrect():
-        messagebox.showinfo('Incorrect','The answer is 6')
+        messagebox.showinfo('Result','Incorrect, The answer is 6')
 
     global question5_win
 
@@ -407,7 +486,7 @@ def question4():
         score += 1
 
     def incorrect():
-        messagebox.showinfo('Incorrect','The answer is Jurgen Klopp')
+        messagebox.showinfo('Result','Incorrect, The answer is Jurgen Klopp')
 
     global question4_win
 
@@ -486,7 +565,7 @@ def question3():
         score += 1
 
     def incorrect():
-        messagebox.showinfo('Incorrect',"The answer is You'll never walk alone")
+        messagebox.showinfo('Result',"Incorrect, The answer is You'll never walk alone")
 
     global question3_win
 
@@ -564,7 +643,7 @@ def question2():
         score += 1
 
     def incorrect():
-        messagebox.showinfo('Incorrect','The answer is Anfield')
+        messagebox.showinfo('Result','Incorrect, The answer is Anfield')
 
     global question2_win
 
