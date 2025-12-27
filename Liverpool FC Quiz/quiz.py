@@ -96,7 +96,7 @@ def question10():
         question10_win,
         text='Manchester United',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question10_button_a.grid(
@@ -108,7 +108,7 @@ def question10():
         question10_win,
         text='Leeds United',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question10_button_b.grid(
@@ -120,7 +120,7 @@ def question10():
         question10_win,
         text='Manchester City',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question10_button_c.grid(
@@ -132,7 +132,7 @@ def question10():
         question10_win,
         text='Everton',
         font=('Arial'),
-        width=10,
+        width=15,
         command=correct
     )
     question10_button_d.grid(
@@ -177,7 +177,7 @@ def question9():
         question9_win,
         text='The Red Devils',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question9_button_a.grid(
@@ -189,7 +189,7 @@ def question9():
         question9_win,
         text='The Gunners',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question9_button_b.grid(
@@ -201,7 +201,7 @@ def question9():
         question9_win,
         text='The Reds',
         font=('Arial'),
-        width=10,
+        width=15,
         command=correct
     )
     question9_button_c.grid(
@@ -213,7 +213,7 @@ def question9():
         question9_win,
         text='The Foxes',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question9_button_d.grid(
@@ -258,7 +258,7 @@ def question8():
         question8_win,
         text='Jamie Carragher',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question8_button_a.grid(
@@ -270,7 +270,7 @@ def question8():
         question8_win,
         text='Steven Gerrard',
         font=('Arial'),
-        width=10,
+        width=15,
         command=correct
     )
     question8_button_b.grid(
@@ -282,7 +282,7 @@ def question8():
         question8_win,
         text='Jordan Henderson',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question8_button_c.grid(
@@ -294,7 +294,7 @@ def question8():
         question8_win,
         text='Xabi Alonso',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question8_button_d.grid(
@@ -339,7 +339,7 @@ def question7():
         question7_win,
         text='Blue',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question7_button_a.grid(
@@ -351,7 +351,7 @@ def question7():
         question7_win,
         text='White',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question7_button_b.grid(
@@ -363,7 +363,7 @@ def question7():
         question7_win,
         text='Red',
         font=('Arial'),
-        width=10,
+        width=15,
         command=correct
     )
     question7_button_c.grid(
@@ -375,7 +375,7 @@ def question7():
         question7_win,
         text='Black',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question7_button_d.grid(
@@ -420,7 +420,7 @@ def question6():
         question6_win,
         text='Ian Rush',
         font=('Arial'),
-        width=10,
+        width=15,
         command=correct
     )
     question6_button_a.grid(
@@ -432,7 +432,7 @@ def question6():
         question6_win,
         text='Steven Gerrard',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question6_button_b.grid(
@@ -444,7 +444,7 @@ def question6():
         question6_win,
         text='Mohammed Salah',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question6_button_c.grid(
@@ -456,7 +456,7 @@ def question6():
         question6_win,
         text='Robbie Fowler',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question6_button_d.grid(
@@ -501,7 +501,7 @@ def question5():
         question5_win,
         text='4',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question5_button_a.grid(
@@ -513,7 +513,7 @@ def question5():
         question5_win,
         text='5',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question5_button_b.grid(
@@ -525,7 +525,7 @@ def question5():
         question5_win,
         text='6',
         font=('Arial'),
-        width=10,
+        width=15,
         command=correct
     )
     question5_button_c.grid(
@@ -537,7 +537,7 @@ def question5():
         question5_win,
         text='7',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question5_button_d.grid(
@@ -582,7 +582,7 @@ def question4():
         question4_win,
         text='Jurgen Klopp',
         font=('Arial'),
-        width=10,
+        width=15,
         command=correct
     )
     question4_button_a.grid(
@@ -594,7 +594,7 @@ def question4():
         question4_win,
         text='Brendan Rogers',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question4_button_b.grid(
@@ -606,7 +606,7 @@ def question4():
         question4_win,
         text='Rafa Benítez',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question4_button_c.grid(
@@ -618,7 +618,7 @@ def question4():
         question4_win,
         text='Kenny Dalglish',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question4_button_d.grid(
@@ -663,7 +663,7 @@ def question3():
         question3_win,
         text='Blue Moon',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question3_button_a.grid(
@@ -675,7 +675,7 @@ def question3():
         question3_win,
         text="You'll Never Walk Alone",
         font=('Arial'),
-        width=10,
+        width=15,
         command=correct
     )
     question3_button_b.grid(
@@ -687,7 +687,7 @@ def question3():
         question3_win,
         text='Sweet Caroline',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question3_button_c.grid(
@@ -699,7 +699,7 @@ def question3():
         question3_win,
         text='Wonderwall',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question3_button_d.grid(
@@ -743,7 +743,7 @@ def question2():
         question2_win,
         text='Hill Dickinson',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question2_button_a.grid(
@@ -755,7 +755,7 @@ def question2():
         question2_win,
         text='Old Trafford',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question2_button_b.grid(
@@ -767,7 +767,7 @@ def question2():
         question2_win,
         text='Wembley',
         font=('Arial'),
-        width=10,
+        width=15,
         command=incorrect
     )
     question2_button_c.grid(
@@ -779,7 +779,7 @@ def question2():
         question2_win,
         text='Anfield',
         font=('Arial'),
-        width=10,
+        width=15,
         command=correct
     )
     question2_button_d.grid(
