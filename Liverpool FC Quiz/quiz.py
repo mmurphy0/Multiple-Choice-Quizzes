@@ -20,9 +20,7 @@ def result():
     global result_win
 
     result_win = Toplevel()
-    result_win.geometry('200x82')
-    result_win.minsize(200,80)
-    result_win.maxsize(200,80)
+    result_win.geometry('200x82+0+0')
     result_win.title('Liverpool FC Quiz - Results')
 
     result_title = tk.Label(
@@ -76,9 +74,7 @@ def question10():
     global question10_win
 
     question10_win = Toplevel()
-    question10_win.geometry('280x90')
-    question10_win.minsize(280,90)
-    question10_win.maxsize(280,90)
+    question10_win.geometry('280x90+0+0')
     question10_win.title('Liverpool FC Quiz - Question 10')
 
     question10_label = tk.Label(
@@ -157,9 +153,7 @@ def question9():
     global question9_win
 
     question9_win = Toplevel()
-    question9_win.geometry('280x90')
-    question9_win.minsize(280,90)
-    question9_win.maxsize(280,90)
+    question9_win.geometry('280x90+0+0')
     question9_win.title('Liverpool FC Quiz - Question 9')
 
     question9_label = tk.Label(
@@ -238,9 +232,7 @@ def question8():
     global question8_win
 
     question8_win = Toplevel()
-    question8_win.geometry('280x90')
-    question8_win.minsize(280,90)
-    question8_win.maxsize(280,90)
+    question8_win.geometry('280x90+0+0')
     question8_win.title('Liverpool FC Quiz - Question 8')
 
     question8_label = tk.Label(
@@ -319,9 +311,7 @@ def question7():
     global question7_win
 
     question7_win = Toplevel()
-    question7_win.geometry('280x90')
-    question7_win.maxsize(280,90)
-    question7_win.minsize(280,90)
+    question7_win.geometry('280x90+0+0')
     question7_win.title('Liverpool FC Quiz - Question 7')
 
     question7_label = tk.Label(
@@ -400,9 +390,7 @@ def question6():
     global question6_win
 
     question6_win = Toplevel()
-    question6_win.geometry('280x90')
-    question6_win.minsize(280,90)
-    question6_win.maxsize(280,90)
+    question6_win.geometry('280x90+0+0')
     question6_win.title('Liverpool FC Quiz - Question 6')
 
     question6_label = tk.Label(
@@ -481,9 +469,7 @@ def question5():
     global question5_win
 
     question5_win = Toplevel()
-    question5_win.geometry('280x90')
-    question5_win.minsize(280,90)
-    question5_win.maxsize(280,90)
+    question5_win.geometry('280x90+0+0')
     question5_win.title('Liverpool FC Quiz - Question 5')
 
     question5_label = tk.Label(
@@ -562,9 +548,7 @@ def question4():
     global question4_win
 
     question4_win = Toplevel()
-    question4_win.geometry('280x90')
-    question4_win.minsize(280,90)
-    question4_win.maxsize(280,90)
+    question4_win.geometry('280x90+0+0')
     question4_win.title('Liverpool FC Quiz - Question 4')
 
     question4_label = tk.Label(
@@ -643,9 +627,7 @@ def question3():
     global question3_win
 
     question3_win = Toplevel()
-    question3_win.geometry('280x90')
-    question3_win.minsize(280,90)
-    question3_win.maxsize(280,90)
+    question3_win.geometry('280x90+0+0')
     question3_win.title('Liverpool FC Quiz - Question 3')
 
     question3_label = tk.Label(
@@ -723,9 +705,7 @@ def question2():
     global question2_win
 
     question2_win = Toplevel()
-    question2_win.geometry('422x90')
-    question2_win.minsize(422,90)
-    question2_win.maxsize(422,90)
+    question2_win.geometry('422x90+0+0')
     question2_win.title('Liverpool FC Quiz - Question 2')
 
     question2_label = tk.Label(
@@ -804,9 +784,7 @@ def question1():
     global question1_win
 
     question1_win = Toplevel()
-    question1_win.geometry('345x90')
-    question1_win.minsize(345,90)
-    question1_win.maxsize(345,90)
+    question1_win.geometry('345x90+0+0')
     question1_win.title('Liverpool FC Quiz - Question 1')
 
     question1_label = tk.Label(
