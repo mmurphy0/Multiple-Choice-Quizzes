@@ -20,14 +20,12 @@ def save():
     reset()
 
 
-
 def results():
     global results_win
 
     results_win = Toplevel()
-    results_win.geometry('200x82')
-    results_win.minsize(200,82)
-    results_win.maxsize(200,82)
+    results_win.geometry('200x82+0+0')
+    results_win.resizable(False,False)
     results_win.title('UK Capitals Quiz - Results')
 
     results_title = tk.Label(
@@ -55,7 +53,6 @@ def results():
     question5_win.destroy()
 
 
-
 def question_5():
     def correct():
         global score
@@ -70,9 +67,8 @@ def question_5():
     global question5_win
 
     question5_win = Toplevel()
-    question5_win.geometry('270x90')
-    question5_win.minsize(270,90)
-    question5_win.maxsize(270,90)
+    question5_win.geometry('270x90+0+0')
+    question5_win.resizable(False,False)
     question5_win.title('UK Capitals Quiz - Question 5')
 
     question5_label = tk.Label(
@@ -151,9 +147,8 @@ def question_4():
     global question4_win
 
     question4_win = Toplevel()
-    question4_win.geometry('352x90')
-    question4_win.minsize(352,90)
-    question4_win.maxsize(352,90)
+    question4_win.geometry('352x90+0+0')
+    question4_win.resizable(False,False)
     question4_win.title('UK Capitals Quiz - Question 4')
 
     question4_label = tk.Label(
@@ -217,6 +212,7 @@ def question_4():
 
     question3_win.destroy()
 
+
 def question_3():
     def correct():
         global score
@@ -231,9 +227,8 @@ def question_3():
     global question3_win
 
     question3_win = Toplevel()
-    question3_win.geometry('285x90')
-    question3_win.minsize(285,90)
-    question3_win.maxsize(285,90)
+    question3_win.geometry('285x90+0+0')
+    question3_win.resizable(False,False)
     question3_win.title('UK Capitals Quiz - Question 3')
 
     question3_label = tk.Label(
@@ -312,9 +307,8 @@ def question_2():
     global question2_win
 
     question2_win = Toplevel()
-    question2_win.geometry('265x90')
-    question2_win.minsize(265,90)
-    question2_win.maxsize(265,90)
+    question2_win.geometry('265x90+0+0')
+    question2_win.resizable(False,False)
     question2_win.title('UK Capitals Quiz - Question 2')
 
     question2_label = tk.Label(
@@ -393,9 +387,8 @@ def question_1():
     global question1_win
 
     question1_win = Toplevel()
-    question1_win.geometry('282x90')
-    question1_win.minsize(282,90)
-    question1_win.minsize(282,90)
+    question1_win.geometry('282x90+0+0')
+    question1_win.resizable(False,False)
     question1_win.title('UK Capitals Quiz - Question 1')
 
     question1_label = tk.Label(
@@ -459,9 +452,8 @@ def question_1():
 
 
 root = tk.Tk()
-root.geometry('170x60')
-root.minsize(170,60)
-root.maxsize(170,60)
+root.geometry('170x60+0+0')
+root.resizable(False,False)
 root.title('UK Capitals Quiz')
 
 root_title = tk.Label(

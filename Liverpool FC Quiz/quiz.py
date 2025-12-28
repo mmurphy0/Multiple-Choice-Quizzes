@@ -22,6 +22,7 @@ def result():
 
     result_win = Toplevel()
     result_win.geometry('117x90+0+0')
+    result_win.resizable(False,False)
     result_win.title('Liverpool FC Quiz - Results')
 
     result_title = tk.Label(
@@ -77,6 +78,7 @@ def question10():
 
     question10_win = Toplevel()
     question10_win.geometry('312x90+0+0')
+    question10_win.resizable(False,False)
     question10_win.title('Liverpool FC Quiz - Question 10')
 
     question10_label = tk.Label(
@@ -156,6 +158,7 @@ def question9():
 
     question9_win = Toplevel()
     question9_win.geometry('312x90+0+0')
+    question9_win.resizable(False,False)
     question9_win.title('Liverpool FC Quiz - Question 9')
 
     question9_label = tk.Label(
@@ -235,6 +238,7 @@ def question8():
 
     question8_win = Toplevel()
     question8_win.geometry('372x90+0+0')
+    question8_win.resizable(False,False)
     question8_win.title('Liverpool FC Quiz - Question 8')
 
     question8_label = tk.Label(
@@ -314,6 +318,7 @@ def question7():
 
     question7_win = Toplevel()
     question7_win.geometry('325x90+0+0')
+    question7_win.resizable(False,False)
     question7_win.title('Liverpool FC Quiz - Question 7')
 
     question7_label = tk.Label(
@@ -393,6 +398,7 @@ def question6():
 
     question6_win = Toplevel()
     question6_win.geometry('390x90+0+0')
+    question6_win.resizable(False,False)
     question6_win.title('Liverpool FC Quiz - Question 6')
 
     question6_label = tk.Label(
@@ -472,6 +478,7 @@ def question5():
 
     question5_win = Toplevel()
     question5_win.geometry('455x90+0+0')
+    question5_win.resizable(False,False)
     question5_win.title('Liverpool FC Quiz - Question 5')
 
     question5_label = tk.Label(
@@ -551,6 +558,7 @@ def question4():
 
     question4_win = Toplevel()
     question4_win.geometry('450x90+0+0')
+    question4_win.resizable(False,False)
     question4_win.title('Liverpool FC Quiz - Question 4')
 
     question4_label = tk.Label(
@@ -630,6 +638,7 @@ def question3():
 
     question3_win = Toplevel()
     question3_win.geometry('330x90+0+0')
+    question3_win.resizable(False,False)
     question3_win.title('Liverpool FC Quiz - Question 3')
 
     question3_label = tk.Label(
@@ -708,6 +717,7 @@ def question2():
 
     question2_win = Toplevel()
     question2_win.geometry('422x90+0+0')
+    question2_win.resizable(False,False)
     question2_win.title('Liverpool FC Quiz - Question 2')
 
     question2_label = tk.Label(
@@ -787,6 +797,7 @@ def question1():
 
     question1_win = Toplevel()
     question1_win.geometry('345x90+0+0')
+    question1_win.resizable(False,False)
     question1_win.title('Liverpool FC Quiz - Question 1')
 
     question1_label = tk.Label(
@@ -851,8 +862,7 @@ def question1():
 
 root = tk.Tk()
 root.geometry('200x60')
-root.minsize(200,60)
-root.maxsize(200,60)
+root.resizable(False,False)
 root.title('Liverpool FC Quiz')
 
 quiz_title = tk.Label(
