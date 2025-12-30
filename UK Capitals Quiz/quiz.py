@@ -459,7 +459,7 @@ root.title('UK Capitals Quiz')
 root_title = tk.Label(
     root,
     text='UK Capitals Quiz',
-    font=('Arial',20)
+    font=('Arial',20,'bold')
 )
 root_title.pack()
 
