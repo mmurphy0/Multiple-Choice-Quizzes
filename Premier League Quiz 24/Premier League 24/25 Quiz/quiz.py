@@ -15,9 +15,9 @@ def question1():
         messagebox.showinfo('Result','Incorrect, The answer is Liverpool')
 
     question1_win = Toplevel()
-    question1_win.geometry('280x80+0+0')
+    question1_win.geometry('323x90+0+0')
     question1_win.resizable(False,False)
-    question1_win.title('Premier League 24/25 Quiz - Question 1')
+    question1_win.title('Premier League 24/25 Quiz - Q1')
 
     question1_label = tk.Label(
         question1_win,
@@ -51,7 +51,7 @@ def question1():
     )
     question1_button_b.grid(
         row=3,
-        column=1
+        column=2
     )
 
     question1_button_c = tk.Button(
