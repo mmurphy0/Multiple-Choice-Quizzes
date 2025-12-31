@@ -1,24 +1,35 @@
 # Multiple Choice Quizzes
 
 ## Description
-This is a collection of multiple choice quizzes i have made using the python tkinter module
+This is a collection of multiple choice quizzes i have made using the python tkinter module these quizzes will eventually cover a variety of topics so it is welcome to more people who enjoy quizzes.
+
+### Avaliable Quizzes
 
 -> UK Capitals Quiz
 
 -> Liverpool FC Quiz
 
+### File Contents
+Every quiz has its own file and each file is set out the same way with 3 files
+
+- quiz.py (Quiz)
+
+- questions.txt (Questions & Answers)
+
+- scorebook.txt (Keeps record of all scores and sessions)
+
 ## Usage
--> The user is welcomed with a startup window which has the title of the quiz and start quiz button
+- The user is welcomed with a startup window which has the title of the quiz and start quiz button
 
--> When The start quiz button has been clicked, the quiz starts
+- When The start quiz button has been clicked, the quiz starts
 
--> The User must click one of the 4 buttons as an answer, messageboxes appear with feedback on the question
+- The User must click one of the 4 buttons as an answer, messageboxes appear with feedback on the question
 
-  -> Correct = 'Correct!'
+  - Correct = 'Correct!'
   
-  -> Incorrect = 'Incorrect, The answer was (answer)'
+  - Incorrect = 'Incorrect, The answer was (answer)'
 
--> After the questions have been answered, the user is given their results which are then saved to results.txt with the date and time of the game.
+- After the questions have been answered, the user is given their results which are then saved to results.txt with the date and time of the game.
 
 ## Installation
 git clone (repo)
@@ -31,9 +42,9 @@ python (quizname).py
 python3 (quizname).py
 
 ## Tech Stack
--> Python
+- Python
 
--> Tkinter
+- Tkinter
 
 ## Future Updates
--> More quizzes
+- More quizzes across various topics
