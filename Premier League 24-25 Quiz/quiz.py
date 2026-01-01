@@ -5,13 +5,87 @@ from datetime import datetime
 
 score = 0
 
-def question4():
-    def correct():
-        global score
-        messagebox.showinfo('Result','Correct!')
-        score += 1
+def question5():
+    def q5_correct():
+        correct()
 
-    def incorrect():
+    def q5_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is ')
+
+    global question5_win
+
+    question5_win = Toplevel()
+    question5_win.geometry('280x90+0+0')
+    question5_win.resizable(False,False)
+    question5_win.title('Premier League 24/25 Quiz - Q5')
+
+    question5_label = tk.Label(
+        question5_win,
+        text='Where did Ipswich Town Finish?',
+        font=('Arial',20)
+    )
+    question5_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question5_button_a = tk.Button(
+        question5_win,
+        text='19th',
+        font=('Arial'),
+        width=15,
+        command=q5_correct
+    )
+    question5_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question5_button_b = tk.Button(
+        question5_win,
+        text='1st',
+        font=('Arial'),
+        width=15,
+        command=q5_incorrect
+    )
+    question5_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question5_button_c = tk.Button(
+        question5_win,
+        text='6th',
+        font=('Arial'),
+        width=15,
+        command=q5_incorrect
+    )
+    question5_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question5_button_d = tk.Button(
+        question5_win,
+        text='10th',
+        font=('Arial'),
+        width=15,
+        command=q5_incorrect
+    )
+    question5_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question4_win.destroy()
+
+
+def question4():
+    def q4_correct():
+        correct()
+
+    def q4_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Leicester City')
 
     global question4_win
@@ -37,7 +111,7 @@ def question4():
         text='Leicester City',
         font=('Arial'),
         width=15,
-        command=correct
+        command=q4_correct
     )
     question4_button_a.grid(
         row=3,
@@ -49,7 +123,7 @@ def question4():
         text='Aston Villa',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q4_incorrect
     )
     question4_button_b.grid(
         row=3,
@@ -61,7 +135,7 @@ def question4():
         text='West Ham',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q4_incorrect
     )
     question4_button_c.grid(
         row=4,
@@ -73,7 +147,7 @@ def question4():
         text='Wolves',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q4_incorrect
     )
     question4_button_d.grid(
         row=4,
@@ -84,12 +158,10 @@ def question4():
 
 
 def question3():
-    def correct():
-        global score
-        messagebox.showinfo('Result','Correct!')
-        score += 1
+    def q3_correct():
+        correct()
 
-    def incorrect():
+    def q3_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is 29')
 
     global question3_win
@@ -115,7 +187,7 @@ def question3():
         text='25',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q3_incorrect
     )
     question3_button_a.grid(
         row=3,
@@ -127,7 +199,7 @@ def question3():
         text='27',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q3_incorrect
     )
     question3_button_b.grid(
         row=3,
@@ -139,7 +211,7 @@ def question3():
         text='29',
         font=('Arial'),
         width=15,
-        command=correct
+        command=q3_correct
     )
     question3_button_c.grid(
         row=4,
@@ -151,7 +223,7 @@ def question3():
         text='31',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q3_incorrect
     )
     question3_button_d.grid(
         row=4,
@@ -161,12 +233,10 @@ def question3():
     question2_win.destroy()
 
 def question2():
-    def correct():
-        global score
-        messagebox.showinfo('Result','Correct!')
-        score += 1
+    def q2_correct():
+        correct()
 
-    def incorrect():
+    def q2_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Mohamed Salah')
 
     global question2_win
@@ -192,7 +262,7 @@ def question2():
         text='Erling Haaland',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q2_incorrect
     )
     question2_button_a.grid(
         row=3,
@@ -204,7 +274,7 @@ def question2():
         text='Mohamed Salah',
         font=('Arial'),
         width=15,
-        command=correct
+        command=q2_correct
     )
     question2_button_b.grid(
         row=3,
@@ -216,7 +286,7 @@ def question2():
         text='Alexander Isak',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q2_incorrect
     )
     question2_button_c.grid(
         row=4,
@@ -228,7 +298,7 @@ def question2():
         text='Bukayo Saka',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q2_incorrect
     )
     question2_button_d.grid(
         row=4,
@@ -239,12 +309,10 @@ def question2():
 
 
 def question1():
-    def correct():
-        global score
-        messagebox.showinfo('Result','Correct!')
-        score += 1
+    def q1_correct():
+        correct()
 
-    def incorrect():
+    def q1_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Liverpool')
 
     global question1_win
@@ -270,7 +338,7 @@ def question1():
         text='Chelsea',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q1_incorrect
     )
     question1_button_a.grid(
         row=3,
@@ -282,7 +350,7 @@ def question1():
         text='Arsenal',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q1_incorrect
     )
     question1_button_b.grid(
         row=3,
@@ -294,7 +362,7 @@ def question1():
         text='Liverpool',
         font=('Arial'),
         width=15,
-        command=correct
+        command=q1_correct
     )
     question1_button_c.grid(
         row=4,
@@ -306,12 +374,18 @@ def question1():
         text='Manchester City',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q1_incorrect
     )
     question1_button_d.grid(
         row=4,
         column=2
     )
+
+def correct():
+    global score
+    messagebox.showinfo('Result','Correct!')
+    score += 1
+    return 
 
 root = tk.Tk()
 root.geometry('257x60+0+0')
