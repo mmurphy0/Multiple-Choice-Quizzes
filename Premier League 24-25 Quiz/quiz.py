@@ -5,6 +5,83 @@ from datetime import datetime
 
 score = 0
 
+def question3():
+    def correct():
+        global score
+        messagebox.showinfo('Result','Correct!')
+        score += 1
+
+    def incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is 29')
+
+    global question3_win
+
+    question3_win = Toplevel()
+    question3_win.geometry('280x90+0+0')
+    question3_win.resizable(False,False)
+    question3_win.title('Premier Leaguw 24/25 Quiz - Q3')
+
+    question3_label = tk.Label(
+        question1_win,
+        text='How many goals did the top scorer score?',
+        font=('Arial',20)
+    ) 
+    question3_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question3_button_a = tk.Button(
+        question3_win,
+        text='25',
+        font=('Arial'),
+        width=15,
+        command=incorrect
+    )
+    question3_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question3_button_b = tk.Button(
+        question3_win,
+        text='27',
+        font=('Arial'),
+        width=15,
+        command=incorrect
+    )
+    question3_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question3_button_c = tk.Button(
+        question3_win,
+        text='29',
+        font=('Arial'),
+        width=15,
+        command=correct
+    )
+    question3_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question3_button_d = tk.Button(
+        question3_win,
+        text='31',
+        font=('Arial'),
+        width=15,
+        command=incorrect
+    )
+    question3_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question2_win.destroy()
+
 def question2():
     def correct():
         global score
