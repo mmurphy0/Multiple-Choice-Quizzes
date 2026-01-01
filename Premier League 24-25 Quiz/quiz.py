@@ -5,6 +5,84 @@ from datetime import datetime
 
 score = 0
 
+def question4():
+    def correct():
+        global score
+        messagebox.showinfo('Result','Correct!')
+        score += 1
+
+    def incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Leicester City')
+
+    global question4_win
+
+    question4_win = Toplevel()
+    question4_win.geometry('280x90+0+0')
+    question4_win.resizable(False,False)
+    question4_win.title('Premier League 24/25 Quiz - Q4')
+
+    question4_label = tk.Label(
+        question4_win,
+        text='Which club was relegated?',
+        font=('Arial',20)
+    )
+    question4_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question4_button_a = tk.Button(
+        question4_win,
+        text='Leicester City',
+        font=('Arial'),
+        width=15,
+        command=correct
+    )
+    question4_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question4_button_b = tk.Button(
+        question4_win,
+        text='Aston Villa',
+        font=('Arial'),
+        width=15,
+        command=incorrect
+    )
+    question4_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question4_button_c = tk.Button(
+        question4_win,
+        text='West Ham',
+        font=('Arial'),
+        width=15,
+        command=incorrect
+    )
+    question4_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question4_button_d = tk.Button(
+        question4_win,
+        text='Wolves',
+        font=('Arial'),
+        width=15,
+        command=incorrect
+    )
+    question4_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question3_win.destroy()
+
+
 def question3():
     def correct():
         global score

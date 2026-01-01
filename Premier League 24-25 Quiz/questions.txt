@@ -23,7 +23,7 @@ Answer = C
 A. Leicester City
 B. Aston Villa
 C. West Ham
-D. Liverpool
+D. Wolves
 Answer = A
 
 5. Ipswich Town finished the 2024–25 season in which position?
