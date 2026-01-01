@@ -34,25 +34,23 @@ D. Mid‑table
 Answer = A
 
 6. How many goals were scored in total in the 2024–25 Premier League?
-A. 1115
+A. 850
 B. 980
 C. 1200
-D. 850
-Answer = A
+D. 1115
+Answer = D
 
 7. Which goalkeeper shared the Golden Glove award for most clean sheets?
 A. David Raya & Matz Sels
-B. Alisson
-C. Jordan Pickford
-D. Ederson
+B. Alisson & Ederson
 Answer = A
 
 8. Which club qualified for the UEFA Conference League through Premier League position/FA Cup?
-A. Crystal Palace
+A. Chelsea
 B. Brighton
-C. Chelsea
+C. Crystal Palace
 D. Everton
-Answer = A
+Answer = C
 
 9. How many teams are in the Premier League each season?
 A. 22
@@ -132,18 +130,18 @@ D. League Cup final
 Answer = B
 
 20. Which of these teams finished in the top 6 in the 2024–25 Premier League?
-A. Aston Villa
+A. Brentford
 B. Nottingham Forest
 C. Southampton
-D. Brentford
-Answer = A
+D. Aston Villa
+Answer = D
 
 21. Which club did NOT get relegated in 2024–25?
-A. Brighton & Hove Albion
+A. Ipswich Town
 B. Leicester City
-C. Ipswich Town
+C. Brighton & Hove Albion
 D. Southampton
-Answer = A
+Answer = C
 
 22. Which player scored 29 goals AND also led in assists?
 A. Mohamed Salah
@@ -167,8 +165,8 @@ D. 30
 Answer = A
 
 25. Which club finished in the top four but DID NOT win the league?
-A. Arsenal
+A. Ipswich Town
 B. Liverpool
-C. Ipswich Town
+C. Arsenal
 D. Crystal Palace
-Answer = A
+Answer = C
