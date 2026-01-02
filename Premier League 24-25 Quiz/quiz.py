@@ -5,12 +5,88 @@ from datetime import datetime
 
 score = 0
 
+def question6():
+    def q6_correct():
+        correct()
+
+    def q6_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is 1115')
+
+    global question6_win
+
+    question6_win = Toplevel()
+    question6_win.geometry('280x90+0+0')
+    question6_win.resizable(False,False)
+    question6_win.title('Premier League 24/25 Quiz - Q6')
+
+    question6_label = tk.Label(
+        question6_win,
+        text='How many goals were scored in the Premier League?',
+        font=('Arial',20)
+    )
+    question6_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question6_button_a = tk.Button(
+        question6_win,
+        text='850',
+        font=('Arial'),
+        width=15,
+        command=q6_incorrect
+    )
+    question6_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question6_button_b = tk.Button(
+        question6_win,
+        text='980',
+        font=('Arial'),
+        width=15,
+        command=q6_incorrect
+    )
+    question6_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question6_button_c = tk.Button(
+        question6_win,
+        text='1200',
+        font=('Arial'),
+        width=15,
+        command=q6_incorrect
+    )
+    question6_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question6_button_d = tk.Button(
+        question6_win,
+        text='1115',
+        font=('Arial'),
+        width=15,
+        command=q6_correct
+    )
+    question6_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question5_win.destroy()
+
+
 def question5():
     def q5_correct():
         correct()
 
     def q5_incorrect():
-        messagebox.showinfo('Result','Incorrect, The answer is ')
+        messagebox.showinfo('Result','Incorrect, The answer is 19th ')
 
     global question5_win
 
