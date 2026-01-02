@@ -5,9 +5,9 @@ This is a collection of multiple choice quizzes i have made using the python tki
 
 ### Avaliable Quizzes
 
--> UK Capitals Quiz
+- UK Capitals Quiz
 
--> Liverpool FC Quiz
+- Liverpool FC Quiz
 
 ### File Contents
 Every quiz has its own file and each file is set out the same way with 3 files
