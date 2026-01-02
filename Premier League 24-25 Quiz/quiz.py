@@ -5,6 +5,82 @@ from datetime import datetime
 
 score = 0
 
+def question8():
+    def q8_correct():
+        correct()
+
+    def q8_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Crystal Palace')
+
+    global question8_win
+
+    question8_win = Toplevel()
+    question8_win.geometry('280x90+0+0')
+    question8_win.resizable(False,False)
+    question8_win.title('Premier League 24/25 Quiz - Q8')
+
+    question8_label = tk.Label(
+        question8_win,
+        text='Which club qualified for UEFA Conference League through position in the league?',
+        font=('Arial',20)
+    )
+    question8_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question8_button_a = tk.Button(
+        question8_win,
+        text='Chelsea',
+        font=('Arial'),
+        width=15,
+        command=q8_incorrect
+    )
+    question8_button_a.grid(
+        row=3,
+        column=1
+    )
+    
+    question8_button_b = tk.Button(
+        question8_win,
+        text='Brighton',
+        font=('Arial'),
+        width=15,
+        command=q8_incorrect
+    )
+    question8_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question8_button_c = tk.Button(
+        question8_win,
+        text='Crystal Palace',
+        font=('Arial'),
+        width=15,
+        command=q8_correct
+    )
+    question8_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question8_button_d = tk.Button(
+        question8_win,
+        text='Everton',
+        font=('Arial'),
+        width=15,
+        command=q8_incorrect
+    )
+    question8_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question7_win.destroy()
+
+
 def question7():
     def q7_correct():
         correct()
