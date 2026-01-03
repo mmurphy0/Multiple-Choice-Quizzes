@@ -84,9 +84,11 @@ def question12():
 def question11():
     def q11_correct():
         correct()
+        question12()
 
     def q11_incorrect():
         messagebox.showinfo('Result','The answer is Arsenal ')
+        question12()
 
     global question11_win
 
@@ -160,9 +162,11 @@ def question11():
 def question10():
     def q10_correct():
         correct()
+        question11()
 
     def q10_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is August-May')
+        question11()
 
     global question10_win
 
@@ -236,9 +240,11 @@ def question10():
 def question9():
     def q9_correct():
         correct()
+        question10()
 
     def q9_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is 20')
+        question10()
 
     global question9_win
 
@@ -312,9 +318,11 @@ def question9():
 def question8():
     def q8_correct():
         correct()
+        question9()
 
     def q8_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Crystal Palace')
+        question9()
 
     global question8_win
 
@@ -388,20 +396,22 @@ def question8():
 def question7():
     def q7_correct():
         correct()
+        question8()
 
     def q7_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is David Raya & Matz Sels')
+        question8()
 
     global question7_win
 
     question7_win = Toplevel()
-    question7_win.geometry('280x90')
+    question7_win.geometry('622x60+0+0')
     question7_win.resizable(False,False)
     question7_win.title('Premier League 24/25 Quiz - Q7')
 
     question7_label = tk.Label(
         question7_win,
-        text='WHich goalkeepers shared the Premier League Golden Glove Award?',
+        text='Which goalkeepers shared the Premier League Golden Glove Award?',
         font=('Arial',20)
     )
     question7_label.grid(
@@ -440,14 +450,16 @@ def question7():
 def question6():
     def q6_correct():
         correct()
+        question7()
 
     def q6_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is 1115')
+        question7()
 
     global question6_win
 
     question6_win = Toplevel()
-    question6_win.geometry('280x90+0+0')
+    question6_win.geometry('482x90+0+0')
     question6_win.resizable(False,False)
     question6_win.title('Premier League 24/25 Quiz - Q6')
 
@@ -516,14 +528,16 @@ def question6():
 def question5():
     def q5_correct():
         correct()
+        question6()
 
     def q5_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is 19th ')
+        question6()
 
     global question5_win
 
     question5_win = Toplevel()
-    question5_win.geometry('280x90+0+0')
+    question5_win.geometry('312x90+0+0')
     question5_win.resizable(False,False)
     question5_win.title('Premier League 24/25 Quiz - Q5')
 
@@ -592,14 +606,16 @@ def question5():
 def question4():
     def q4_correct():
         correct()
+        question5()
 
     def q4_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Leicester City')
+        question5()
 
     global question4_win
 
     question4_win = Toplevel()
-    question4_win.geometry('280x90+0+0')
+    question4_win.geometry('312x90+0+0')
     question4_win.resizable(False,False)
     question4_win.title('Premier League 24/25 Quiz - Q4')
 
@@ -668,19 +684,21 @@ def question4():
 def question3():
     def q3_correct():
         correct()
+        question4()
 
     def q3_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is 29')
+        question4()
 
     global question3_win
 
     question3_win = Toplevel()
-    question3_win.geometry('280x90+0+0')
+    question3_win.geometry('380x90+0+0')
     question3_win.resizable(False,False)
-    question3_win.title('Premier Leaguw 24/25 Quiz - Q3')
+    question3_win.title('Premier League 24/25 Quiz - Q3')
 
     question3_label = tk.Label(
-        question1_win,
+        question3_win,
         text='How many goals did the top scorer score?',
         font=('Arial',20)
     ) 
@@ -743,14 +761,16 @@ def question3():
 def question2():
     def q2_correct():
         correct()
+        question3()
 
     def q2_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Mohamed Salah')
+        question3()
 
     global question2_win
 
     question2_win = Toplevel()
-    question2_win.geometry('280x90+0+0')
+    question2_win.geometry('470x90+0+0')
     question2_win.resizable(False,False)
     question2_win.title('Premier League 24/25 Quiz - Q2')
 
@@ -819,9 +839,11 @@ def question2():
 def question1():
     def q1_correct():
         correct()
+        question2()
 
     def q1_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Liverpool')
+        question2()
 
     global question1_win
 
