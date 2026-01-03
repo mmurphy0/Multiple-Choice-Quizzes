@@ -5,6 +5,82 @@ from datetime import datetime
 
 score = 0
 
+def question10():
+    def q10_correct():
+        correct()
+
+    def q10_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is August-May')
+
+    global question10_win
+
+    question10_win = Toplevel()
+    question10_win.geometry('280x90+0+0')
+    question10_win.resizable(False,False)
+    question10_win.title('Premier League 24/25 Quiz - Q10')
+
+    question10_label = tk.Label(
+        question10_win,
+        text='When is the start and end of the season?',
+        font=('Arial',20)
+    )
+    question10_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question10_button_a = tk.Button(
+        question10_win,
+        text='August-May',
+        font=('Arial'),
+        width=15,
+        command=q10_correct
+    )
+    question10_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question10_button_b = tk.Button(
+        question10_win,
+        text='June-January',
+        font=('Arial'),
+        width=15,
+        command=q10_incorrect
+    )
+    question10_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question10_button_c = tk.Button(
+        question10_win,
+        text='September-July',
+        font=('Arial'),
+        width=15,
+        command=q10_incorrect
+    )
+    question10_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question10_button_d = tk.Button(
+        question10_win,
+        text='July-April',
+        font=('Arial'),
+        width=15,
+        command=q10_incorrect
+    )
+    question10_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question9_win.destroy()
+
+
 def question9():
     def q9_correct():
         correct()
@@ -78,6 +154,7 @@ def question9():
         column=2
     )
 
+    question8_win.destroy()
 
 
 def question8():
