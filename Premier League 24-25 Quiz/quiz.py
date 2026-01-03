@@ -5,6 +5,80 @@ from datetime import datetime
 
 score = 0
 
+def question12():
+    def q12_correct():
+        correct()
+
+    def q12_incorrect():
+        messagebox.showinfo('Result','The answer is Arne Slot')
+
+    global question12_win
+
+    question12_win = Toplevel()
+    question12_win.geometry('280x90+0+0')
+    question12_win.resizable(False,False)
+    question12_win.title('Premier League 24/25 Quiz - Q12')
+
+    question12_label = tk.Label(
+        question12_win,
+        text='Which Manager won the Premier League in their debut season?',
+        font=('Arial',20)
+    )
+    question12_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question12_button_a = tk.Button(
+        question12_win,
+        text='Pep Guardiola',
+        font=('Arial'),
+        width=15,
+        command=q12_incorrect
+    )
+    question12_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question12_button_b = tk.Button(
+        question12_win,
+        text='Mikel Arteta',
+        font=('Arial'),
+        width=15,
+        command=q12_incorrect
+    )
+    question12_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question12_button_c = tk.Button(
+        question12_win,
+        text='Arne Slot',
+        font=('Arial'),
+        width=15,
+        command=q12_correct
+    )
+    question12_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question12_button_d = tk.Button(
+        question12_win,
+        text='Unai Emery',
+        font=('Arial'),
+        width=15,
+        command=q12_incorrect
+    )
+    question12_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question11_win.destroy()
 
 
 def question11():
