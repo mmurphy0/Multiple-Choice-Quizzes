@@ -5,6 +5,84 @@ from datetime import datetime
 
 score = 0
 
+
+
+def question11():
+    def q11_correct():
+        correct()
+
+    def q11_incorrect():
+        messagebox.showinfo('Result','The answer is Arsenal ')
+
+    global question11_win
+
+    question11_win = Toplevel()
+    question11_win.geometry('280x90+0+0')
+    question11_win.resizable(False,False)
+    question11_win.title('Premier League 24/25 Quiz - Q10')
+
+    question11_label = tk.Label(
+        question11_win,
+        text='Which club finish 2nd?',
+        font=('Arial',20)
+    )
+    question11_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question11_button_a = tk.Button(
+        question11_win,
+        text='Manchester City',
+        font=('Arial'),
+        width=15,
+        command=q11_incorrect
+    )
+    question11_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question11_button_b = tk.Button(
+        question11_win,
+        text='Arsenal',
+        font=('Arial'),
+        width=15,
+        command=q11_correct
+    )
+    question11_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question11_button_c = tk.Button(
+        question11_win,
+        text='Chelsea',
+        font=('Arial'),
+        width=15,
+        command=q11_incorrect
+    )
+    question11_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question11_button_d = tk.Button(
+        question11_win,
+        text='Tottenham',
+        font=('Arial'),
+        width=15,
+        command=q11_incorrect
+    )
+    question11_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question10_win.destroy()
+
+
 def question10():
     def q10_correct():
         correct()
