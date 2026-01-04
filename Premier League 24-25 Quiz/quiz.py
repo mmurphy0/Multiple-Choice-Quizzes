@@ -5,6 +5,84 @@ from datetime import datetime
 
 score = 0
 
+def question16():
+    def q16_correct():
+        correct()
+        question17()
+
+    def q16_incorrect():
+        messagebox.showinfo('Result','The answer is Arsenal')
+        question17()
+
+    global question16_win
+
+    question16_win = Toplevel()
+    question16_win.geometry('320x90+0+0')
+    question16_win.resizable(False,False)
+    question16_win.title('Premier League 24-25 Quiz - Q16')
+
+    question16_label = tk.Label(
+        question15_win,
+        text='Which club conceded the least goals',
+        font=('Arial',20)
+    )
+    question16_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question16_button_a = tk.Button(
+        question16_win,
+        text='Arsenal',
+        font=('Arial'),
+        width=15,
+        command=q16_correct
+    )
+    question16_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question16_button_b = tk.Button(
+        question16_win,
+        text='Chelsea',
+        font=('Arial'),
+        width=15,
+        command=q16_incorrect
+    )
+    question16_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question16_button_c = tk.Button(
+        question16_win,
+        text='Liverpool',
+        font=('Arial'),
+        width=15,
+        command=q16_incorrect
+    )
+    question16_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question16_button_d = tk.Button(
+        question16_win,
+        text='Manchester United',
+        font=('Arial'),
+        width=15,
+        command=q16_incorrect
+    )
+    question16_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question15_win.destroy()
+
+
 def question15():
     def q15_correct():
         correct()
