@@ -15,13 +15,13 @@ def question12():
     global question12_win
 
     question12_win = Toplevel()
-    question12_win.geometry('280x90+0+0')
+    question12_win.geometry('380x90+0+0')
     question12_win.resizable(False,False)
     question12_win.title('Premier League 24/25 Quiz - Q12')
 
     question12_label = tk.Label(
         question12_win,
-        text='Which Manager won the Premier League in their debut season?',
+        text='Which Manager won the Premier League?',
         font=('Arial',20)
     )
     question12_label.grid(
@@ -93,9 +93,9 @@ def question11():
     global question11_win
 
     question11_win = Toplevel()
-    question11_win.geometry('280x90+0+0')
+    question11_win.geometry('312x90+0+0')
     question11_win.resizable(False,False)
-    question11_win.title('Premier League 24/25 Quiz - Q10')
+    question11_win.title('Premier League 24/25 Quiz - Q11')
 
     question11_label = tk.Label(
         question11_win,
@@ -171,7 +171,7 @@ def question10():
     global question10_win
 
     question10_win = Toplevel()
-    question10_win.geometry('280x90+0+0')
+    question10_win.geometry('370x90+0+0')
     question10_win.resizable(False,False)
     question10_win.title('Premier League 24/25 Quiz - Q10')
 
@@ -249,7 +249,7 @@ def question9():
     global question9_win
 
     question9_win = Toplevel()
-    question9_win.geometry('280x90+0+0')
+    question9_win.geometry('407x90+0+0')
     question9_win.resizable(False,False)
     question9_win.title('Premier League 24/25 Quiz - Q9')
 
@@ -934,7 +934,7 @@ startquiz_button = tk.Button(
     text='Start Quiz',
     font=('Arial'),
     width=40,
-    command=question8
+    command=question12
 )
 startquiz_button.pack()
 
