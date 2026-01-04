@@ -5,12 +5,93 @@ from datetime import datetime
 
 score = 0
 
+def question14():
+    def q14_correct():
+        correct()
+        question15()
+
+    def q14_incorrect():
+        messagebox.showinfo('Result','The answer is all of the above')
+        question15()
+
+    global question14_win
+
+    question14_win = Toplevel()
+    question14_win.geometry('320x90')
+    question14_win.resizable(False,False)
+    question14_win.title('Premier League 24-25 Quiz - Q14')
+
+    question14_label = tk.Label(
+        question14_win,
+        text='Which club qualified for the Champions League?',
+        font=('Arial',20)
+    )
+    question14_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question14_button_a = tk.Button(
+        question14_win,
+        text='Liverpool',
+        font=('Arial'),
+        width=15,
+        command=q14_incorrect
+    )
+    question14_button_a.grid(
+        row=3,
+        column=1,
+        columnspan=2
+    )
+
+    question14_button_b = tk.Button(
+        question14_win,
+        text='Arsenal',
+        font=('Arial'),
+        width=15,
+        command=q14_incorrect
+    )
+    question14_button_b.grid(
+        row=3,
+        column=1
+    )
+
+    question14_button_c = tk.Button(
+        question14_win,
+        text='Manchester City',
+        font=('Arial'),
+        width=15,
+        command=q14_incorrect
+    )
+    question14_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question14_button_d = tk.Button(
+        question14_win,
+        text='All of the above',
+        font=('Arial'),
+        width=15,
+        command=q14_correct
+    )
+    question14_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question13_win.destroy()
+
+
 def question13():
     def q13_correct():
         correct()
+        question14()
 
     def q13_incorrect():
         messagebox.showinfo('Result','The answer is Liverpool')
+        question14()
 
     global question13_win
 
