@@ -327,13 +327,13 @@ def question8():
     global question8_win
 
     question8_win = Toplevel()
-    question8_win.geometry('280x90+0+0')
+    question8_win.geometry('462x90+0+0')
     question8_win.resizable(False,False)
     question8_win.title('Premier League 24/25 Quiz - Q8')
 
     question8_label = tk.Label(
         question8_win,
-        text='Which club qualified for UEFA Conference League through position in the league?',
+        text='Which club qualified for UEFA Conference League?',
         font=('Arial',20)
     )
     question8_label.grid(
@@ -934,7 +934,7 @@ startquiz_button = tk.Button(
     text='Start Quiz',
     font=('Arial'),
     width=40,
-    command=question1
+    command=question8
 )
 startquiz_button.pack()
 
