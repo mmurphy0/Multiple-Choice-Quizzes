@@ -5,6 +5,84 @@ from datetime import datetime
 
 score = 0
 
+def question15():
+    def q15_correct():
+        correct()
+        question16()
+
+    def q15_incorrect():
+        messagebox.showinfo('Result','The answer is Kevin De Bruyne')
+        question16()
+
+    global question15_win
+
+    question15_win = Toplevel()
+    question15_win.geometry('320x90+0+0')
+    question15_win.resizable(False,False)
+    question15_win.title('Premier League 24-25 Quiz - Q15')
+
+    question15_label = tk.Label(
+        question15_win,
+        text='Which player had the most assists?',
+        font=('Arial',20)
+    )
+    question15_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question15_button_a = tk.Button(
+        question15_win,
+        text='Mohamed Salah',
+        font=('Arial'),
+        width=15,
+        command=q15_incorrect
+    )
+    question15_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question15_button_b = tk.Button(
+        question15_win,
+        text='Kevin De Bruyne',
+        font=('Arial'),
+        width=15,
+        command=q15_correct
+    )
+    question15_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question15_button_c = tk.Button(
+        question15_win,
+        text='Jacob Murphy',
+        font=('Arial'),
+        width=15,
+        command=q15_incorrect
+    )
+    question15_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question15_button_d = tk.Button(
+        question15_win,
+        text='Bukayo Saka',
+        font=('Arial'),
+        width=15,
+        command=q15_incorrect
+    )
+    question15_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question14_win.destroy()
+
+
 def question14():
     def q14_correct():
         correct()
@@ -17,7 +95,7 @@ def question14():
     global question14_win
 
     question14_win = Toplevel()
-    question14_win.geometry('320x90')
+    question14_win.geometry('320x90+0+0')
     question14_win.resizable(False,False)
     question14_win.title('Premier League 24-25 Quiz - Q14')
 
@@ -96,7 +174,7 @@ def question13():
     global question13_win
 
     question13_win = Toplevel()
-    question13_win.geometry('320x90')
+    question13_win.geometry('320x90+0+0')
     question13_win.resizable(False,False)
     question13_win.title('Premier League 24-25 Quiz - Q13')
 

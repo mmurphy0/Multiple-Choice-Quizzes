@@ -94,79 +94,45 @@ C. Manchester City
 D. All of the above
 Answer = D
 
-15. What notable attacking statistic did the 2024–25 season rank as?
-A. Second‑most goals scored in a 38‑game season
-B. Lowest scoring ever
-C. Most red cards in history
-D. Longest 0‑0 run
-Answer = A
-
-16. Which player had the most assists in 2024–25?
+15. Which player had the most assists in 2024–25?
 A. Mohamed Salah
 B. Kevin De Bruyne
 C. Jacob Murphy
 D. Bukayo Saka
 Answer = B
 
-17. Which club conceded the fewest goals in 2024–25?
+16. Which club conceded the fewest goals in 2024–25?
 A. Arsenal
 B. Chelsea
 C. Liverpool
 D. Manchester United
 Answer = A
 
-18. How many teams get relegated?
+17. How many teams get relegated?
 A. 3
 B. 2
 C. 1
 D. 4
 Answer = A
 
-19. Which competition’s final is played closest to the end of the league season?
-A. FA Cup final
-B. UEFA Europa League final
-C. Community Shield
-D. League Cup final
-Answer = B
-
-20. Which of these teams finished in the top 6 in the 2024–25 Premier League?
-A. Brentford
-B. Nottingham Forest
-C. Southampton
-D. Aston Villa
-Answer = D
-
-21. Which club did NOT get relegated in 2024–25?
+18. Which club did NOT get relegated in 2024–25?
 A. Ipswich Town
 B. Leicester City
 C. Brighton & Hove Albion
 D. Southampton
 Answer = C
 
-22. Which player scored 29 goals AND also led in assists?
+19. Which player scored 29 goals AND also led in assists?
 A. Mohamed Salah
 B. Harry Kane
 C. Son Heung‑min
 D. Erling Haaland
 Answer = D
 
-23. Which award did Mohamed Salah also win besides Golden Boot?
+20. Which award did Mohamed Salah also win besides Golden Boot?
 A. Playmaker (most assists)
 B. Manager of the Season
 C. Golden Glove
 D. Fair Play Award
 Answer = A
 
-24. How many matchdays were scheduled in the 2024–25 season?
-A. 33 weekends plus midweek rounds and a Bank Holiday matchweek
-B. 38 weekends only
-C. 40 weekends only
-D. 30
-Answer = A
-
-25. Which club finished in the top four but DID NOT win the league?
-A. Ipswich Town
-B. Liverpool
-C. Arsenal
-D. Crystal Palace
-Answer = C
