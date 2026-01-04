@@ -5,12 +5,90 @@ from datetime import datetime
 
 score = 0
 
+def question13():
+    def q13_correct():
+        correct()
+
+    def q13_incorrect():
+        messagebox.showinfo('Result','The answer is Liverpool')
+
+    global question13_win
+
+    question13_win = Toplevel()
+    question13_win.geometry('320x90')
+    question13_win.resizable(False,False)
+    question13_win.title('Premier League 24-25 Quiz - Q13')
+
+    question13_label = tk.Label(
+        question13_win,
+        text='Which team had the longest unbeaten run?',
+        font=('Arial',20)
+    )
+    question13_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question13_button_a = tk.Button(
+        question13_win,
+        text='Liverpool',
+        font=('Arial'),
+        width=15,
+        command=q13_correct
+    )
+    question13_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question13_button_b = tk.Button(
+        question13_win,
+        text='Arsenal',
+        font=('Arial'),
+        width=15,
+        command=q13_incorrect
+    )
+    question13_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question13_button_c = tk.Button(
+        question13_win,
+        text='Newcastle United',
+        font=('Arial'),
+        width=15,
+        command=q13_incorrect
+    )
+    question13_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question13_button_d = tk.Button(
+        question13_win,
+        text='Manchester City',
+        font=('Arial'),
+        width=15,
+        command=q13_incorrect
+    )
+    question13_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question12_win.destroy()
+
+
 def question12():
     def q12_correct():
         correct()
+        question13()
 
     def q12_incorrect():
         messagebox.showinfo('Result','The answer is Arne Slot')
+        question13()
 
     global question12_win
 
