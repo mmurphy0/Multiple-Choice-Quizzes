@@ -5,6 +5,84 @@ from datetime import datetime
 
 score = 0
 
+def question17():
+    def q17_correct():
+        correct()
+        question18()
+
+    def q17_incorrect():
+        messagebox.showinfo('Incorrect, The answer is Brighton & Hove Albion')
+        question18()
+
+    global question17_win
+    
+    question17_win = Toplevel()
+    question17_win.geometry('320x90+0+0')
+    question17_win.resizable(False,False)
+    question17_win.title('Premier League 24-25 Quiz - Q18')
+
+    question17_label = tk.Label(
+        question17_win,
+        text='Which club was not relegated?',
+        font=('Arial',20)
+    )
+    question17_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question17_button_a = tk.Button(
+        question17_win,
+        text='Ipswich Town',
+        font=('Arial'),
+        width=15,
+        command=q17_incorrect
+    )
+    question17_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question17_button_b = tk.Button(
+        question17_win,
+        text='Leicester City',
+        font=('Arial'),
+        width=15,
+        command=q17_incorrect
+    )
+    question17_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question17_button_c = tk.Button(
+        question17_win,
+        text='Brighton & Hove Albion',
+        font=('Arial'),
+        width=15,
+        command=q17_correct
+    )
+    question17_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question17_button_d = tk.Button(
+        question17_win,
+        text='Southampton',
+        font=('Arial'),
+        width=15,
+        command=q17_incorrect
+    )
+    question17_button_d.grid(
+        row=4,
+        column=1
+    )
+
+    question16_win.destroy()
+
+
 def question16():
     def q16_correct():
         correct()
