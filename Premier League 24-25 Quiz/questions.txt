@@ -108,23 +108,23 @@ C. Liverpool
 D. Manchester United
 Answer = A
 
-17. How many teams get relegated?
-A. 3
-B. 2
-C. 1
-D. 4
-Answer = A
-
-18. Which club did NOT get relegated in 2024–25?
+17. Which club did NOT get relegated in 2024–25?
 A. Ipswich Town
 B. Leicester City
 C. Brighton & Hove Albion
 D. Southampton
 Answer = C
 
+18. How many teams get relegated?
+A. 3
+B. 2
+C. 1
+D. 4
+Answer = A
+
 19. Which player scored 29 goals AND also led in assists?
 A. Mohamed Salah
-B. Harry Kane
+B. Alexander Isak
 C. Son Heung‑min
 D. Erling Haaland
 Answer = D

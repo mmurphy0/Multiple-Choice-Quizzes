@@ -5,6 +5,83 @@ from datetime import datetime
 
 score = 0
 
+def question19():
+    def q19_correct():
+        correct()
+        question20()
+
+    def q19_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Erling Haaland')
+        question20()
+
+    global question19_win
+
+    question19_win = Toplevel()
+    question19_win.geometry('320x90+0+0')
+    question19_win.resizable(False,False)
+    question19_win.title('Premier League 24-25 Quiz - Q19')
+
+    question19_label = tk.Label(
+        question19_win,
+        text='Which player scored 29 goals & led in assists?',
+        font=('Arial',20)
+    )
+    question19_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question19_button_a = tk.Button(
+        question19_win,
+        text='Mohamed Salah',
+        font=('Arial'),
+        width=15,
+        command=q19_incorrect
+    )
+    question19_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question19_button_b = tk.Button(
+        question19_win,
+        text='Alexander Isak',
+        font=('Arial'),
+        width=15,
+        command=q19_incorrect
+    )
+    question19_button_b.grid(
+        row=3,
+        column=1
+    )
+
+    question19_button_c = tk.Button(
+        question19_win,
+        text='Son Heung-min',
+        font=('Arial'),
+        width=15,
+        command=q19_incorrect
+    )
+    question19_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question19_button_d = tk.Button(
+        question19_win,
+        text='Erling Haaland',
+        font=('Arial'),
+        width=15,
+        command=q19_correct
+    )
+    question19_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question18_win.destroy()
+
 def question18():
     def q18_correct():
         correct()
