@@ -40,7 +40,7 @@ C. 1200
 D. 1115
 Answer = D
 
-7. Which goalkeeper shared the Golden Glove award for most clean sheets?
+7. Which goalkeepers shared the Premier League Golden Glove Award? (most clean sheets)
 A. David Raya & Matz Sels
 B. Alisson & Ederson
 Answer = A
@@ -80,21 +80,21 @@ C. Arne Slot
 D. Unai Emery
 Answer = C
 
-13. Which team had the longest unbeaten run this season?
+13. Which team had the longest unbeaten run this season? (consecutive wins & draws)
 A. Liverpool
 B. Arsenal
 C. Newcastle United
 D. Manchester City
 Answer = A
 
-14. Which club qualified for the Champions League from England?
+14. Which club qualified for the Champions League from England? (for teams in positions 1-4)
 A. Liverpool
 B. Arsenal
 C. Manchester City
 D. All of the above
 Answer = D
 
-15. Which player had the most assists in 2024–25?
+15. Which player had the most assists in 2024–25? (Their pass lead to a teammate scoring)
 A. Mohamed Salah
 B. Kevin De Bruyne
 C. Jacob Murphy
@@ -129,7 +129,7 @@ C. Son Heung‑min
 D. Erling Haaland
 Answer = D
 
-20. Which award did Mohamed Salah also win besides Golden Boot?
+20. Mohamed Salah won the Golden Boot and?
 A. Playmaker (most assists)
 B. Manager of the Season
 C. Golden Glove
