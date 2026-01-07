@@ -5,14 +5,60 @@ from datetime import datetime
 
 score = 0
 
+def result():
+    def reset():
+        global score
+        score = 0
+        result_win.destroy()
+
+    def save():
+        time = str(datetime.now())
+        with open('Premier League 24-25 Quiz/scorebook.txt','a') as file:
+            file.write(time + '\n' + (f'Score: {score} /20') + '\n' + '----------' + '\n')
+            messagebox.showinfo('Confirmation','Score successfully saved')
+            reset()
+
+    global result_win
+
+    result_win = Toplevel()
+    result_win.geometry('117x90+0+0')
+    result_win.resizable(False,False)
+    result_win.title('Premier League 24-25 Quiz - Results')
+
+    result_title = tk.Label(
+        result_win,
+        text='Results',
+        font=('Arial',20,'bold')
+    )
+    result_title.pack()
+
+    result_label = tk.Label(
+        result_win,
+        text=(f'Score: {score}/20'),
+        font=('Arial',20)
+    )
+    result_label.pack()
+
+    continue_button = tk.Button(
+        result_win,
+        text='Continue',
+        font=('Arial'),
+        width=20,
+        command=save
+    )
+    continue_button.pack()
+
+    question20_win.destroy()
+
+
 def question20():
     def q20_correct():
         correct()
-        results()
+        result()
 
     def q20_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is All of the Above')
-        results()
+        result()
 
     global question20_win
 

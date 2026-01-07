@@ -122,7 +122,7 @@ C. 1
 D. 4
 Answer = A
 
-19. Which player scored 29 goals AND also led in assists?
+19. Which player scored 29 goals AND led in assists?
 A. Mohamed Salah
 B. Alexander Isak
 C. Son Heung‑min
@@ -131,8 +131,8 @@ Answer = D
 
 20. Mohamed Salah won the Golden Boot and?
 A. Playmaker (most assists)
-B. Manager of the Season
+B. Player of the Season
 C. Golden Glove
-D. Fair Play Award
-Answer = A
+D. All of the Above
+Answer = D
 
