@@ -63,7 +63,7 @@ def question20():
     global question20_win
 
     question20_win = Toplevel()
-    question20_win.geometry('320x90+0+0')
+    question20_win.geometry('393x90+0+0')
     question20_win.resizable(False,False)
     question20_win.title('Premier League 24-25 Quiz - Q20')
 
@@ -105,6 +105,7 @@ def question20():
     question20_button_c = tk.Button(
         question20_win,
         text='Player of the Season',
+        font=('Arial'),
         width=15,
         command=q20_incorrect
     )
@@ -134,13 +135,13 @@ def question19():
         question20()
 
     def q19_incorrect():
-        messagebox.showinfo('Result','Incorrect, The answer is Erling Haaland')
+        messagebox.showinfo('Result','Incorrect, The answer is Mohamed Salah')
         question20()
 
     global question19_win
 
     question19_win = Toplevel()
-    question19_win.geometry('320x90+0+0')
+    question19_win.geometry('417x90+0+0')
     question19_win.resizable(False,False)
     question19_win.title('Premier League 24-25 Quiz - Q19')
 
@@ -160,7 +161,7 @@ def question19():
         text='Mohamed Salah',
         font=('Arial'),
         width=15,
-        command=q19_incorrect
+        command=q19_correct
     )
     question19_button_a.grid(
         row=3,
@@ -176,7 +177,7 @@ def question19():
     )
     question19_button_b.grid(
         row=3,
-        column=1
+        column=2
     )
 
     question19_button_c = tk.Button(
@@ -196,7 +197,7 @@ def question19():
         text='Erling Haaland',
         font=('Arial'),
         width=15,
-        command=q19_correct
+        command=q19_incorrect
     )
     question19_button_d.grid(
         row=4,
@@ -204,6 +205,7 @@ def question19():
     )
 
     question18_win.destroy()
+
 
 def question18():
     def q18_correct():
@@ -217,7 +219,7 @@ def question18():
     global question18_win
 
     question18_win = Toplevel()
-    question18_win.geometry('320x90+0+0')
+    question18_win.geometry('312x90+0+0')
     question18_win.resizable(False,False)
     question18_win.title('Premier League 24-25 Quiz - Q18')
 
@@ -253,7 +255,7 @@ def question18():
     )
     question18_button_b.grid(
         row=3,
-        column=1,
+        column=2,
     )
 
     question18_button_c = tk.Button(
@@ -295,7 +297,7 @@ def question17():
     global question17_win
     
     question17_win = Toplevel()
-    question17_win.geometry('320x90+0+0')
+    question17_win.geometry('312x90+0+0')
     question17_win.resizable(False,False)
     question17_win.title('Premier League 24-25 Quiz - Q17')
 
@@ -355,7 +357,7 @@ def question17():
     )
     question17_button_d.grid(
         row=4,
-        column=1
+        column=2
     )
 
     question16_win.destroy()
@@ -367,19 +369,19 @@ def question16():
         question17()
 
     def q16_incorrect():
-        messagebox.showinfo('Result','The answer is Arsenal')
+        messagebox.showinfo('Result','Incorrect, The answer is Arsenal')
         question17()
 
     global question16_win
 
     question16_win = Toplevel()
-    question16_win.geometry('320x90+0+0')
+    question16_win.geometry('347x90+0+0')
     question16_win.resizable(False,False)
     question16_win.title('Premier League 24-25 Quiz - Q16')
 
     question16_label = tk.Label(
-        question15_win,
-        text='Which club conceded the least goals',
+        question16_win,
+        text='Which club conceded the least goals?',
         font=('Arial',20)
     )
     question16_label.grid(
@@ -445,7 +447,7 @@ def question15():
         question16()
 
     def q15_incorrect():
-        messagebox.showinfo('Result','The answer is Kevin De Bruyne')
+        messagebox.showinfo('Result','Incorrect, The answer is Mohamed Salah')
         question16()
 
     global question15_win
@@ -471,7 +473,7 @@ def question15():
         text='Mohamed Salah',
         font=('Arial'),
         width=15,
-        command=q15_incorrect
+        command=q15_correct
     )
     question15_button_a.grid(
         row=3,
@@ -483,7 +485,7 @@ def question15():
         text='Kevin De Bruyne',
         font=('Arial'),
         width=15,
-        command=q15_correct
+        command=q15_incorrect
     )
     question15_button_b.grid(
         row=3,
@@ -523,13 +525,13 @@ def question14():
         question15()
 
     def q14_incorrect():
-        messagebox.showinfo('Result','The answer is all of the above')
+        messagebox.showinfo('Result','Incorrect, The answer is all of the above')
         question15()
 
     global question14_win
 
     question14_win = Toplevel()
-    question14_win.geometry('320x90+0+0')
+    question14_win.geometry('435x90+0+0')
     question14_win.resizable(False,False)
     question14_win.title('Premier League 24-25 Quiz - Q14')
 
@@ -554,7 +556,6 @@ def question14():
     question14_button_a.grid(
         row=3,
         column=1,
-        columnspan=2
     )
 
     question14_button_b = tk.Button(
@@ -566,7 +567,7 @@ def question14():
     )
     question14_button_b.grid(
         row=3,
-        column=1
+        column=2
     )
 
     question14_button_c = tk.Button(
@@ -602,13 +603,13 @@ def question13():
         question14()
 
     def q13_incorrect():
-        messagebox.showinfo('Result','The answer is Liverpool')
+        messagebox.showinfo('Result','Incorrect, The answer is Liverpool')
         question14()
 
     global question13_win
 
     question13_win = Toplevel()
-    question13_win.geometry('320x90+0+0')
+    question13_win.geometry('387x90+0+0')
     question13_win.resizable(False,False)
     question13_win.title('Premier League 24-25 Quiz - Q13')
 
@@ -680,7 +681,7 @@ def question12():
         question13()
 
     def q12_incorrect():
-        messagebox.showinfo('Result','The answer is Arne Slot')
+        messagebox.showinfo('Result','Incorrect, The answer is Arne Slot')
         question13()
 
     global question12_win
@@ -758,7 +759,7 @@ def question11():
         question12()
 
     def q11_incorrect():
-        messagebox.showinfo('Result','The answer is Arsenal ')
+        messagebox.showinfo('Result','Incorrect, The answer is Arsenal ')
         question12()
 
     global question11_win
@@ -770,7 +771,7 @@ def question11():
 
     question11_label = tk.Label(
         question11_win,
-        text='Which club finish 2nd?',
+        text='Which club finished 2nd?',
         font=('Arial',20)
     )
     question11_label.grid(
@@ -1605,7 +1606,7 @@ startquiz_button = tk.Button(
     text='Start Quiz',
     font=('Arial'),
     width=40,
-    command=question12
+    command=question1
 )
 startquiz_button.pack()
 

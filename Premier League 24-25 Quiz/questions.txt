@@ -99,7 +99,7 @@ A. Mohamed Salah
 B. Kevin De Bruyne
 C. Jacob Murphy
 D. Bukayo Saka
-Answer = B
+Answer = A
 
 16. Which club conceded the fewest goals in 2024–25?
 A. Arsenal
@@ -127,7 +127,7 @@ A. Mohamed Salah
 B. Alexander Isak
 C. Son Heung‑min
 D. Erling Haaland
-Answer = D
+Answer = A
 
 20. Mohamed Salah won the Golden Boot and?
 A. Playmaker (most assists)
