@@ -3,6 +3,12 @@ from tkinter import Toplevel, messagebox
 import datetime
 from datetime import datetime
 
+def correct():
+    global score
+    score += 1
+    messagebox.showinfo('Result','Correct!')
+    return
+
 root = tk.Tk()
 root.geometry('150x60+0+0')
 root.resizable(False,False)
