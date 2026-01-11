@@ -3,6 +3,69 @@ from tkinter import Toplevel, messagebox
 import datetime
 from datetime import datetime
 
+def question2():
+    def q2_correct():
+        correct()
+        question3()
+
+    def q2_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is McLaren')
+        question3
+
+    question2_win = Toplevel()
+    question2_win.geometry('320x90+0+0')
+    question2_win.resizable(False,False)
+    question2_win.title('F1 2025 Quiz - Q2')
+
+    question2_button_a = tk.Button(
+        question2_win,
+        text='Mercedes',
+        font=('Arial'),
+        width=15,
+        command=q2_incorrect
+    )
+    question2_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question2_button_b = tk.Button(
+        question2_win,
+        text='Ferrari',
+        font=('Arial'),
+        width=15,
+        command=q2_incorrect
+    )
+    question2_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question2_button_c = tk.Button(
+        question2_win,
+        text='Red Bull Racing',
+        font=('Arial'),
+        width=15,
+        command=q2_incorrect
+    )
+    question2_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question2_button_d = tk.Button(
+        question2_win,
+        text='McLaren',
+        font=('Arial'),
+        width=15,
+        command=q2_correct
+    )
+    question2_button_d.grid(
+        row=4,
+        column=2
+    )
+
+
 def question1():
     def q1_correct():
         correct()
@@ -75,7 +138,7 @@ def question1():
         row=4,
         column=2
     )
-    
+
 
 def correct():
     global score
