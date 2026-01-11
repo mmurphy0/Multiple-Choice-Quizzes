@@ -3,6 +3,84 @@ from tkinter import Toplevel, messagebox
 import datetime
 from datetime import datetime
 
+def question3():
+    def q3_correct():
+        correct()
+        question4()
+
+    def q3_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Abu Dhabi GP')
+        question4
+
+    global question3_win
+
+    question3_win = Toplevel()
+    question3_win.geometry('320x90+0+0')
+    question3_win.resizable(False,False)
+    question3_win.title('F1 2025 Quiz - Q3')
+
+    question3_label = tk.Label(
+        question3_win,
+        text="Which race did Lando Norris win the 2025 Driver's Title?",
+        font=('Arial',20)
+    )
+    question3_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question3_button_a = tk.Button(
+        question3_win,
+        text='Monaco GP',
+        font=('Arial'),
+        width=15,
+        command=q3_incorrect
+    )
+    question3_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question3_button_b = tk.Button(
+        question3_win,
+        text='Abu Dhabi GP',
+        font=('Arial'),
+        width=15,
+        command=q3_correct
+    )
+    question3_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question3_button_c = tk.Button(
+        question3_win,
+        text='Italian GP',
+        font=('Arial'),
+        width=15,
+        command=q3_incorrect
+    )
+    question3_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question3_button_d = tk.Button(
+        question3_win,
+        text='British GP',
+        font=('Arial'),
+        width=15,
+        command=q3_incorrect
+    )
+    question3_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question2_win.destroy()
+
+
 def question2():
     def q2_correct():
         correct()
@@ -11,6 +89,8 @@ def question2():
     def q2_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is McLaren')
         question3
+
+    global question2_win
 
     question2_win = Toplevel()
     question2_win.geometry('320x90+0+0')
@@ -65,6 +145,8 @@ def question2():
         column=2
     )
 
+    question1_win.destroy()
+
 
 def question1():
     def q1_correct():
@@ -74,6 +156,8 @@ def question1():
     def q1_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Lando Norris')
         question2()
+
+    global question1_win
 
     question1_win = Toplevel()
     question1_win.geometry('320x90+0+0')
