@@ -3,6 +3,84 @@ from tkinter import Toplevel, messagebox
 import datetime
 from datetime import datetime
 
+def question7():
+    def q7_correct():
+        correct()
+        question8()
+
+    def q7_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is 2')
+        question8()
+
+    global question7_win
+
+    question7_win = Toplevel()
+    question7_win.geometry('320x90+0+0')
+    question7_win.resizable(False,False)
+    question7_win.title('F1 2025 Quiz - Q7')
+
+    question7_label = tk.Label(
+        question7_win,
+        text='How many points seperated Norris and Verstappen?',
+        font=('Arial',20)
+    )
+    question7_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question7_button_a = tk.Button(
+        question7_win,
+        text='10',
+        font=('Arial'),
+        width=15,
+        command=q7_incorrect
+    )
+    question7_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question7_button_b = tk.Button(
+        question7_win,
+        text='2',
+        font=('Arial'),
+        width=15,
+        command=q7_correct
+    )
+    question7_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question7_button_c = tk.Button(
+        question7_win,
+        text='15',
+        font=('Arial'),
+        width=15,
+        command=q7_incorrect
+    )
+    question7_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question7_button_d = tk.Button(
+        question7_win,
+        text='7',
+        font=('Arial'),
+        width=15,
+        command=q7_incorrect
+    )
+    question7_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question6_win.destroy()
+
+
 def question6():
     def q6_correct():
         correct()
