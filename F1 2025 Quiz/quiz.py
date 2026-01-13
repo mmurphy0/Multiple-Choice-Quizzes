@@ -6,7 +6,7 @@ from datetime import datetime
 def question8():
     def q8_correct():
         correct()
-        quesion9()
+        question9()
 
     def q8_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Max Verstappen')
