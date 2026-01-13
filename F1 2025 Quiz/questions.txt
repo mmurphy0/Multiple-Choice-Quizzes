@@ -40,19 +40,19 @@ C. Red Bull Racing
 D. Williams
 Answer = A
 
-7- Which driver won the 2025 Abu Dhabi Grand Prix?
-A. Lando Norris
-B. Oscar Piastri
-C. Max Verstappen
-D. George Russell
-Answer = C
-
-8- How many points separated Norris and Verstappen in the final standings?
+7- How many points separated Norris and Verstappen in the final standings?
 A. 10
 B. 2
 C. 15
 D. 7
 Answer = B
+
+8- Which driver won the 2025 Abu Dhabi Grand Prix?
+A. Lando Norris
+B. Oscar Piastri
+C. Max Verstappen
+D. George Russell
+Answer = C
 
 9- Which team did George Russell race for in 2025?
 A. Ferrari
