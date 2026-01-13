@@ -3,6 +3,84 @@ from tkinter import Toplevel, messagebox
 import datetime
 from datetime import datetime
 
+def question6():
+    def q6_correct():
+        correct()
+        question7()
+
+    def q6_incorrect():
+        messagebox.showinfo('Result',"Incorrect, The answer is Ferrari")
+        question7()
+
+    global question6_win
+
+    question6_win = Toplevel()
+    question6_win.geometry('320x90+0+0')
+    question6_win.resizable(False,False)
+    question6_win.title('F1 2025 Quiz - Q6')
+
+    question6_label = tk.Label(
+        question6_win,
+        text="Which team was 2nd in the Constructors' Championship",
+        font=('Arial')
+    )
+    question6_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question6_button_a = tk.Button(
+        question6_win,
+        text='Ferrari',
+        font=('Arial'),
+        width=15,
+        command=q6_correct
+    )
+    question6_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question6_button_b = tk.Button(
+        question6_win,
+        text='Mercedes',
+        font=('Arial'),
+        width=15,
+        command=q6_incorrect
+    )
+    question6_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question6_button_c = tk.Button(
+        question6_win,
+        text='Red Bull Racing',
+        font=('Arial'),
+        width=15,
+        command=q6_incorrect
+    )
+    question6_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question6_button_d = tk.Button(
+        question6_win,
+        text='Williams',
+        font=('Arial'),
+        width=15,
+        command=q6_incorrect
+    )
+    question6_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question5_win.destroy()
+
+
 def question5():
     def q5_correct():
         correct()
@@ -12,7 +90,7 @@ def question5():
         messagebox.showinfo('Result','Incorrect, The answer is Oscar Piastri')
         question6()
 
-    global question6_win
+    global question5_win
 
     question5_win = Toplevel()
     question5_win.geometry('320x90+0+0')
