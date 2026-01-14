@@ -3,6 +3,83 @@ from tkinter import Toplevel, messagebox
 import datetime
 from datetime import datetime
 
+def question10():
+    def q10_correct():
+        correct()
+        question11()
+
+    def q10_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Red Bull')
+        question11()
+
+    global question10_win
+
+    question10_win = Toplevel()
+    question10_win.geometry('320x90+0+0')
+    question10_win.resizable(False,False)
+    question10_win.title('F1 2025 Quiz - Q10')
+
+    question10_label = tk.Label(
+        question10_win,
+        text="Which team was 3rd in the Constructors' Championship",
+        font=('Arial',20)
+    )
+    question10_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question10_button_a = tk.Button(
+        question10_win,
+        text='Red Bull',
+        font=('Arial'),
+        width=15,
+        command=q10_correct
+    )
+    question10_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question10_button_b = tk.Button(
+        question10_win,
+        text='Ferrari',
+        font=('Arial'),
+        width=15,
+        command=q10_incorrect
+    )
+    question10_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question10_button_c = tk.Button(
+        question10_win,
+        text='Williams',
+        font=('Arial'),
+        width=15,
+        command=q10_incorrect
+    )
+    question10_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question10_button_d = tk.Button(
+        question10_win,
+        text='Aston Martin',
+        font=('Arial'),
+        width=15,
+        command=q10_incorrect
+    )
+    question10_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question9_win.destroy()
+
 
 def question9():
     def q9_correct():
