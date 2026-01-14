@@ -3,14 +3,92 @@ from tkinter import Toplevel, messagebox
 import datetime
 from datetime import datetime
 
+def question12():
+    def q12_correct():
+        correct()
+        question13()
+
+    def q12_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Lando Norris')
+        question13()
+
+    global question12_win
+
+    question12_win = Toplevel()
+    question12_win.geometry('320x90+0+0')
+    question12_win.resizable(False,False)
+    question12_win.title('F1 2025 Quiz - Q12')
+    
+    question12_label = tk.Label(
+        question12_win,
+        text='Which British driver won his first world title?',
+        font=('Arial',20)
+    )
+    question12_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question12_button_a = tk.Button(
+        question12_win,
+        text='Lewis Hamilton',
+        font=('Arial'),
+        width=15,
+        command=q12_incorrect
+    )
+    question12_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question12_button_b = tk.Button(
+        question12_win,
+        text='George Russell',
+        font=('Arial'),
+        width=15,
+        command=q12_incorrect
+    )
+    question12_button_b.grid(
+        row=3,
+        column=1
+    )
+
+    question12_button_c = tk.Button(
+        question12_win,
+        text='Lando Norris',
+        font=('Arial'),
+        width=15,
+        command=q12_correct
+    )
+    question12_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question12_button_d = tk.Button(
+        question12_win,
+        text='Alex Albon',
+        font=('Arial'),
+        width=15,
+        command=q12_incorrect
+    )
+    question12_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question11_win.destroy()
+
+
 def question11():
     def q11_correct():
         correct()
-        question11()
+        question12()
 
     def q11_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is George Russell')
-        question11()
+        question12()
 
     global question11_win
 
