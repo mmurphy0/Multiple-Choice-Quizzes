@@ -3,6 +3,84 @@ from tkinter import Toplevel, messagebox
 import datetime
 from datetime import datetime
 
+def question13():
+    def q13_correct():
+        correct()
+        question14()
+
+    def q13_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is 4')
+        question14()
+
+    global question13_win
+
+    question13_win = Toplevel()
+    question13_win.geometry('320x90+0+0')
+    question13_win.resizable(False,False)
+    question13_win.title('F1 2025 Quiz - Q14')
+
+    question13_label = tk.Label(
+        question13_win,
+        text="Which number is Lando Norris' ?",
+        font=('Arial',20)
+    )
+    question13_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question13_button_a = tk.Button(
+        question13_win,
+        text='44',
+        font=('Arial'),
+        width=15,
+        command=q13_incorrect
+    )
+    question13_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question13_button_b = tk.Button(
+        question13_win,
+        text='4',
+        font=('Arial'),
+        width=15,
+        command=q13_correct
+    )
+    question13_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question13_button_c = tk.Button(
+        question13_win,
+        text='55',
+        font=('Arial'),
+        width=15,
+        command=q13_incorrect
+    )
+    question13_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question13_button_d = tk.Button(
+        question13_win,
+        text='16',
+        font=('Arial'),
+        width=15,
+        command=q13_incorrect
+    )
+    question13_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question13_win.destroy()
+
+
 def question12():
     def q12_correct():
         correct()
