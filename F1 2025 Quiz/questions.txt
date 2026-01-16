@@ -89,12 +89,12 @@ C. 55
 D. 16
 Answer = B
 
-14- Which team experienced a major resurgence by winning the 2025 Constructors’ title?
-A. Red Bull
-B. McLaren
-C. Mercedes
-D. Alpine
-Answer = B
+14- How many race wins did Lando Norris achieve during the 2025 season?
+A. 4
+B. 6
+C. 8
+D. 10
+Answer = C
 
 15- Which driver finished ahead of Charles Leclerc in the 2025 Drivers’ standings?
 A. Max Verstappen
