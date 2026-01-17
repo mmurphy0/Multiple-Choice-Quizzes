@@ -3,6 +3,84 @@ from tkinter import Toplevel, messagebox
 import datetime
 from datetime import datetime
 
+def question18():
+    def q18_correct():
+        correct()
+        question19()
+
+    def q18_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is United Kingdom')
+        question19()
+
+    global question18_win
+
+    question18_win = Toplevel()
+    question18_win.geometry('320x90+0+0')
+    question18_win.resizable(False,False)
+    question18_win.title('F1 2025 Quiz - Q18')
+
+    question18_label = tk.Label(
+        question17_win,
+        text='Which country is Lando Norris from?',
+        font=('Arial',20)
+    )
+    question18_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question18_button_a = tk.Button(
+        question17_win,
+        text='Australia',
+        font=('Arial'),
+        width=15,
+        command=q18_incorrect
+    )
+    question18_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question18_button_b = tk.Button(
+        question18_win,
+        text='United Kingdom',
+        font=('Arial'),
+        width=15,
+        command=q18_correct
+    )
+    question18_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question18_button_c = tk.Button(
+        question18_win,
+        text='Netherlands',
+        font=('Arial'),
+        width=15,
+        command=q18_incorrect
+    )
+    question18_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question18_button_d = tk.Button(
+        question18_win,
+        text='Spain',
+        font=('Arial'),
+        width=15,
+        command=q18_incorrect
+    )
+    question18_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question17_win.destroy()
+    
+
 def question17():
     def q17_correct():
         correct()
