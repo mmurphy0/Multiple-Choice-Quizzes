@@ -3,6 +3,84 @@ from tkinter import Toplevel, messagebox
 import datetime
 from datetime import datetime
 
+def question19():
+    def q19_correct():
+        correct()
+        question20()
+
+    def q19_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is McLaren')
+        question20()
+
+    global question19_win
+
+    question19_win = Toplevel()
+    question19_win.geometry('320x90+0+0')
+    question19_win.resizable(False,False)
+    question19_win.title('F1 Quiz 2025 - Q19')
+
+    question19_label = tk.Label(
+        question19_win,
+        text='WHich team had the largest points advantage?',
+        font=('Arial',20)
+    )
+    question19_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question19_button_a = tk.Button(
+        question19_win,
+        text='McLaren',
+        font=('Arial'),
+        width=15,
+        command=q19_correct
+    )
+    question19_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question19_button_b = tk.Button(
+        question19_win,
+        text='Ferrari',
+        font=('Arial'),
+        width=15,
+        command=q19_incorrect
+    )
+    question19_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question19_button_c = tk.Button(
+        question19_win,
+        text='Red Bull',
+        font=('Arial'),
+        width=15,
+        command=q19_incorrect
+    )
+    question19_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question19_button_d = tk.Button(
+        question19_win,
+        text='Mercedes',
+        font=('Arial'),
+        width=15,
+        command=q19_incorrect
+    )
+    question19_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question18_win.destroy()
+
+
 def question18():
     def q18_correct():
         correct()
@@ -79,7 +157,7 @@ def question18():
     )
 
     question17_win.destroy()
-    
+
 
 def question17():
     def q17_correct():
