@@ -3,6 +3,84 @@ from tkinter import Toplevel, messagebox
 import datetime
 from datetime import datetime
 
+def question17():
+    def q17_correct():
+        correct()
+        question18()
+
+    def q17_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Charles Leclerc')
+        question18()
+
+    global question17_win
+
+    question17_win = Toplevel()
+    question17_win.geometry('320x90+0+0')
+    question17_win.resizable(False,False)
+    question17_win.title('F1 2025 Quiz - Q17')
+
+    question17_label = tk.Label(
+        question17_win,
+        text='Which driver did not win the Abu Dhabu Grand Prix?',
+        font=('Arial',20)
+    )
+    question17_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question17_button_a = tk.Button(
+        question17_win,
+        text='Max Verstappen',
+        font=('Arial'),
+        width=15,
+        command=q17_incorrect
+    )
+    question17_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question17_button_b = tk.Button(
+        question17_win,
+        text='Lando Norris',
+        font=('Arial'),
+        width=15,
+        command=q17_incorrect
+    )
+    question17_button_b.grid(
+        row=3,
+        column=1
+    )
+
+    question17_button_c = tk.Button(
+        question17_win,
+        text='Oscar Piastri',
+        font=('Arial'),
+        width=15,
+        command=q17_incorrect
+    )
+    question17_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question17_button_d = tk.Button(
+        question17_win,
+        text='Charles Leclerc',
+        font=('Arial'),
+        width=15,
+        command=q17_correct
+    )
+    question17_button_d.grid(
+        row=4,
+        column=1
+    )
+
+    question16_win.destroy()
+
+
 def question16():
     def q16_correct():
         correct()
