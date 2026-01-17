@@ -3,6 +3,84 @@ from tkinter import Toplevel, messagebox
 import datetime
 from datetime import datetime
 
+def question20():
+    def q20_correct():
+        correct()
+        results()
+
+    def q20_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Kimi Antonelli')
+        results()
+
+    global question20_win
+
+    question20_win = Toplevel()
+    question20_win.geometry('320x90+0+0')
+    question20_win.resizable(False,False)
+    question20_win.title('F1 Quiz - Q20')
+
+    question20_label = tk.Label(
+        question20_win,
+        text='Which driver was the highest-scoring rookie?',
+        font=('Arial',20)
+    )
+    question20_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    question20_button_a = tk.Button(
+        question20_win,
+        text='Kimi Antonelli',
+        font=('Arial'),
+        width=15,
+        command=q20_correct
+    )
+    question20_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    question20_button_b = tk.Button(
+        question20_win,
+        text='Yuki Tsunoda',
+        font=('Arial'),
+        width=15,
+        command=q20_incorrect
+    )
+    question20_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question20_button_c = tk.Button(
+        question20_win,
+        text='Estaban Ocon',
+        font=('Arial'),
+        width=15,
+        command=q20_incorrect
+    )
+    question20_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    question20_button_d = tk.Button(
+        question20_win,
+        text='Oliver Bearman',
+        font=('Arial'),
+        width=15,
+        command=q20_incorrect
+    )
+    question20_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question19_win.destroy()
+
+
 def question19():
     def q19_correct():
         correct()
