@@ -3,6 +3,8 @@ from tkinter import Toplevel, messagebox
 import datetime
 from datetime import datetime
 
+score = 0
+
 def question20():
     def q20_correct():
         correct()
@@ -15,7 +17,7 @@ def question20():
     global question20_win
 
     question20_win = Toplevel()
-    question20_win.geometry('320x90+0+0')
+    question20_win.geometry('403x90+0+0')
     question20_win.resizable(False,False)
     question20_win.title('F1 Quiz - Q20')
 
@@ -93,13 +95,13 @@ def question19():
     global question19_win
 
     question19_win = Toplevel()
-    question19_win.geometry('320x90+0+0')
+    question19_win.geometry('417x90+0+0')
     question19_win.resizable(False,False)
     question19_win.title('F1 Quiz 2025 - Q19')
 
     question19_label = tk.Label(
         question19_win,
-        text='WHich team had the largest points advantage?',
+        text='Which team had the largest points advantage?',
         font=('Arial',20)
     )
     question19_label.grid(
@@ -171,12 +173,12 @@ def question18():
     global question18_win
 
     question18_win = Toplevel()
-    question18_win.geometry('320x90+0+0')
+    question18_win.geometry('328x90+0+0')
     question18_win.resizable(False,False)
     question18_win.title('F1 2025 Quiz - Q18')
 
     question18_label = tk.Label(
-        question17_win,
+        question18_win,
         text='Which country is Lando Norris from?',
         font=('Arial',20)
     )
@@ -187,7 +189,7 @@ def question18():
     )
 
     question18_button_a = tk.Button(
-        question17_win,
+        question18_win,
         text='Australia',
         font=('Arial'),
         width=15,
@@ -243,19 +245,19 @@ def question17():
         question18()
 
     def q17_incorrect():
-        messagebox.showinfo('Result','Incorrect, The answer is Charles Leclerc')
+        messagebox.showinfo('Result','Incorrect, The answer is Oscar Piastri')
         question18()
 
     global question17_win
 
     question17_win = Toplevel()
-    question17_win.geometry('320x90+0+0')
+    question17_win.geometry('402x90+0+0')
     question17_win.resizable(False,False)
     question17_win.title('F1 2025 Quiz - Q17')
 
     question17_label = tk.Label(
         question17_win,
-        text='Which driver did not win the Abu Dhabu Grand Prix?',
+        text='Which driver was 2nd in the Abu Dhabu GP?',
         font=('Arial',20)
     )
     question17_label.grid(
@@ -285,7 +287,7 @@ def question17():
     )
     question17_button_b.grid(
         row=3,
-        column=1
+        column=2
     )
 
     question17_button_c = tk.Button(
@@ -293,7 +295,7 @@ def question17():
         text='Oscar Piastri',
         font=('Arial'),
         width=15,
-        command=q17_incorrect
+        command=q17_correct
     )
     question17_button_c.grid(
         row=4,
@@ -305,11 +307,11 @@ def question17():
         text='Charles Leclerc',
         font=('Arial'),
         width=15,
-        command=q17_correct
+        command=q17_incorrect
     )
     question17_button_d.grid(
         row=4,
-        column=1
+        column=2
     )
 
     question16_win.destroy()
@@ -327,7 +329,7 @@ def question16():
     global question16_win
 
     question16_win = Toplevel()
-    question16_win.geometry('320x90+0+0')
+    question16_win.geometry('506x90+0+0')
     question16_win.resizable(False,False)
     question16_win.title('F1 2025 Quiz - Q16')
 
@@ -405,16 +407,14 @@ def question15():
     global question15_win
 
     question15_win = Toplevel()
-    question15_win.geometry('320x90+0+0')
+    question15_win.geometry('544x90+0+0')
     question15_win.resizable(False,False)
-    question15_win.title('F1 2025 Quiz - Q16')
+    question15_win.title('F1 2025 Quiz - Q15')
 
     question15_label = tk.Label(
         question15_win,
-        text="Which driver finished ahead of Charles Leclerc in the Drivers' standings?",
-        font=('Arial',20),
-        width=15,
-        command=q15_incorrect
+        text="Who was ahead of Charles Leclerc in the Drivers' standings?",
+        font=('Arial',20)
     )
     question15_label.grid(
         row=1,
@@ -485,9 +485,9 @@ def question14():
     global question14_win
 
     question14_win = Toplevel()
-    question14_win.geometry('320x90+0+0')
+    question14_win.geometry('353x90+0+0')
     question14_win.resizable(False,False)
-    question14_win.title('F1 2025 Quiz - Q15')
+    question14_win.title('F1 2025 Quiz - Q14')
 
     question14_label = tk.Label(
         question14_win,
@@ -565,11 +565,11 @@ def question13():
     question13_win = Toplevel()
     question13_win.geometry('320x90+0+0')
     question13_win.resizable(False,False)
-    question13_win.title('F1 2025 Quiz - Q14')
+    question13_win.title('F1 2025 Quiz - Q13')
 
     question13_label = tk.Label(
         question13_win,
-        text="Which number is Lando Norris' ?",
+        text="Which number is Lando Norris'?",
         font=('Arial',20)
     )
     question13_label.grid(
@@ -626,7 +626,7 @@ def question13():
         column=2
     )
 
-    question13_win.destroy()
+    question12_win.destroy()
 
 
 def question12():
@@ -641,7 +641,7 @@ def question12():
     global question12_win
 
     question12_win = Toplevel()
-    question12_win.geometry('320x90+0+0')
+    question12_win.geometry('389x90+0+0')
     question12_win.resizable(False,False)
     question12_win.title('F1 2025 Quiz - Q12')
     
@@ -677,7 +677,7 @@ def question12():
     )
     question12_button_b.grid(
         row=3,
-        column=1
+        column=2
     )
 
     question12_button_c = tk.Button(
@@ -719,7 +719,7 @@ def question11():
     global question11_win
 
     question11_win = Toplevel()
-    question11_win.geometry('320x90+0+0')
+    question11_win.geometry('420x90+0+0')
     question11_win.resizable(False,False)
     question11_win.title('F1 2025 Quiz - Q11')
 
@@ -755,7 +755,7 @@ def question11():
     )
     question11_button_b.grid(
         row=3,
-        column=1
+        column=2
     )
 
     question11_button_c = tk.Button(
@@ -797,7 +797,7 @@ def question10():
     global question10_win
 
     question10_win = Toplevel()
-    question10_win.geometry('320x90+0+0')
+    question10_win.geometry('508x90+0+0')
     question10_win.resizable(False,False)
     question10_win.title('F1 2025 Quiz - Q10')
 
@@ -875,7 +875,7 @@ def question9():
     global question9_win
 
     question9_win = Toplevel()
-    question9_win.geometry('320x90+0+0')
+    question9_win.geometry('371x90+0+0')
     question9_win.resizable(False,False)
     question9_win.title('F1 2025 Quiz - Q9')
 
@@ -953,7 +953,7 @@ def question8():
     global question8_win
 
     question8_win = Toplevel()
-    question8_win.geometry('320x90+0+0')
+    question8_win.geometry('402x90+0+0')
     question8_win.resizable(False,False)
     question8_win.title('F1 2025 Quiz - Q8')
 
@@ -1031,7 +1031,7 @@ def question7():
     global question7_win
 
     question7_win = Toplevel()
-    question7_win.geometry('320x90+0+0')
+    question7_win.geometry('470x90+0+0')
     question7_win.resizable(False,False)
     question7_win.title('F1 2025 Quiz - Q7')
 
@@ -1109,14 +1109,14 @@ def question6():
     global question6_win
 
     question6_win = Toplevel()
-    question6_win.geometry('320x90+0+0')
+    question6_win.geometry('512x90+0+0')
     question6_win.resizable(False,False)
     question6_win.title('F1 2025 Quiz - Q6')
 
     question6_label = tk.Label(
         question6_win,
-        text="Which team was 2nd in the Constructors' Championship",
-        font=('Arial')
+        text="Which team was 2nd in the Constructors' Championship?",
+        font=('Arial',20)
     )
     question6_label.grid(
         row=1,
@@ -1187,9 +1187,9 @@ def question5():
     global question5_win
 
     question5_win = Toplevel()
-    question5_win.geometry('320x90+0+0')
+    question5_win.geometry('393x90+0+0')
     question5_win.resizable(False,False)
-    question5_win.title('F1 2025 Quiz - Q6')
+    question5_win.title('F1 2025 Quiz - Q5')
 
     question5_label = tk.Label(
         question5_win,
@@ -1265,7 +1265,7 @@ def question4():
     global question4_win
 
     question4_win = Toplevel()
-    question4_win.geometry('320x90+0+0')
+    question4_win.geometry('398x90+0+0')
     question4_win.resizable(False,False)
     question4_win.title('F1 2025 Quiz - Q4')
 
@@ -1343,7 +1343,7 @@ def question3():
     global question3_win
 
     question3_win = Toplevel()
-    question3_win.geometry('320x90+0+0')
+    question3_win.geometry('503x90+0+0')
     question3_win.resizable(False,False)
     question3_win.title('F1 2025 Quiz - Q3')
 
@@ -1416,14 +1416,25 @@ def question2():
 
     def q2_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is McLaren')
-        question3
+        question3()
 
     global question2_win
 
     question2_win = Toplevel()
-    question2_win.geometry('320x90+0+0')
+    question2_win.geometry('438x90+0+0')
     question2_win.resizable(False,False)
     question2_win.title('F1 2025 Quiz - Q2')
+
+    question2_label = tk.Label(
+        question2_win,
+        text="Who won the 2025 Constructors' Championship?",
+        font=('Arial',20)
+    )
+    question2_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
 
     question2_button_a = tk.Button(
         question2_win,
@@ -1488,7 +1499,7 @@ def question1():
     global question1_win
 
     question1_win = Toplevel()
-    question1_win.geometry('320x90+0+0')
+    question1_win.geometry('340x90+0+0')
     question1_win.resizable(False,False)
     question1_win.title('F1 2025 Quiz - Q1')
 
@@ -1574,7 +1585,8 @@ start_button = tk.Button(
     root,
     text='Start Quiz',
     font=('Arial'),
-    width=20
+    width=20,
+    command=question20
 )
 start_button.pack()
 

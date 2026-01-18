@@ -5,7 +5,7 @@ C. Lando Norris
 D. George Russell
 Answer = C
 
-2- Which team won the 2025 Constructors’ Championship?
+2- Who won the 2025 Constructors’ Championship?
 A. Mercedes
 B. Ferrari
 C. Red Bull Racing
@@ -96,7 +96,7 @@ C. 8
 D. 10
 Answer = C
 
-15- Which driver finished ahead of Charles Leclerc in the 2025 Drivers’ standings?
+15- Who finished ahead of Charles Leclerc in the 2025 Drivers’ standings?
 A. Max Verstappen
 B. Oscar Piastri
 C. Lando Norris
@@ -110,12 +110,12 @@ C. Ferrari
 D. Red Bull Racing
 Answer = B
 
-17- Which driver did NOT win the 2025 Abu Dhabi Grand Prix?
+17- Which driver was 2nd in the Abu Dhabu Grand Prix?
 A. Max Verstappen
 B. Lando Norris
 C. Oscar Piastri
 D. Charles Leclerc
-Answer = D
+Answer = C
 
 18- Which country is Lando Norris from?
 A. Australia
