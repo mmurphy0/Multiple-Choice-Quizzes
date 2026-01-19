@@ -1,9 +1,52 @@
 import tkinter as tk
 from tkinter import Toplevel, messagebox
-import datetime
-from datetime import datetime
+from time import strftime
 
 score = 0
+
+def results():
+    def reset():
+        global score
+        score = 0
+        results_win.destroy()
+
+    def save():
+        time = strftime('%H:%M:%S %D')
+        with open("F1 2025 Quiz/scorebook.txt",'a') as file:
+            file.write(time + '\n' + (f'Score: {score} / 20') + '\n' + '----------' + '\n')
+            messagebox.showinfo('Confirmation','Results successfully saved')
+            reset()
+
+    results_win = Toplevel()
+    results_win.geometry('117x90+0+0')
+    results_win.resizable(False,False)
+    results_win.title('F1 2025 Quiz - Results')
+
+    results_title = tk.Label(
+        results_win,
+        text='Results:',
+        font=('Arial',20,'bold')
+    )
+    results_title.pack()
+
+    player_result_label = tk.Label(
+        results_win,
+        text=(f'{score} / 20'),
+        font=('Arial',20)
+    )
+    player_result_label.pack()
+
+    save_button = tk.Button(
+        results_win,
+        text='Save',
+        font=('Arial'),
+        width=15,
+        command=save
+    )
+    save_button.pack()
+
+    question20_win.destroy()
+
 
 def question20():
     def q20_correct():
@@ -1150,7 +1193,7 @@ def question6():
 
     question6_button_c = tk.Button(
         question6_win,
-        text='Red Bull Racing',
+        text='Red Bull',
         font=('Arial'),
         width=15,
         command=q6_incorrect
@@ -1338,18 +1381,18 @@ def question3():
 
     def q3_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Abu Dhabi GP')
-        question4
+        question4()
 
     global question3_win
 
     question3_win = Toplevel()
-    question3_win.geometry('503x90+0+0')
+    question3_win.geometry('543x90+0+0')
     question3_win.resizable(False,False)
     question3_win.title('F1 2025 Quiz - Q3')
 
     question3_label = tk.Label(
         question3_win,
-        text="Which race did Lando Norris win the 2025 Driver's Title?",
+        text="Which race did Lando Norris win the Driver's Championship?",
         font=('Arial',20)
     )
     question3_label.grid(
@@ -1421,13 +1464,13 @@ def question2():
     global question2_win
 
     question2_win = Toplevel()
-    question2_win.geometry('438x90+0+0')
+    question2_win.geometry('389x90+0+0')
     question2_win.resizable(False,False)
     question2_win.title('F1 2025 Quiz - Q2')
 
     question2_label = tk.Label(
         question2_win,
-        text="Who won the 2025 Constructors' Championship?",
+        text="Who won the Constructors' Championship?",
         font=('Arial',20)
     )
     question2_label.grid(
@@ -1462,7 +1505,7 @@ def question2():
 
     question2_button_c = tk.Button(
         question2_win,
-        text='Red Bull Racing',
+        text='Red Bull',
         font=('Arial'),
         width=15,
         command=q2_incorrect
@@ -1569,6 +1612,11 @@ def correct():
     messagebox.showinfo('Result','Correct!')
     return
 
+def reset_score():
+    global score
+    score = 0
+    question1()
+
 root = tk.Tk()
 root.geometry('150x60+0+0')
 root.resizable(False,False)
@@ -1586,7 +1634,7 @@ start_button = tk.Button(
     text='Start Quiz',
     font=('Arial'),
     width=20,
-    command=question20
+    command=reset_score
 )
 start_button.pack()
 
