@@ -1,0 +1,139 @@
+1- Who won the Drivers’ Championship?
+A. Max Verstappen
+B. Oscar Piastri
+C. Lando Norris
+D. George Russell
+Answer = C
+
+2- Who won the Constructors’ Championship?
+A. Mercedes
+B. Ferrari
+C. Red Bull Racing
+D. McLaren
+Answer = D
+
+3- Which race did Lando Norris win the Drivers’ title?
+A. Monaco GP
+B. Abu Dhabi GP
+C. Italian GP
+D. British GP
+Answer = B
+
+4- Who was 2nd in the Drivers’ Championship?
+A. Charles Leclerc
+B. Max Verstappen
+C. Oscar Piastri
+D. George Russell
+Answer = B
+
+5- Who was 3rd in the Drivers’ Championship?
+A. Oscar Piastri
+B. Lewis Hamilton
+C. Fernando Alonso
+D. Alex Albon
+Answer = A
+
+6- Which team was 2nd in the Constructors’ Championship?
+A. Ferrari
+B. Mercedes
+C. Red Bull Racing
+D. Williams
+Answer = A
+
+7- How many points separated Norris and Verstappen?
+A. 10
+B. 2
+C. 15
+D. 7
+Answer = B
+
+8- Which driver won the Abu Dhabi Grand Prix?
+A. Lando Norris
+B. Oscar Piastri
+C. Max Verstappen
+D. George Russell
+Answer = C
+
+9- Which team did George Russell race for?
+A. Ferrari
+B. Mercedes
+C. McLaren
+D. Red Bull
+Answer = B
+
+10- Which team was 3rd in the Constructors’ Championship?
+A. Red Bull
+B. Ferrari
+C. Williams
+D. Aston Martin
+Answer = A
+
+11- Which driver finished 4th in the Drivers’ standings?
+A. Charles Leclerc
+B. George Russell
+C. Lewis Hamilton
+D. Alex Albon
+Answer = B
+
+12- Which British driver won his first world title?
+A. Lewis Hamilton
+B. George Russell
+C. Lando Norris
+D. Alex Albon
+Answer = C
+
+13- Which number is Lando Norris'?
+A. 44
+B. 4
+C. 55
+D. 16
+Answer = B
+
+14- How many races did Lando Norris win?
+A. 4
+B. 6
+C. 8
+D. 10
+Answer = C
+
+15- Who was ahead of Charles Leclerc in the Drivers’ standings?
+A. Max Verstappen
+B. Oscar Piastri
+C. Lando Norris
+D. All of the above
+Answer = D
+
+16- Which team was 4th in the Constructors’ standings?
+A. Williams
+B. Mercedes
+C. Ferrari
+D. Red Bull Racing
+Answer = B
+
+17- Which driver was 2nd in the Abu Dhabu Grand Prix?
+A. Max Verstappen
+B. Lando Norris
+C. Oscar Piastri
+D. Charles Leclerc
+Answer = C
+
+18- Which country is Lando Norris from?
+A. Australia
+B. United Kingdom
+C. Netherlands
+D. Spain
+Answer = B
+
+19- Which team had the largest points advantage?
+A. McLaren
+B. Ferrari
+C. Red Bull
+D. Mercedes
+Answer = A
+
+20- Which driver was the highest-scoring?
+A. Kimi Antonelli
+B. Yuki Tsunoda
+C. Esteban Ocon
+D. Oliver Bearman
+Answer = A
