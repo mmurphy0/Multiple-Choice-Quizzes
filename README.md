@@ -3,6 +3,8 @@
 ## Description
 This is a collection of multiple choice quizzes i have made using the python tkinter module these quizzes will eventually cover a variety of topics so it is welcome to more people who enjoy quizzes.
 
+### Please Note - On the scorebooks for each quiz, the date is in the MM/DD/YYYY format
+
 ### Avaliable Quizzes
 
 - UK Capitals Quiz
@@ -50,8 +52,6 @@ python3 (quizname).py
 - Python
 
 - Tkinter
-
-### Please Note - On the scorebooks for each quiz, the date is in the MM/DD/YYYY format
 
 ## Future Updates
 - More quizzes across various topics
