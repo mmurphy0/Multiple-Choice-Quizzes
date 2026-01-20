@@ -9,6 +9,10 @@ This is a collection of multiple choice quizzes i have made using the python tki
 
 - Liverpool FC Quiz
 
+- Premier League 24-25 Quiz
+
+- F1 2025 Quiz
+
 ### File Contents
 Every quiz has its own file and each file is set out the same way with 3 files
 
@@ -16,7 +20,7 @@ Every quiz has its own file and each file is set out the same way with 3 files
 
 - questions.txt (Questions & Answers)
 
-- scorebook.txt (Keeps record of all scores and sessions)
+- scorebook.txt (Keeps record of all scores and sessions date & time)
 
 ## Usage
 - The user is welcomed with a startup window which has the title of the quiz and start quiz button
@@ -46,6 +50,8 @@ python3 (quizname).py
 - Python
 
 - Tkinter
+
+### Please Note - On the scorebooks for each quiz, the date is in the MM/DD/YYYY format
 
 ## Future Updates
 - More quizzes across various topics
