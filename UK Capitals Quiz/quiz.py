@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox, Toplevel
-import datetime
-from datetime import datetime
+from time import strftime
 
 score = int(0)
 
@@ -11,7 +10,7 @@ def save():
         score = 0
         results_win.destroy()
     
-    time = datetime.now()
+    time = strftime('%H:%M:%S &D')
 
     with open('UK Capitals Quiz/scorebook.txt','a') as file:
         file.write(str(time) + '\n' + (f'Score: {score}/5') + '\n' + '--------------------' + '\n')

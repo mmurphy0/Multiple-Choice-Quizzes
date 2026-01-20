@@ -1,8 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox, Toplevel
-import datetime
-from datetime import datetime
-
+from time import strftime
 score = 0
 
 def result():
@@ -12,7 +10,7 @@ def result():
         result_win.destroy()
 
     def save():
-        time = str(datetime.now())
+        time = strftime('%H:%M:%S %D')
         with open('Premier League 24-25 Quiz/scorebook.txt','a') as file:
             file.write(time + '\n' + (f'Score: {score} /20') + '\n' + '----------' + '\n')
             messagebox.showinfo('Confirmation','Score successfully saved')
