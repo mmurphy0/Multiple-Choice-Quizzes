@@ -55,5 +55,3 @@ python3 (quizname).py
 
 ## Future Updates
 - More quizzes across various topics
-
-- F1 quiz COMING SOON
