@@ -240,7 +240,7 @@ def question_3():
         text='Glasgow',
         font=('Arial'),
         width=10,
-        command=q3incorrect
+        command=q3_incorrect
     )
     question3_button_a.grid(
         row=3,
