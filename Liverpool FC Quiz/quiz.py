@@ -63,13 +63,11 @@ def result():
 
 
 def question10():
-    def correct():
-        global score
-        messagebox.showinfo('Result','Correct!')
-        score += 1
+    def q10_correct():
+        correct()
         result()
 
-    def incorrect():
+    def q10_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Everton')
         result()
 
@@ -96,7 +94,7 @@ def question10():
         text='Manchester United',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q10_incorrect
     )
     question10_button_a.grid(
         row=3,
@@ -108,7 +106,7 @@ def question10():
         text='Leeds United',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q10_incorrect
     )
     question10_button_b.grid(
         row=3,
@@ -120,7 +118,7 @@ def question10():
         text='Manchester City',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q10_incorrect
     )
     question10_button_c.grid(
         row=4,
@@ -132,7 +130,7 @@ def question10():
         text='Everton',
         font=('Arial'),
         width=15,
-        command=correct
+        command=q10_correct
     )
     question10_button_d.grid(
         row=4,
@@ -143,13 +141,11 @@ def question10():
 
 
 def question9():
-    def correct():
-        global score
-        messagebox.showinfo('Result','Correct!')
-        score += 1
+    def q9_correct():
+        correct()
         question10()
 
-    def incorrect():
+    def q9_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is The Reds')
         question10()
 
@@ -176,7 +172,7 @@ def question9():
         text='The Red Devils',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q9_incorrect
     )
     question9_button_a.grid(
         row=3,
@@ -188,7 +184,7 @@ def question9():
         text='The Gunners',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q9_incorrect
     )
     question9_button_b.grid(
         row=3,
@@ -200,7 +196,7 @@ def question9():
         text='The Reds',
         font=('Arial'),
         width=15,
-        command=correct
+        command=q9_correct
     )
     question9_button_c.grid(
         row=4,
@@ -212,7 +208,7 @@ def question9():
         text='The Foxes',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q9_incorrect
     )
     question9_button_d.grid(
         row=4,
@@ -223,13 +219,11 @@ def question9():
 
 
 def question8():
-    def correct():
-        global score
-        messagebox.showinfo('Result','Correct!')
-        score += 1
+    def q8_correct():
+        correct()
         question9()
 
-    def incorrect():
+    def q8_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Steven Gerrard')
         question9()
 
@@ -256,7 +250,7 @@ def question8():
         text='Jamie Carragher',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q8_incorrect
     )
     question8_button_a.grid(
         row=3,
@@ -268,7 +262,7 @@ def question8():
         text='Steven Gerrard',
         font=('Arial'),
         width=15,
-        command=correct
+        command=q8_correct
     )
     question8_button_b.grid(
         row=3,
@@ -280,7 +274,7 @@ def question8():
         text='Jordan Henderson',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q8_incorrect
     )
     question8_button_c.grid(
         row=4,
@@ -292,7 +286,7 @@ def question8():
         text='Xabi Alonso',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q8_incorrect
     )
     question8_button_d.grid(
         row=4,
@@ -303,13 +297,11 @@ def question8():
 
 
 def question7():
-    def correct():
-        global score
-        messagebox.showinfo('Result','Correct!')
-        score += 1
+    def q7_correct():
+        correct()
         question8()
 
-    def incorrect():
+    def q7_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Red')
         question8()
 
@@ -336,7 +328,7 @@ def question7():
         text='Blue',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q7_incorrect
     )
     question7_button_a.grid(
         row=3,
@@ -348,7 +340,7 @@ def question7():
         text='White',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q7_incorrect
     )
     question7_button_b.grid(
         row=3,
@@ -360,7 +352,7 @@ def question7():
         text='Red',
         font=('Arial'),
         width=15,
-        command=correct
+        command=q7_correct
     )
     question7_button_c.grid(
         row=4,
@@ -372,7 +364,7 @@ def question7():
         text='Black',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q7_incorrect
     )
     question7_button_d.grid(
         row=4,
@@ -383,13 +375,11 @@ def question7():
     
 
 def question6():
-    def correct():
-        global score
-        messagebox.showinfo('Result','Correct!')
-        score += 1
+    def q6_correct():
+        correct()
         question7()
 
-    def incorrect():
+    def q6_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Ian Rush')
         question7()
 
@@ -416,7 +406,7 @@ def question6():
         text='Ian Rush',
         font=('Arial'),
         width=15,
-        command=correct
+        command=q6_correct
     )
     question6_button_a.grid(
         row=3,
@@ -428,7 +418,7 @@ def question6():
         text='Steven Gerrard',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q6_incorrect
     )
     question6_button_b.grid(
         row=3,
@@ -440,7 +430,7 @@ def question6():
         text='Mohammed Salah',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q6_incorrect
     )
     question6_button_c.grid(
         row=4,
@@ -452,7 +442,7 @@ def question6():
         text='Robbie Fowler',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q6_incorrect
     )
     question6_button_d.grid(
         row=4,
@@ -463,13 +453,11 @@ def question6():
 
 
 def question5():
-    def correct():
-        global score
-        messagebox.showinfo('Result','Correct!')
-        score += 1
+    def q5_correct():
+        correct()
         question6()
 
-    def incorrect():
+    def q5_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is 6')
         question6()
 
@@ -496,7 +484,7 @@ def question5():
         text='4',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q5_incorrect
     )
     question5_button_a.grid(
         row=3,
@@ -508,7 +496,7 @@ def question5():
         text='5',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q5_incorrect
     )
     question5_button_b.grid(
         row=3,
@@ -520,7 +508,7 @@ def question5():
         text='6',
         font=('Arial'),
         width=15,
-        command=correct
+        command=q5_correct
     )
     question5_button_c.grid(
         row=4,
@@ -532,7 +520,7 @@ def question5():
         text='7',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q5_incorrect
     )
     question5_button_d.grid(
         row=4,
@@ -543,13 +531,11 @@ def question5():
 
 
 def question4():
-    def correct():
-        global score
-        messagebox.showinfo('Result','Correct!')
-        score += 1
+    def q4_correct():
+        correct()
         question5()
 
-    def incorrect():
+    def q4_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Jurgen Klopp')
         question5()
 
@@ -576,7 +562,7 @@ def question4():
         text='Jurgen Klopp',
         font=('Arial'),
         width=15,
-        command=correct
+        command=q4_correct
     )
     question4_button_a.grid(
         row=3,
@@ -588,7 +574,7 @@ def question4():
         text='Brendan Rogers',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q4_incorrect
     )
     question4_button_b.grid(
         row=3,
@@ -600,7 +586,7 @@ def question4():
         text='Rafa Benítez',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q4_incorrect
     )
     question4_button_c.grid(
         row=4,
@@ -612,7 +598,7 @@ def question4():
         text='Kenny Dalglish',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q4_incorrect
     )
     question4_button_d.grid(
         row=4,
@@ -623,13 +609,11 @@ def question4():
 
 
 def question3():
-    def correct():
-        global score
-        messagebox.showinfo('Result','Correct!')
-        score += 1
+    def q3_correct():
+        correct()
         question4()
 
-    def incorrect():
+    def q3_incorrect():
         messagebox.showinfo('Result',"Incorrect, The answer is You'll Never Walk Alone")
         question4()
 
@@ -656,7 +640,7 @@ def question3():
         text='Blue Moon',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q3_incorrect
     )
     question3_button_a.grid(
         row=3,
@@ -668,7 +652,7 @@ def question3():
         text="You'll Never Walk Alone",
         font=('Arial'),
         width=15,
-        command=correct
+        command=q3_correct
     )
     question3_button_b.grid(
         row=3,
@@ -680,7 +664,7 @@ def question3():
         text='Sweet Caroline',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q3_incorrect
     )
     question3_button_c.grid(
         row=4,
@@ -692,7 +676,7 @@ def question3():
         text='Wonderwall',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q3_incorrect
     )
     question3_button_d.grid(
         row=4,
@@ -702,13 +686,11 @@ def question3():
     question2_win.destroy()
 
 def question2():
-    def correct():
-        global score
-        messagebox.showinfo('Result','Correct!')
-        score += 1
+    def q2_correct():
+        correct()
         question3()
 
-    def incorrect():
+    def q2_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Anfield')
         question3()
 
@@ -735,7 +717,7 @@ def question2():
         text='Hill Dickinson',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q2_incorrect
     )
     question2_button_a.grid(
         row=3,
@@ -747,7 +729,7 @@ def question2():
         text='Old Trafford',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q2_incorrect
     )
     question2_button_b.grid(
         row=3,
@@ -759,7 +741,7 @@ def question2():
         text='Wembley',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q2_incorrect
     )
     question2_button_c.grid(
         row=4,
@@ -771,7 +753,7 @@ def question2():
         text='Anfield',
         font=('Arial'),
         width=15,
-        command=correct
+        command=q2_correct
     )
     question2_button_d.grid(
         row=4,
@@ -782,13 +764,11 @@ def question2():
 
 
 def question1():
-    def correct():
-        global score
-        messagebox.showinfo('Result','Correct!')
-        score += 1
+    def q1_correct():
+        correct()
         question2()
     
-    def incorrect():
+    def q1_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is 1892')
         question2()
 
@@ -815,7 +795,7 @@ def question1():
         text='1888',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q1_incorrect
     )
     question1_button_a.grid(
         row=3,
@@ -827,7 +807,7 @@ def question1():
         text='1890',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q1_incorrect
     )
     question1_button_b.grid(
         row=3,
@@ -839,7 +819,7 @@ def question1():
         text='1892',
         font=('Arial'),
         width=15,
-        command=correct
+        command=q1_correct
     )
     question1_button_c.grid(
         row=4,
@@ -851,13 +831,18 @@ def question1():
         text='1896',
         font=('Arial'),
         width=15,
-        command=incorrect
+        command=q1_incorrect
     )
     question1_button_d.grid(
         row=4,
         column=2
     )
 
+def correct():
+    global score
+    score += 1
+    messagebox.showinfo('Result','Correct!')
+    return
 
 root = tk.Tk()
 root.geometry('200x60')
