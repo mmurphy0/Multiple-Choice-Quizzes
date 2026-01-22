@@ -2,6 +2,81 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question2():
+    def q2_correct():
+        correct()
+        question3()
+
+    def q2_incorrect():
+        messagebox.showinfo('Result','The answer is Arsenal')
+        question3()
+    
+    global question2_win
+
+    question2_win = Toplevel()
+    question2_win.geometry('320x90+0+0')
+    question2_win.resizable(False,False)
+    question2_win.title('European Football 24-25 Quiz')
+
+    q2_label = tk.Label(
+        question2_win,
+        text='Who was 2nd in the Premier League?',
+        font=('Arial',20)
+    )
+    q2_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q2_button_a = tk.Button(
+        question2_win,
+        text='Manchester United',
+        font=('Arial'),
+        width=15,
+        command=q2_incorrect
+    )
+    q2_button_a.grid(
+        row=3,
+        column=1,
+    )
+
+    q2_button_b = tk.Button(
+        question2_win,
+        text='Arsenal',
+        font=('Arial'),
+        width=15,
+        command=q2_correct
+    )
+    q2_button_b.grid(
+        row=3,
+        column=2
+    )
+    
+    q2_button_c = tk.Button(
+        question2_win,
+        text='Newcastle United',
+        font=('Arial'),
+        width=15,
+        command=q2_incorrect
+    )
+    q2_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q2_button_d = tk.Button(
+        question2_win,
+        text='Chelsea',
+        font=('Arial'),
+        width=15,
+        command=q2_incorrect
+    )
+    q2_button_d.grid(
+        row=4,
+        column=2
+    )
+
 def question1():
     def q1_correct():
         correct()
