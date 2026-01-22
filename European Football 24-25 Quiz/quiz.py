@@ -2,13 +2,167 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question4():
+    def q4_correct():
+        correct()
+        question5()
+
+    def q4_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Napoli')
+        question5()
+
+    global question4_win
+
+    question4_win = Toplevel()
+    question4_win.geometry('320x90+0+0')
+    question4_win.resizable(False,False)
+    question4_win.title('European Football 24-25 Quiz')
+
+    q4_label = tk.Label(
+        question4_win,
+        text='Who won the Serie A?',
+        font=('Arial',20)
+    )
+    q4_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q4_button_a = tk.Button(
+        question4_win,
+        text='Inter Milan',
+        font=('Arial'),
+        width=15,
+        command=q4_incorrect
+    )
+    q4_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q4_button_b = tk.Button(
+        question4_win,
+        text='Napoli',
+        font=('Arial'),
+        width=15,
+        command=q4_correct
+    )
+    q4_button_b.grid(
+        row=3,
+        column=2
+    )
+    
+    q4_button_c = tk.Button(
+        question4_win,
+        text='Juventus',
+        font=('Arial'),
+        width=15,
+        command=q4_incorrect
+    )
+    q4_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q4_button_d = tk.Button(
+        question4_win,
+        text='AC Milan',
+        font=('Arial'),
+        width=15,
+        command=q4_incorrect
+    )
+    q4_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question3_win.destroy()
+
+def question3():
+    def q3_correct():
+        correct()
+        question4()
+
+    def q3_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Barcelona')
+        question4()
+
+    global question3_win
+
+    question3_win = Toplevel()
+    question3_win.geometry('320x90+0+0')
+    question3_win.resizable(False,False)
+    question3_win.title('European Football 24-25 Quiz')
+
+    q3_label = tk.Label(
+        question3_win,
+        text='Who won the LaLiga?',
+        font=('Arial',20)
+    )
+    q3_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q3_button_a = tk.Button(
+        question3_win,
+        text='Real Madrid',
+        font=('Arial'),
+        width=15,
+        command=q3_incorrect
+    )
+    q3_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q3_button_b = tk.Button(
+        question3_win,
+        text='Atlético Madrid',
+        font=('Arial'),
+        width=15,
+        command=q3_incorrect
+    )
+    q3_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q3_button_c = tk.Button(
+        question3_win,
+        text='Barcelona',
+        font=('Arial'),
+        width=15,
+        command=q3_correct
+    )
+    q3_button_c.grid(
+        row=4,
+        column=1
+    )
+    
+    q3_button_d = tk.Button(
+        question3_win,
+        text='Sevilla',
+        font=('Arial'),
+        width=15,
+        command=q3_incorrect
+    )
+    q3_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question2_win.destroy()
+
 def question2():
     def q2_correct():
         correct()
         question3()
 
     def q2_incorrect():
-        messagebox.showinfo('Result','The answer is Arsenal')
+        messagebox.showinfo('Result','Incorrect, The answer is Arsenal')
         question3()
     
     global question2_win
@@ -77,13 +231,15 @@ def question2():
         column=2
     )
 
+    question1_win.destroy()
+
 def question1():
     def q1_correct():
         correct()
         question2()
 
     def q1_incorrect():
-        messagebox.showinfo('Result','The answer is Liverpool')
+        messagebox.showinfo('Result','Incorrect, The answer is Liverpool')
         question2()
 
     global question1_win
