@@ -2,6 +2,83 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question7():
+    def q7_correct():
+        correct()
+        question8()
+
+    def q7_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is PSG?')
+        question8()
+
+    global question7_win
+
+    question7_win = Toplevel()
+    question7_win.geometry('320x90+0+0')
+    question7_win.resizable(False,False)
+    question7_win.title('European Football 24-25 Quiz - Q7')
+
+    q7_label = tk.Label(
+        question7_win,
+        text='Who won the Champions League',
+        font=('Arial',20)
+    )
+    q7_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q7_button_a = tk.Button(
+        question7_win,
+        text='Real Madrid',
+        font=('Arial'),
+        width=15,
+        command=q7_incorrect
+    )
+    q7_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q7_button_b = tk.Button(
+        question7_win,
+        text='Bayern Munich',
+        font=('Arial'),
+        width=15,
+        command=q7_incorrect
+    )
+    q7_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q7_button_c = tk.Button(
+        question7_win,
+        text='Inter Milan',
+        font=('Arial'),
+        width=15,
+        command=q7_incorrect
+    )
+    q7_button_c.grid(
+        row=4,
+        column=1
+    )
+    
+    q7_button_d = tk.Button(
+        question7_win,
+        text='PSG',
+        font=('Arial'),
+        width=15,
+        command=q7_correct
+    )
+    q7_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question6_win.destroy()
+
 def question6():
     def q6_correct():
         correct()

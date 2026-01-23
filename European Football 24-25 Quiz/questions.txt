@@ -44,7 +44,7 @@ Answer - B
 A - Real Madrid
 B - Bayern Munich
 C - Inter Milan
-D - Paris Saint‑Germain
+D - PSG
 Answer - D
 
 8. Who won the 2025 UEFA Europa League final?
