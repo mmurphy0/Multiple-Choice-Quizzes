@@ -2,6 +2,83 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question9():
+    def q9_correct():
+        correct()
+        question10()
+
+    def q9_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Chelsea')
+        question10()
+
+    global question9_win
+
+    question9_win = Toplevel()
+    question9_win.geometry('320x90+0+0')
+    question9_win.resizable(False,False)
+    question9_win.title('European Football 24-25 Quiz')
+
+    q9_label = tk.Label(
+        question9_win,
+        text='Who won the Conference League?',
+        font=('Arial',20)
+    )
+    q9_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q9_button_a = tk.Button(
+        question9_win,
+        text='Real Betis',
+        font=('Arial'),
+        width=15,
+        command=q9_incorrect
+    )
+    q9_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q9_button_b = tk.Button(
+        question9_win,
+        text='Chelsea',
+        font=('Arial'),
+        width=15,
+        command=q9_correct
+    )
+    q9_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q9_button_c = tk.Button(
+        question9_win,
+        text='Villarreal',
+        font=('Arial'),
+        width=15,
+        command=q9_incorrect
+    )
+    q9_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q9_button_d = tk.Button(
+        question9_win,
+        text='Atalanta',
+        font=('Arial'),
+        width=15,
+        command=q9_incorrect
+    )
+    q9_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question8_win.destroy()
+
 def question8():
     def q8_correct():
         correct()
