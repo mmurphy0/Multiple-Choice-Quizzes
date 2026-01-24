@@ -2,6 +2,83 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question10():
+    def q10_correct():
+        correct()
+        question11()
+
+    def q10_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Mohamed Salah')
+        question11()
+    
+    global question10_win
+
+    question10_win = Toplevel()
+    question10_win.geometry('320x90+0+0')
+    question10_win.resizable(False,False)
+    question10_win.title('European Football 24-25 Quiz - Q10')
+
+    q10_label = tk.Label(
+        question10_win,
+        text='Who was the Premier League top goalscorer?',
+        font=('Arial',20)
+    )
+    q10_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q10_button_a = tk.Button(
+        question10_win,
+        text='Mohamned Salah',
+        font=('Arial'),
+        width=15,
+        command=q10_correct
+    )
+    q10_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q10_button_b = tk.Button(
+        question10_win,
+        text='Erling Haaland',
+        font=('Arial'),
+        width=15,
+        command=q10_incorrect
+    )
+    q10_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q10_button_c = tk.Button(
+        question10_win,
+        text='Alexander Isak',
+        font=('Arial'),
+        width=15,
+        command=q10_incorrect
+    )
+    q10_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q10_button_d = tk.Button(
+        question10_win,
+        text='Ollie Watkins',
+        font=('Arial'),
+        width=15,
+        command=q10_incorrect
+    )
+    q10_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question9_win.destroy()
+
 def question9():
     def q9_correct():
         correct()
@@ -16,7 +93,7 @@ def question9():
     question9_win = Toplevel()
     question9_win.geometry('320x90+0+0')
     question9_win.resizable(False,False)
-    question9_win.title('European Football 24-25 Quiz')
+    question9_win.title('European Football 24-25 Quiz - Q9')
 
     q9_label = tk.Label(
         question9_win,
