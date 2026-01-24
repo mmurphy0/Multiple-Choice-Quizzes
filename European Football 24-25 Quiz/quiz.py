@@ -2,6 +2,83 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question12():
+    def q12_correct():
+        correct()
+        question13()
+
+    def q12_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Brennan Johnson')
+        question13()
+
+    global question12_win
+
+    question12_win = Toplevel()
+    question12_win.geometry('320x90+0+0')
+    question12_win.resizable(False,False)
+    question12_win.title('European Football 24-25 Quiz - Q12')
+
+    q12_label = tk.Label(
+        question12_win,
+        text='Who scored in the Europa League Final?',
+        font=('Arial',20),
+    )
+    q12_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q12_button_a = tk.Button(
+        question12_win,
+        text='Son Heung-min',
+        font=('Arial'),
+        width=15,
+        command=q12_incorrect
+    )
+    q12_button_a.grid(
+        row=3,
+        column=1,
+    )
+
+    q12_button_b = tk.Button(
+        question12_win,
+        text='Brennan Johnson',
+        font=('Arial'),
+        width=15,
+        command=q12_correct
+    )
+    q12_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q12_button_c = tk.Button(
+        question12_win,
+        text='Luke Shaw',
+        font=('Arial'),
+        width=15,
+        command=q12_incorrect
+    )
+    q12_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q12_button_d = tk.Button(
+        question12_win,
+        text='Rasmus Hojlund',
+        font=('Arial'),
+        width=15,
+        command=q12_incorrect
+    )
+    q12_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question11_win.destroy()
+
 def question11():
     def q11_correct():
         correct()
@@ -9,7 +86,7 @@ def question11():
 
     def q11_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Harry Kane')
-        question12
+        question12()
 
     global question11_win
 
