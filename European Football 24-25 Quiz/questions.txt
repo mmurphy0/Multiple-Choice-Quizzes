@@ -96,7 +96,7 @@ C - Aston Villa
 D - Manchester United
 Answer - A
 
-15. Which club plays at Anfield
+15. Which clubs stadium is Anfield?
 A - Liverpool
 B - Everton
 C - Leeds United
