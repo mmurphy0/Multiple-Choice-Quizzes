@@ -96,12 +96,12 @@ C - Aston Villa
 D - Manchester United
 Answer - A
 
-15. Which club qualified for the Champions League by league position in La Liga?
-A - Real Betis
-B - Athletic Bilbao
-C - Real Sociedad
-D - Granada
-Answer - B
+15. Which club plays at Anfield
+A - Liverpool
+B - Everton
+C - Leeds United
+D - Manchester United
+Answer - A
 
 16. Which English club won the EFL Cup in 2024–25?
 A - Manchester City
