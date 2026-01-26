@@ -77,6 +77,8 @@ def question16():
         column=2
     )
 
+    question15_win.destroy()
+
 def question15():
     def q15_correct():
         correct()
