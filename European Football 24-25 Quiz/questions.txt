@@ -130,8 +130,8 @@ D - Nottingham Forest
 Answer - A
 
 20. Who won the 2025 UEFA Super Cup?
-A - Tottenham Hotspur
-B - Paris Saint‑Germain
+A - Tottenham
+B - PSG
 C - Chelsea
 D - Real Madrid
 Answer - B
