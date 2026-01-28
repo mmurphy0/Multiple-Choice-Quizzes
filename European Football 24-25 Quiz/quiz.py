@@ -2,6 +2,83 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question19():
+    def q19_correct():
+        correct()
+        question20()
+
+    def q19_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Arsenal')
+        question20()
+
+    global question19_win
+
+    question19_win = Toplevel()
+    question19_win.geometry('320x90+0+0')
+    question19_win.resizable(False,False)
+    question19_win.title('European Football 24-25 Quiz - Q19')
+
+    q19_label = tk.Label(
+        question19_win,
+        text='Which team is known as "The Reds"?',
+        font=('Arial',20)
+    )
+    q19_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q19_button_a = tk.Button(
+        question19_win,
+        text='Liverpool',
+        font=('Arial'),
+        width=15,
+        command=q19_correct
+    )
+    q19_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q19_button_b = tk.Button(
+        question19_win,
+        text='Manchester United',
+        font=('Arial'),
+        width=15,
+        command=q19_incorrect
+    )
+    q19_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q19_button_c = tk.Button(
+        question19_win,
+        text='Arsenal',
+        font=('Arial'),
+        width=15,
+        command=q19_incorrect
+    )
+    q19_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q19_button_d = tk.Button(
+        question19_win,
+        text='Nottingham Forest',
+        font=('Arial'),
+        width=15,
+        commanf=q19_incorrect
+    )
+    q19_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question18_win.destroy()
+
 def question18():
     def q18_correct():
         correct()

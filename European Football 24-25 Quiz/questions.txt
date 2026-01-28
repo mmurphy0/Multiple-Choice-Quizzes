@@ -122,11 +122,11 @@ A - True
 B - False
 Answer - C
 
-19. Which team is known as “The Gunners”?
-A - Arsenal
-B - West Ham
-C - Tottenham
-D - Chelsea
+19. Which team is known as “The Reds”?
+A - Liverpool
+B - Manchester United
+C - Arsenal
+D - Nottingham Forest
 Answer - A
 
 20. Who won the 2025 UEFA Super Cup?
