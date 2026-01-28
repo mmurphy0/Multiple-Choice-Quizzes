@@ -2,6 +2,59 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question18():
+    def q18_correct():
+        correct()
+        question19()
+    
+    def q18_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is True')
+        question19()
+
+    global question18_win
+
+    question18_win = Toplevel()
+    question18_win.geometry('320x90+0+0')
+    question18_win.resizable(False,False)
+    question18_win.title('European Football 24-25 Quiz - Q18')
+
+    q18_label = tk.Label(
+        question18_win,
+        text='Do AC Milan & Inter Milan share the San Siro?',
+        font=('Arial'),
+    )
+    q18_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q18_button_a = tk.Button(
+        question18_win,
+        text='True',
+        font=('Arial'),
+        width=15,
+        command=q18_correct
+    )
+    q18_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q18_button_b = tk.Button(
+        question18_win,
+        text='False',
+        font=('Arial'),
+        width=15,
+        commanf=q18_incorrect
+    )
+    q18_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question17_win.destroy()
+
 def question17():
     def q17_correct():
         correct()
