@@ -117,11 +117,9 @@ C - Hibernian
 D - Celtic
 Answer - D
 
-18. Which Italian club plays at the San Siro?
-A - Juventus
-B - Napoli
-C - Inter Milan
-D - Fiorentina
+18. Do AC Milan & Inter Milan share the San Siro?
+A - True
+B - False
 Answer - C
 
 19. Which team is known as “The Gunners”?
