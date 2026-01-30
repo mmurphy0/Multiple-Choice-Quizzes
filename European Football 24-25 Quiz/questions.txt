@@ -150,11 +150,9 @@ C - Nottingham Forest
 D - Brighton
 Answer - A
 
-23. Which nation’s club plays in Ligue 1?
-A - Germany
+23. Which country is Ligue 1 played in?
+A - Italy
 B - France
-C - Spain
-D - Italy
 Answer - B
 
 24. Who won the 2025 Copa del Rey?

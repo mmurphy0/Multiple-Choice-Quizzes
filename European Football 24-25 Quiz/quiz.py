@@ -2,6 +2,54 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question23():
+    def q23_correct():
+        correct()
+        question24()
+
+    def q23_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is France')
+        question24()
+
+    global question23_win
+
+    question23_win = Toplevel()
+    question23_win.geometry('320x90+0+0')
+    question23_win.resizable(False,False)
+    question23_win.title('European Football 24-25 Quiz - Q23')
+
+    q23_label = tk.Label(
+        question23_win,
+        text='Which country is Ligue 1 played in?',
+        font=('Arial',20)
+    )
+    q23_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q23_button_a = tk.Button(
+        question23_win,
+        text='Italy',
+        font=('Arial'),
+        width=15,
+        command=q23_incorrect
+    )
+    q23_button_b = tk.Button(
+        question23_win,
+        text='France',
+        font=('Arial'),
+        width=15,
+        command=q23_correct
+    )
+    q23_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question22_win.destroy()
+
 def question22():
     def q22_correct():
         correct()
