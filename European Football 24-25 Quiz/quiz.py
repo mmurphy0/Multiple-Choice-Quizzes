@@ -2,6 +2,83 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question21():
+    def q21_correct():
+        correct()
+        question22()
+    
+    def q21_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Raphina')
+        question22()
+
+    global question21_win
+
+    question21_win = Toplevel()
+    question21_win.geometry('320x90+0+0')
+    question21_win.resizable(False,False)
+    question21_win.title('European Football 24-25 Quiz - Q22')
+
+    q21_label = tk.Label(
+        question21_win,
+        text='Who was the top scorer for Barcelona?',
+        font=('Arial',20)
+    )
+    q21_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q21_button_a = tk.Button(
+        question21_win,
+        text='Lamine Yamal',
+        font=('Arial'),
+        width=15,
+        command=q21_incorrect
+    )
+    q21_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q21_button_b = tk.Button(
+        question21_win,
+        text='Robert Lewandoski',
+        font=('Arial'),
+        width=15,
+        command=q21_incorrect
+    )
+    q21_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q21_button_c = tk.Button(
+        question21_win,
+        text='Raphina',
+        font=('Arial'),
+        width=15,
+        command=q21_correct
+    )
+    q21_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q21_button_d = tk.Button(
+        question21_win,
+        text='Pedri',
+        font=('Arial'),
+        width=15,
+        command=q21_incorrect
+    )
+    q21_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question20_win.destroy()
+
 def question20():
     def q20_correct():
         correct()
