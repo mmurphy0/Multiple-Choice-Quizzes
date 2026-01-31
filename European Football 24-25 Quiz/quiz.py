@@ -2,6 +2,83 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question25():
+    def q25_correct():
+        correct()
+        results()
+
+    def q25_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Inter Milan')
+        results()
+
+    global question25_win
+
+    question25_win = Toplevel()
+    question25_win.geometry('320x90+0+0')
+    question25_win.resizable(False,False)
+    question25_win.title('European Football 24-25 Quiz - Q25')
+
+    q25_label = tk.Label(
+        question25_win,
+        text='Who was 3rd in Serie A?',
+        font=('Arial',20)
+    )
+    q25_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q25_button_a = tk.Button(
+        question25_win,
+        text='Juventus',
+        font=('Arial'),
+        width=15,
+        command=q25_incorrect
+    )
+    q25_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q25_button_b = tk.Button(
+        question25_win,
+        text='Inter Milan',
+        font=('Arial'),
+        width=15,
+        command=q25_correct
+    )
+    q25_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q25_button_c = tk.Button(
+        question25_win,
+        text='AC Milan',
+        font=('Arial'),
+        width=15,
+        command=q25_incorrect
+    )
+    q25_button_c.grid(
+        row=4,
+        column=2
+    )
+
+    q25_button_d = tk.Button(
+        question25_win,
+        text='Roma',
+        font=('Arial'),
+        width=15,
+        command=q25_incorrect
+    )
+    q25_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question24_win.destroy()
+
 def question24():
     def q24_correct():
         correct()
