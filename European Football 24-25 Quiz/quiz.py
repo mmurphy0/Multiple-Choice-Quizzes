@@ -2,6 +2,51 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def results():
+    def reset():
+        global score
+        score = 0
+        results_win.destroy()
+
+    def save():
+        time = strftime('%H:%M:%S %D')
+        with open('European Football 24-25 Quiz/questions.txt','a') as file:
+            file.write(score + '\n' + time + '\n' + '----------' + '\n')
+            messagebox.showinfo('Confirmation','Score sucessfully saved')
+            reset()
+
+    global results_win
+
+    results_win = Toplevel()
+    results_win.geometry('117x90+0+0')
+    results_win.resizable(False,False)
+    results_win.title('European Football 24-25 Quiz - Results')
+
+    results_title = tk.Label(
+        results_win,
+        text='Results',
+        font=('Arial',20,'bold')
+    )
+    results_title.pack()
+
+    results_label = tk.Label(
+        results_win,
+        text=f'{score}/25',
+        font=('Arial',20)
+    )
+    results_label.pack()
+
+    continue_button = tk.Button(
+        results_win,
+        text='Continue',
+        font=('Arial'),
+        width=20,
+        command=save
+    )
+    continue_button.pack()
+
+    question25_win.destroy()
+
 def question25():
     def q25_correct():
         correct()
@@ -1811,7 +1856,9 @@ def question1():
         messagebox.showinfo('Result','Incorrect, The answer is Liverpool')
         question2()
 
-    global question1_win
+    global question1_win, score
+
+    score = 0
 
     question1_win = Toplevel()
     question1_win.geometry('350x90+0+0')
@@ -1900,7 +1947,7 @@ startquiz_button = tk.Button(
     text='Start Quiz',
     font=('Arial'),
     width=20,
-    # command=question1
+    command=question1
 )
 startquiz_button.pack()
 
