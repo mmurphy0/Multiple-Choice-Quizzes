@@ -54,6 +54,5 @@ python3 (quizname).py
 - Tkinter
 
 ## Future Updates
-- European Football 24-25 Quiz - Coming Soon!
 
 - More quizzes across various topics
