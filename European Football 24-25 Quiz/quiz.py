@@ -10,8 +10,8 @@ def results():
 
     def save():
         time = strftime('%H:%M:%S %D')
-        with open('European Football 24-25 Quiz/questions.txt','a') as file:
-            file.write(score + '\n' + time + '\n' + '----------' + '\n')
+        with open('European Football 24-25 Quiz/scorebook.txt','a') as file:
+            file.write(f'Score: {str(score)}' + '\n' + str(time) + '\n' + '----------' + '\n')
             messagebox.showinfo('Confirmation','Score sucessfully saved')
             reset()
 
@@ -59,7 +59,7 @@ def question25():
     global question25_win
 
     question25_win = Toplevel()
-    question25_win.geometry('320x90+0+0')
+    question25_win.geometry('312x90+0+0')
     question25_win.resizable(False,False)
     question25_win.title('European Football 24-25 Quiz - Q25')
 
@@ -107,7 +107,7 @@ def question25():
     )
     q25_button_c.grid(
         row=4,
-        column=2
+        column=1
     )
 
     q25_button_d = tk.Button(
@@ -136,7 +136,7 @@ def question24():
     global question24_win
 
     question24_win = Toplevel()
-    question24_win.geometry('320x90+0+0')
+    question24_win.geometry('312x90+0+0')
     question24_win.resizable(False,False)
     question24_win.title('European Football 24-25 Quiz - Q24')
 
@@ -213,7 +213,7 @@ def question23():
     global question23_win
 
     question23_win = Toplevel()
-    question23_win.geometry('320x90+0+0')
+    question23_win.geometry('320x60+0+0')
     question23_win.resizable(False,False)
     question23_win.title('European Football 24-25 Quiz - Q23')
 
@@ -266,7 +266,7 @@ def question22():
     global question22_win
 
     question22_win = Toplevel()
-    question22_win.geometry('320x90+0+0')
+    question22_win.geometry('344x90+0+0')
     question22_win.resizable(False,False)
     question22_win.title('European Football 24-25 Quiz - Q22')
 
@@ -343,7 +343,7 @@ def question21():
     global question21_win
 
     question21_win = Toplevel()
-    question21_win.geometry('320x90+0+0')
+    question21_win.geometry('352x90+0+0')
     question21_win.resizable(False,False)
     question21_win.title('European Football 24-25 Quiz - Q21')
 
@@ -420,7 +420,7 @@ def question20():
     global question20_win
 
     question20_win = Toplevel()
-    question20_win.geometry('320x90+0+0')
+    question20_win.geometry('312x90+0+0')
     question20_win.resizable(False,False)
     question20_win.title('European Football 24-25 Quiz - Q20')
 
@@ -497,7 +497,7 @@ def question19():
     global question19_win
 
     question19_win = Toplevel()
-    question19_win.geometry('320x90+0+0')
+    question19_win.geometry('338x90+0+0')
     question19_win.resizable(False,False)
     question19_win.title('European Football 24-25 Quiz - Q19')
 
@@ -553,7 +553,7 @@ def question19():
         text='Nottingham Forest',
         font=('Arial'),
         width=15,
-        commanf=q19_incorrect
+        command=q19_incorrect
     )
     q19_button_d.grid(
         row=4,
@@ -574,14 +574,14 @@ def question18():
     global question18_win
 
     question18_win = Toplevel()
-    question18_win.geometry('320x90+0+0')
+    question18_win.geometry('365x60+0+0')
     question18_win.resizable(False,False)
     question18_win.title('European Football 24-25 Quiz - Q18')
 
     q18_label = tk.Label(
         question18_win,
-        text='Do AC Milan & Inter Milan share the San Siro?',
-        font=('Arial'),
+        text='Do AC Milan & Inter share the San Siro?',
+        font=('Arial',20),
     )
     q18_label.grid(
         row=1,
@@ -606,7 +606,7 @@ def question18():
         text='False',
         font=('Arial'),
         width=15,
-        commanf=q18_incorrect
+        command=q18_incorrect
     )
     q18_button_b.grid(
         row=3,
@@ -627,7 +627,7 @@ def question17():
     global question17_win
 
     question17_win = Toplevel()
-    question17_win.geometry('320x90+0+0')
+    question17_win.geometry('322x90+0+0')
     question17_win.resizable(False,False)
     question17_win.title('European Football 24-25 Quiz - Q17')
 
@@ -647,7 +647,7 @@ def question17():
         text='Hearts',
         font=('Arial'),
         width=15,
-        command=q17_correct
+        command=q17_incorrect
     )
     q17_button_a.grid(
         row=3,
@@ -704,7 +704,7 @@ def question16():
     global question16_win
 
     question16_win = Toplevel()
-    question16_win.geometry('320x90+0+0')
+    question16_win.geometry('312x90+0+0')
     question16_win.resizable(False,False)
     question16_win.title('European Football 24-25 Quiz - Q16')
 
@@ -736,7 +736,7 @@ def question16():
         text='Liverpool',
         font=('Arial'),
         width=15,
-        command=q16_correct
+        command=q16_incorrect
     )
     q16_button_b.grid(
         row=3,
@@ -748,7 +748,7 @@ def question16():
         text='Newcastle United',
         font=('Arial'),
         width=15,
-        command=q16_incorrect
+        command=q16_correct
     )
     q16_button_c.grid(
         row=4,
@@ -781,14 +781,14 @@ def question15():
     global question15_win
 
     question15_win = Toplevel()
-    question15_win.geometry('320x90+0+0')
+    question15_win.geometry('312x90+0+0')
     question15_win.resizable(False,False)
     question15_win.title('European Football 24-25 Quiz - Q15')
 
     q15_label = tk.Label(
         question15_win,
         text='Which clubs stadium is Anfield?',
-        font=('Arial'),
+        font=('Arial',20),
     )
     q15_label.grid(
         row=1,
@@ -858,13 +858,13 @@ def question14():
     global question14_win
 
     question14_win = Toplevel()
-    question14_win.geometry('320x90+0+0')
+    question14_win.geometry('335x90+0+0')
     question14_win.resizable(False,False)
     question14_win.title('European Football 24-25 Quiz - Q14')
 
     q14_label = tk.Label(
         question14_win,
-        text='Who was 4th in the Premier League',
+        text='Who was 4th in the Premier League?',
         font=('Arial',20)
     )
     q14_label.grid(
@@ -941,7 +941,7 @@ def question13():
 
     q13_label = tk.Label(
         question13_win,
-        text="Whow on the Ballon d'Or?",
+        text="Who won the Ballon d'Or?",
         font=('Arial',20)
     )
     q13_label.grid(
@@ -1314,7 +1314,7 @@ def question8():
         question9()
 
     def q8_incorrect():
-        messagebox.showinfo('Result','Incorrect, The answer is Tottenham?')
+        messagebox.showinfo('Result','Incorrect, The answer is Tottenham')
         question9()
 
     global question8_win
@@ -1391,19 +1391,19 @@ def question7():
         question8()
 
     def q7_incorrect():
-        messagebox.showinfo('Result','Incorrect, The answer is PSG?')
+        messagebox.showinfo('Result','Incorrect, The answer is PSG')
         question8()
 
     global question7_win
 
     question7_win = Toplevel()
-    question7_win.geometry('312x90+0+0')
+    question7_win.geometry('313x90+0+0')
     question7_win.resizable(False,False)
     question7_win.title('European Football 24-25 Quiz - Q7')
 
     q7_label = tk.Label(
         question7_win,
-        text='Who won the Champions League',
+        text='Who won the Champions League?',
         font=('Arial',20)
     )
     q7_label.grid(
@@ -1705,7 +1705,7 @@ def question3():
     global question3_win
 
     question3_win = Toplevel()
-    question3_win.geometry('320x90+0+0')
+    question3_win.geometry('312x90+0+0')
     question3_win.resizable(False,False)
     question3_win.title('European Football 24-25 Quiz - Q3')
 
@@ -1949,7 +1949,7 @@ startquiz_button = tk.Button(
     text='Start Quiz',
     font=('Arial'),
     width=20,
-    command=question13
+    command=question1
 )
 startquiz_button.pack()
 
