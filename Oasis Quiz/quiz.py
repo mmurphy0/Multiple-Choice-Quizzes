@@ -3,6 +3,59 @@ from tkinter import messagebox, Toplevel
 import time
 from time import strftime
 
+def question2():
+    def q2_correct():
+        correct()
+        question3()
+
+    def q2_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is True')
+        question3()
+
+    global question2_win
+
+    question2_win = Toplevel()
+    question2_win.geometry('380x50+0+0')
+    question2_win.resizable(False,False)
+    question2_win.title('Oasis Quiz - Q2')
+
+    q2_label = tk.Label(
+        question2_win,
+        text='Did Oasis Reunite?',
+        font=('Arial',20),
+    )
+    q2_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q2_button_a = tk.Button(
+        question2_win,
+        text='True',
+        font=('Arial'),
+        width=15,
+        command=q2_correct
+    )
+    q2_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q2_button_b = tk.Button(
+        question2_win,
+        text='False',
+        font=('Arial'),
+        width=15,
+        command=q2_incorrect
+    )
+    q2_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question1_win.destroy()
+
 def question1():
     def q1_correct():
         correct()
@@ -12,8 +65,10 @@ def question1():
         messagebox.showinfo('Result','Incorrect, The answer is 1991')
         question2()
 
+    global question1_win
+
     question1_win = Toplevel()
-    question1_win.geometry('380x90')
+    question1_win.geometry('380x90+0+0')
     question1_win.resizable(False,False)
     question1_win.title('Oasis Quiz - Q1')
 
