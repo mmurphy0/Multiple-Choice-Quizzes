@@ -10,7 +10,7 @@ A - True
 B - False
 Answer - A
 
-3 - Which city did Oasis originate from
+3 - Which city did they originate from
 A - Liverpool
 B - Sheffield
 C - Manchester

@@ -3,6 +3,83 @@ from tkinter import messagebox, Toplevel
 import time
 from time import strftime
 
+def question3():
+    def q3_correct():
+        correct()
+        question4()
+
+    def q3_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Manchester')
+        question4()
+
+    global question3_win
+
+    question3_win = Toplevel()
+    question3_win.geometry('380x90+0+0')
+    question3_win.resizable(False,False)
+    question3_win.title('Oasis Quiz - Q3')
+
+    q3_label = tk.Label(
+        question3_win,
+        text='Which city did they originate from?',
+        font=('Arial',20)
+    )
+    q3_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q3_button_a = tk.Button(
+        question3_win,
+        text='Liverpool',
+        font=('Arial'),
+        width=15,
+        command=q3_incorrect
+    )
+    q3_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q3_button_b = tk.Button(
+        question3_win,
+        text='Sheffield',
+        font=('Arial'),
+        width=15,
+        command=q3_incorrect
+    )
+    q3_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q3_button_c = tk.Button(
+        question3_win,
+        text='Manchester',
+        font=('Arial'),
+        width=15,
+        command=q3_correct
+    )
+    q3_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q3_button_d = tk.Button(
+        question3_win,
+        text='London',
+        font=('Arial'),
+        width=15,
+        command=q3_incorrect
+    )
+    q3_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question2_win.destroy()
+    
 def question2():
     def q2_correct():
         correct()
