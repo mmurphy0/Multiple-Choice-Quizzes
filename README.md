@@ -15,6 +15,8 @@ This is a collection of multiple choice quizzes i have made using the python tki
 
 - F1 2025 Quiz
 
+- European Football 24-25 Quiz
+
 ### File Contents
 Every quiz has its own file and each file is set out the same way with 3 files
 
@@ -54,5 +56,9 @@ python3 (quizname).py
 - Tkinter
 
 ## Future Updates
+
+- Oasis Quiz (Coming Next)
+
+- The Office (US) Quiz - (Coming Soon)
 
 - More quizzes across various topics
