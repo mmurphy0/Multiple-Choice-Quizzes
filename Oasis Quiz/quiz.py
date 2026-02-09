@@ -3,6 +3,83 @@ from tkinter import messagebox, Toplevel
 import time
 from time import strftime
 
+def question4():
+    def q4_correct():
+        correct()
+        question5()
+
+    def q4_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Definitely Maybe')
+        question5()
+
+    global question4_win
+
+    question4_win = Toplevel()
+    question4_win.geometry('380x90+0+0')
+    question4_win.resizable(False,False)
+    question4_win.title('Oasis Quiz - Q4')
+
+    q4_label = tk.Label(
+        question4_win,
+        text="What was Oasis' debut album?",
+        font=('Arial',20)
+    )
+    q4_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q4_button_a = tk.Button(
+        question4_win,
+        text='Definitely Maybe',
+        font=('Arial'),
+        width=15,
+        command=q4_correct
+    )
+    q4_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q4_button_b = tk.Button(
+        question4_win,
+        text='Be Here Now',
+        font=('Arial'),
+        width=15,
+        command=q4_incorrect
+    )
+    q4_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q4_button_c = tk.Button(
+        question4_win,
+        text="(What's the story) Morning Glory?",
+        font=('Arial'),
+        width=15,
+        command=q4_incorrect
+    )
+    q4_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q4_button_d = tk.Button(
+        question4_win,
+        text='Standing on the Shoulder of Giants',
+        font=('Arial'),
+        width=15,
+        command=q4_incorrect
+    )
+    q4_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question3_win.destroy()
+    
 def question3():
     def q3_correct():
         correct()
