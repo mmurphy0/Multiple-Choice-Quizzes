@@ -3,6 +3,83 @@ from tkinter import messagebox, Toplevel
 import time
 from time import strftime
 
+def question5():
+    def q5_correct():
+        correct()
+        question6()
+
+    def q5_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Tony McCarroll')
+        question6()
+
+    global question5_win
+
+    question5_win = Toplevel()
+    question5_win.geometry('380x90+0+0')
+    question5_win.resizable(False,False)
+    question5_win.title('Oasis Quiz - Q5')
+
+    q5_label = tk.Label(
+        question5_win,
+        text="Who was Oasis' original drummer?",
+        font=('Arial'),
+    )
+    q5_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q5_button_a = tk.Button(
+        question5_win,
+        text='Alan White',
+        font=('Arial'),
+        width=15,
+        command=q5_incorrect
+    )
+    q5_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q5_button_b = tk.Button(
+        question5_win,
+        text='Zak Starkey',
+        font=('Arial'),
+        width=15,
+        command=q5_incorrect
+    )
+    q5_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q5_button_c = tk.Button(
+        question5_win,
+        text='Chris Sharrock',
+        font=('Arial'),
+        width=15,
+        command=q5_incorrect
+    )
+    q5_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q5_button_d = tk.Button(
+        question5_win,
+        text='Tony McCarroll',
+        font=('Arial'),
+        width=15,
+        command=q5_correct
+    )
+    q5_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question4_win.destroy()
+
 def question4():
     def q4_correct():
         correct()
@@ -79,7 +156,7 @@ def question4():
     )
 
     question3_win.destroy()
-    
+
 def question3():
     def q3_correct():
         correct()
