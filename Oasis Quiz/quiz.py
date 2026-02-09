@@ -3,6 +3,59 @@ from tkinter import messagebox, Toplevel
 import time
 from time import strftime
 
+def question6():
+    def q6_correct():
+        correct()
+        question7()
+
+    def q6_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is True')
+        question7()
+
+    global question6_win
+
+    question6_win = Toplevel()
+    question6_win.geometry('380x50+0+0')
+    question6_win.resizable(False,False)
+    question6_win.title('Oasis Quiz - Q6')
+
+    q6_label = tk.Label(
+        question6_win,
+        text='Did Noel Gallagher write the majority of Oasis songs?',
+        font=('Arial',20)
+    )
+    q6_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q6_button_a = tk.Button(
+        question6_win,
+        text='True',
+        font=('Arial'),
+        width=15,
+        command=q6_correct
+    )
+    q6_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q6_button_b = tk.Button(
+        question6_win,
+        text='False',
+        font=('Arial'),
+        width=15,
+        command=q6_incorrect
+    )
+    q6_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question5_win.destroy()
+
 def question5():
     def q5_correct():
         correct()
