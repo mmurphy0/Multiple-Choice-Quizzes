@@ -3,6 +3,83 @@ from tkinter import messagebox, Toplevel
 import time
 from time import strftime
 
+def question9():
+    def q9_correct():
+        correct()
+        question10()
+
+    def q9_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Guitar')
+        question10()
+
+    global question9_win
+
+    question9_win = Toplevel()
+    question9_win.geometry('380x90+0+0')
+    question9_win.resizable(False,False)
+    question9_win.title('Oasis Quiz - Q10')
+
+    q9_label = tk.Label(
+        question9_win,
+        text='Which instrument did Noel Gallagher mainly play?',
+        font=('Arial',20)
+    )
+    q9_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q9_button_a = tk.Button(
+        question9_win,
+        text='Drums',
+        font=('Arial'),
+        width=15,
+        command=q9_incorrect
+    )
+    q9_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q9_button_b = tk.Button(
+        question9_win,
+        text='Bass',
+        font=('Arial'),
+        width=15,
+        command=q9_incorrect
+    )
+    q9_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q9_button_c = tk.Button(
+        question9_win,
+        text='Guitar',
+        font=('Arial'),
+        width=15,
+        command=q9_correct
+    )
+    q9_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q9_button_d = tk.Button(
+        question9_win,
+        text='Keyboard',
+        font=('Arial'),
+        width=15,
+        command=q9_incorrect
+    )
+    q9_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question8_win.destroy()
+
 def question8():
     def q8_correct():
         correct()
