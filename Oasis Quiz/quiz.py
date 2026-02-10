@@ -3,6 +3,83 @@ from tkinter import messagebox, Toplevel
 import time
 from time import strftime
 
+def question8():
+    def q8_correct():
+        correct()
+        question9()
+
+    def q8_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Some Might Say')
+        question9()
+
+    global question8_win
+
+    question8_win = Toplevel()
+    question8_win.geometry('380x90+0+0')
+    question8_win.resizable(False,False)
+    question8_win.title('Oasis Quiz - Q8')
+
+    q8_label = tk.Label(
+        question8_win,
+        text='Which song was their 1st UK number 1?',
+        font=('Arial',20)
+    )
+    q8_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q8_button_a = tk.Button(
+        question8_win,
+        text='Some Might Say',
+        font=('Arial'),
+        width=15,
+        command=q8_correct
+    )
+    q8_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q8_button_b = tk.Button(
+        question8_win,
+        text='Supersonic',
+        font=('Arial'),
+        width=15,
+        command=q8_incorrect
+    )
+    q8_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q8_button_c = tk.Button(
+        question8_win,
+        text='Live Forever',
+        font=('Arial'),
+        width=15,
+        command=q8_incorrect
+    )
+    q8_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q8_button_d = tk.Button(
+        question8_win,
+        text='Wonderwall',
+        font=('Arial'),
+        width=15,
+        command=q8_incorrect
+    )
+    q8_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question7_win.destroy()
+
 def question7():
     def q7_correct():
         correct()
