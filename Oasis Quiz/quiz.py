@@ -2,6 +2,83 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question11():
+    def q11_correct():
+        correct()
+        question12()
+
+    def q11_incorrect():
+        messagebox.showinfo('Result',"Incorrect, The answer is Rock 'n' Roll Star")
+        question12()
+
+    global question11_win
+
+    question11_win = Toplevel()
+    question11_win.geometry('380x90+0+0')
+    question11_win.resizable(False,False)
+    question11_win.title('Oasis Quiz - Q11')
+
+    q11_label = tk.Label(
+        question11_win,
+        text='Which song opens Definitely Maybe?',
+        font=('Arial',20)
+    )
+    q11_label.grid(
+        row=1,
+        column=2,
+        columnspan=2
+    )
+
+    q11_button_a = tk.Button(
+        question11_win,
+        text='Supersonic',
+        font=('Arial'),
+        width=15,
+        command=q11_incorrect
+    )
+    q11_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q11_button_b = tk.Button(
+        question11_win,
+        text="Rock 'n' Roll Star",
+        font=('Arial'),
+        width=15,
+        command=q11_correct
+    )
+    q11_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q11_button_c = tk.Button(
+        question11_win,
+        text='Columbia',
+        font=('Arial'),
+        width=15,
+        command=q11_incorrect
+    )
+    q11_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q11_button_d = tk.Button(
+        question11_win,
+        text='Bring it on Down',
+        font=('Arial'),
+        width=15,
+        command=q11_incorrect
+    )
+    q11_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question10_win.destroy()
+
 def question10():
     def q10_correct():
         correct()
