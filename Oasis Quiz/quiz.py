@@ -1,7 +1,59 @@
 import tkinter as tk
 from tkinter import messagebox, Toplevel
-import time
 from time import strftime
+
+def question10():
+    def q10_correct():
+        correct()
+        question11()
+
+    def q10_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is True')
+        question11()
+    
+    global question10_win
+
+    question10_win = Toplevel()
+    question10_win.geometry('380x90+0+0')
+    question10_win.resizable(False,False)
+    question10_win.title('Oasis Quiz - Q10')
+
+    q10_label = tk.Label(
+        question10_win,
+        text='Did Oasis play 2 nights at Knebworth in 1996?',
+        font=('Arial',20)
+    )
+    q10_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q10_button_a = tk.Button(
+        question10_win,
+        text='True',
+        font=('Arial'),
+        width=15,
+        command=q10_correct
+    )
+    q10_button_a.grid(
+        row=3,
+        column=2
+    )
+
+    q10_button_b = tk.Button(
+        question10_win,
+        text='False',
+        font=('Arial'),
+        width=15,
+        command=q10_incorrect
+    )
+    q10_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question9_win.destroy()
 
 def question9():
     def q9_correct():
