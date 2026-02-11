@@ -88,7 +88,7 @@ A - True
 B - False
 Answer - B
 
-15 - Who was known by the nickname “Bonehead”
+15 - Who was known as “Bonehead”?
 A - Gem Archer
 B - Andy Bell
 C - Paul Arthurs
