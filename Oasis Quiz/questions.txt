@@ -1,4 +1,4 @@
-1 - What year were Oasis formed
+1 - What year were Oasis formed?
 A - 1988
 B - 1991
 C - 1993
@@ -10,21 +10,21 @@ A - True
 B - False
 Answer - A
 
-3 - Which city did they originate from
+3 - Which city did they originate from?
 A - Liverpool
 B - Sheffield
 C - Manchester
 D - London
 Answer - C
 
-4 - What was Oasis’ debut album
+4 - What was Oasis’ debut album?
 A - Definitely Maybe
 B - Be Here Now
 C - (What’s the Story) Morning Glory?
 D - Standing on the Shoulder of Giants
 Answer - A
 
-5 - Who was Oasis’ original drummer
+5 - Who was Oasis’ original drummer?
 A - Alan White
 B - Zak Starkey
 C - Chris Sharrock
@@ -36,21 +36,21 @@ A - True
 B - False
 Answer - A
 
-7 - Who was the lead singer of Oasis
+7 - Who was the lead singer of Oasis??
 A - Noel Gallagher
 B - Liam Gallagher
 C - Paul Arthurs
 D - Andy Bell
 Answer - B
 
-8 - Which Oasis single was their first UK number one
+8 - Which Oasis single was their first UK number one?
 A - Some Might Say
 B - Supersonic
 C - Live Forever
 D - Wonderwall
 Answer - A
 
-9 - Which instrument did Noel Gallagher mainly play
+9 - Which instrument did Noel Gallagher mainly play?
 A - Drums
 B - Bass
 C - Guitar
@@ -62,14 +62,14 @@ A - True
 B - False
 Answer - A
 
-11 - Which song opens the album Definitely Maybe
+11 - Which song opens the album Definitely Maybe?
 A - Supersonic
 B - Rock ’n’ Roll Star
 C - Columbia
 D - Bring It On Down
 Answer - B
 
-12 - Which Oasis song includes the lyric “You gotta roll with it”
+12 - Which Oasis song includes the lyric “You gotta roll with it”?
 A - Morning Glory
 B - Cigarettes & Alcohol
 C - Roll With It
@@ -95,14 +95,14 @@ C - Paul Arthurs
 D - Johnny Marr
 Answer - C
 
-16 - Which Oasis album was released in 1997
+16 - Which album was released in 1997?
 A - Definitely Maybe
 B - Morning Glory
 C - Standing on the Shoulder of Giants
 D - Be Here Now
 Answer - D
 
-17 - Which Oasis song was used as the theme for The Royle Family
+17 - Which song was used as the theme for The Royle Family?
 A - Half the World Away
 B - Live Forever
 C - Whatever
@@ -114,7 +114,7 @@ A - True
 B - False
 Answer - B
 
-19 - Which member joined Oasis as lead guitarist in 1999
+19 - Which member joined as lead guitarist in 1999?
 A - Andy Bell
 B - Gem Archer
 C - Paul Arthurs
@@ -128,26 +128,26 @@ C - Champagne Supernova
 D - Wonderwall
 Answer - C
 
-21 - Which Oasis song features Noel Gallagher on lead vocals
+21 - Which song features Noel Gallagher on lead vocals?
 A - Don’t Look Back in Anger
 B - Supersonic
 C - Slide Away
 D - Live Forever
 Answer - A
 
-22 - Liam Gallagher was the main songwriter for Oasis
+22 - Liam Gallagher was the main songwriter for Oasis?
 A - True
 B - False
 Answer - B
 
-23 - Which record label released Definitely Maybe
+23 - Which record label released Definitely Maybe?
 A - Creation Records
 B - Virgin Records
 C - Parlophone
 D - Sony Music
 Answer - A
 
-24 - Which Oasis album includes the song “Go Let It Out”
+24 - Which album includes the song “Go Let It Out”?
 A - Heathen Chemistry
 B - Standing on the Shoulder of Giants
 C - Don’t Believe the Truth
