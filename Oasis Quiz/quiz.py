@@ -2,6 +2,83 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question12():
+    def q12_correct():
+        correct()
+        question13()
+
+    def q12_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Roll With It')
+        question13
+
+    global question12_win
+
+    question12_win = Toplevel()
+    question12_win.geometry('380x90+0+0')
+    question12_win.resizable(False,False)
+    question12_win.title('Oasis Quiz - Q12')
+
+    q12_label = tk.Label(
+        question12_win,
+        text='Which song has the lyrics "You gotta roll with it"?',
+        font=('Arial',20),
+    )
+    q12_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q12_button_a = tk.Button(
+        question12_win,
+        text='Morning Glory',
+        font=('Arial'),
+        width=15,
+        command=q12_incorrect
+    )
+    q12_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q12_button_b = tk.Button(
+        question12_win,
+        text='Cigarettes & Alcohol',
+        font=('Arial'),
+        width=15,
+        command=q12_incorrect
+    )
+    q12_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q12_button_c = tk.Button(
+        question12_win,
+        text='Roll With It',
+        font=('Arial'),
+        width=15,
+        command=q12_correct
+    )
+    q12_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q12_button_d = tk.Button(
+        question12_win,
+        text='Shakermaker',
+        font=('Arial'),
+        width=15,
+        command=q12_incorrect
+    )
+    q12_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question11_win.destroy()
+
 def question11():
     def q11_correct():
         correct()
