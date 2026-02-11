@@ -76,14 +76,14 @@ C - Roll With It
 D - Shakermaker
 Answer - C
 
-13 - Which album features “Champagne Supernova”
+13 - Which album is Champagne Supernova from?
 A - Be Here Now
 B - Definitely Maybe
 C - Heathen Chemistry
 D - (What’s the Story) Morning Glory?
 Answer - D
 
-14 - Andy Bell joined Oasis before the release of Definitely Maybe
+14 - Andy Bell joined Oasis before Definitely Maybe
 A - True
 B - False
 Answer - B

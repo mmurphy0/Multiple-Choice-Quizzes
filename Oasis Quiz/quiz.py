@@ -2,6 +2,59 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question14():
+    def q14_correct():
+        correct()
+        question14()
+
+    def q14_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is False')
+        question14()
+
+    global question14_win
+
+    question14_win = Toplevel()
+    question14_win.geometry('380x90+0+0')
+    question14_win.resizable(False,False)
+    question14_win.title('Oasis Quiz - Q14')
+
+    q14_label = tk.Label(
+        question14_win,
+        text='Did Andy Bell join before Definitely Maybe?',
+        font=('Arial',20)
+    )
+    q14_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q14_button_a = tk.Button(
+        question14_win,
+        text='True',
+        font=('Arial'),
+        width=15,
+        command=q14_incorrect
+    )
+    q14_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q14_button_b = tk.Button(
+        question14_win,
+        text='False',
+        font=('Arial'),
+        width=15,
+        command=q14_correct
+    )
+    q14_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question13_win.destroy()
+
 def question13():
     def q13_correct():
         correct()
