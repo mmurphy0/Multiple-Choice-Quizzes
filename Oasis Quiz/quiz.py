@@ -2,6 +2,83 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question15():
+    def q15_correct():
+        correct()
+        question16()
+
+    def q15_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Paul Arthurs')
+        question16()
+    
+    global question15_win
+
+    question15_win = Toplevel()
+    question15_win.geometry('380x90+0+0')
+    question15_win.resizable(False,False)
+    question15_win.title('Oasis Quiz - Q15')
+
+    q15_label = tk.Label(
+        question15_win,
+        text='Who was known as "Bonehead"?',
+        font=('Arial',20),
+    )
+    q15_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q15_button_a = tk.Button(
+        question15_win,
+        text='Gem Archer',
+        font=('Arial'),
+        width=15,
+        command=q15_incorrect
+    )
+    q15_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q15_button_b = tk.Button(
+        question15_win,
+        text='Andy Bell',
+        font=('Arial'),
+        width=15,
+        command=q15_incorrect
+    )
+    q15_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q15_button_c = tk.Button(
+        question15_win,
+        text='Paul Arthurs',
+        font=('Arial'),
+        width=15,
+        command=q15_correct
+    )
+    q15_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q15_button_d = tk.Button(
+        question15_win,
+        text='Johnny Marr',
+        font=('Arial'),
+        width=15,
+        command=q15_incorrect
+    )
+    q15_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question14_win.destroy()
+
 def question14():
     def q14_correct():
         correct()
