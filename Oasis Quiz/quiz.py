@@ -2,6 +2,57 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question18(question17_win):
+    def q18_correct():
+        correct()
+        question19(question18_win)
+
+    def q18_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is False')
+        question19(question18_win)
+
+    question18_win = Toplevel()
+    question18_win.geometry('380x50+0+0')
+    question18_win.resizable(False,False)
+    question18_win.title('Oasis Quiz - Q18')
+
+    q18_label = tk.Label(
+        question18_win,
+        text="Be Here Now is Oasis' best-selling album",
+        font=('Arial',20)
+    )
+    q18_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q18_button_a = tk.Button(
+        question18_win,
+        text='True',
+        font=('Arial'),
+        width=15,
+        command=q18_incorrect
+    )
+    q18_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q18_button_b = tk.Button(
+        question18_win,
+        text='False',
+        font=('Arial'),
+        width=15,
+        command=q18_correct
+    )
+    q18_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question17_win.destroy()
+
 def question17(question16_win):
     def q17_correct():
         correct()
