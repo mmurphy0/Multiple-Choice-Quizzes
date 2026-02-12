@@ -2,6 +2,81 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question17(question16_win):
+    def q17_correct():
+        correct()
+        question18(question17_win)
+
+    def q17_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Half the World Away')
+        question18(question17_win)
+    
+    question17_win = Toplevel()
+    question17_win.geometry('380x90+0+0')
+    question17_win.resizable(False,False)
+    question17_win.title('Oasis Quiz - Q17')
+
+    q17_label = tk.Label(
+        question17_win,
+        text='Which song was used for The Royle Family?',
+        font=('Arial',20)
+    )
+    q17_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q17_button_a = tk.Button(
+        question17_win,
+        text='Half the World Away',
+        font=('Arial'),
+        width=15,
+        command=q17_correct
+    )
+    q17_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q17_button_b = tk.Button(
+        question17_win,
+        text='Live Forever',
+        font=('Arial'),
+        width=15,
+        command=q17_incorrect
+    )
+    q17_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q17_button_c = tk.Button(
+        question17_win,
+        text='Whatever',
+        font=('Arial'),
+        width=15,
+        command=q17_incorrect
+    )
+    q17_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q17_button_d = tk.Button(
+        question17_win,
+        text="Don't Look Back in Anger",
+        font=('Arial'),
+        width=15,
+        command=q17_incorrect
+    )
+    q17_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question16_win.destroy()
+
 def question16(question15_win):
     def q16_correct():
         correct()
@@ -636,7 +711,7 @@ def question7(question6_win):
 
     def q7_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Liam Gallagher')
-        question8(question8_win)
+        question8(question7_win)
 
     question7_win = Toplevel()
     question7_win.geometry('380x90+0+0')
