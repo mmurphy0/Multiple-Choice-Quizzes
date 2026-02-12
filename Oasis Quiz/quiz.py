@@ -2,16 +2,89 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
-def question15():
+def question16(question15_win):
+    def q16_correct():
+        correct()
+        question17(question16_win)
+
+    def q16_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Be Here Now')
+        question17(question16_win)
+
+    question16_win = Toplevel()
+    question16_win.geometry('380x90+0+0')
+    question16_win.resizable(False,False)
+    question16_win.title('Oasis Quiz - Q16')
+
+    q16_label = tk.Label(
+        question16_win,
+        text='Which album was released in 1997?',
+        font=('Arial',20)
+    )
+    q16_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q16_button_a = tk.Button(
+        question16_win,
+        text='Definitely Maybe',
+        font=('Arial'),
+        width=15,
+        command=q16_incorrect
+    )
+    q16_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q16_button_b = tk.Button(
+        question16_win,
+        text="(What's The Story) Morning Glory?",
+        font=('Arial'),
+        width=15,
+        command=q16_incorrect
+    )
+    q16_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q16_button_c = tk.Button(
+        question16_win,
+        text='Standing on the Shoulder of Giants',
+        font=('Arial'),
+        width=15,
+        command=q16_incorrect
+    )
+    q16_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q16_button_d = tk.Button(
+        question16_win,
+        text='Be Here Now',
+        font=('Arial'),
+        width=15,
+        command=q16_correct
+    )
+    q16_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question15_win.destroy()
+
+def question15(question14_win):
     def q15_correct():
         correct()
-        question16()
+        question16(question15_win)
 
     def q15_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Paul Arthurs')
-        question16()
-    
-    global question15_win
+        question16(question15_win)
 
     question15_win = Toplevel()
     question15_win.geometry('380x90+0+0')
@@ -79,16 +152,14 @@ def question15():
 
     question14_win.destroy()
 
-def question14():
+def question14(question13_win):
     def q14_correct():
         correct()
-        question14()
+        question15(question14_win)
 
     def q14_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is False')
-        question14()
-
-    global question14_win
+        question15(question14_win)
 
     question14_win = Toplevel()
     question14_win.geometry('380x90+0+0')
@@ -132,16 +203,14 @@ def question14():
 
     question13_win.destroy()
 
-def question13():
+def question13(question12_win):
     def q13_correct():
         correct()
-        question14()
+        question14(question13_win)
     
     def q13_incorrect():
         messagebox.showinfo('Result',"Incorrect, The answer is (What's the story) Morning Glory")
-        question14()
-    
-    global question13_win
+        question14(question13_win)
 
     question13_win = Toplevel()
     question13_win.geometry('380x90+0+0')
@@ -209,16 +278,14 @@ def question13():
 
     question12_win.destroy()
 
-def question12():
+def question12(question11_win):
     def q12_correct():
         correct()
-        question13()
+        question13(question12_win)
 
     def q12_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Roll With It')
-        question13
-
-    global question12_win
+        question13(question12_win)
 
     question12_win = Toplevel()
     question12_win.geometry('380x90+0+0')
@@ -286,16 +353,14 @@ def question12():
 
     question11_win.destroy()
 
-def question11():
+def question11(question10_win):
     def q11_correct():
         correct()
-        question12()
+        question12(question11_win)
 
     def q11_incorrect():
         messagebox.showinfo('Result',"Incorrect, The answer is Rock 'n' Roll Star")
-        question12()
-
-    global question11_win
+        question12(question11_win)
 
     question11_win = Toplevel()
     question11_win.geometry('380x90+0+0')
@@ -363,17 +428,15 @@ def question11():
 
     question10_win.destroy()
 
-def question10():
+def question10(question9_win):
     def q10_correct():
         correct()
-        question11()
+        question11(question10_win)
 
     def q10_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is True')
-        question11()
+        question11(question10_win)
     
-    global question10_win
-
     question10_win = Toplevel()
     question10_win.geometry('380x90+0+0')
     question10_win.resizable(False,False)
@@ -416,16 +479,14 @@ def question10():
 
     question9_win.destroy()
 
-def question9():
+def question9(question8_win):
     def q9_correct():
         correct()
-        question10()
+        question10(question9_win)
 
     def q9_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Guitar')
-        question10()
-
-    global question9_win
+        question10(question9_win)
 
     question9_win = Toplevel()
     question9_win.geometry('380x90+0+0')
@@ -493,16 +554,14 @@ def question9():
 
     question8_win.destroy()
 
-def question8():
+def question8(question7_win):
     def q8_correct():
         correct()
-        question9()
+        question9(question8_win)
 
     def q8_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Some Might Say')
-        question9()
-
-    global question8_win
+        question9(question8_win)
 
     question8_win = Toplevel()
     question8_win.geometry('380x90+0+0')
@@ -570,16 +629,14 @@ def question8():
 
     question7_win.destroy()
 
-def question7():
+def question7(question6_win):
     def q7_correct():
         correct()
-        question8()
+        question8(question7_win)
 
     def q7_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Liam Gallagher')
-        question8()
-
-    global question7_win
+        question8(question8_win)
 
     question7_win = Toplevel()
     question7_win.geometry('380x90+0+0')
@@ -647,16 +704,14 @@ def question7():
 
     question6_win.destroy()
 
-def question6():
+def question6(question5_win):
     def q6_correct():
         correct()
-        question7()
+        question7(question6_win)
 
     def q6_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is True')
-        question7()
-
-    global question6_win
+        question7(question6_win)
 
     question6_win = Toplevel()
     question6_win.geometry('380x50+0+0')
@@ -700,16 +755,14 @@ def question6():
 
     question5_win.destroy()
 
-def question5():
+def question5(question4_win):
     def q5_correct():
         correct()
-        question6()
+        question6(question5_win)
 
     def q5_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Tony McCarroll')
-        question6()
-
-    global question5_win
+        question6(question5_win)
 
     question5_win = Toplevel()
     question5_win.geometry('380x90+0+0')
@@ -777,16 +830,14 @@ def question5():
 
     question4_win.destroy()
 
-def question4():
+def question4(question3_win):
     def q4_correct():
         correct()
-        question5()
+        question5(question4_win)
 
     def q4_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Definitely Maybe')
-        question5()
-
-    global question4_win
+        question5(question4_win)
 
     question4_win = Toplevel()
     question4_win.geometry('380x90+0+0')
@@ -854,16 +905,14 @@ def question4():
 
     question3_win.destroy()
 
-def question3():
+def question3(question2_win):
     def q3_correct():
         correct()
-        question4()
+        question4(question3_win)
 
     def q3_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Manchester')
-        question4()
-
-    global question3_win
+        question4(question3_win)
 
     question3_win = Toplevel()
     question3_win.geometry('380x90+0+0')
@@ -931,16 +980,14 @@ def question3():
 
     question2_win.destroy()
     
-def question2():
+def question2(question1_win):
     def q2_correct():
         correct()
-        question3()
+        question3(question2_win)
 
     def q2_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is True')
-        question3()
-
-    global question2_win
+        question3(question2_win)
 
     question2_win = Toplevel()
     question2_win.geometry('380x50+0+0')
@@ -987,13 +1034,11 @@ def question2():
 def question1():
     def q1_correct():
         correct()
-        question2()
+        question2(question1_win)
 
     def q1_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is 1991')
-        question2()
-
-    global question1_win
+        question2(question1_win)
 
     question1_win = Toplevel()
     question1_win.geometry('380x90+0+0')
@@ -1086,5 +1131,6 @@ startquiz_button = tk.Button(
     width=20,
     command=question1
 )
+startquiz_button.pack()
 
 root.mainloop()
