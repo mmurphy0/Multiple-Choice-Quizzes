@@ -2,6 +2,81 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question19(question18_win):
+    def q19_correct():
+        correct()
+        question20(question19_win)
+    
+    def q19_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Gem Archer')
+        question20(question19_win)
+
+    question19_win = Toplevel()
+    question19_win.geometry('380x90+0+0')
+    question19_win.resizable(False,False)
+    question19_win.title('Oasis Quiz - Q19')
+
+    q19_label = tk.Label(
+        question19_win,
+        text='Who joined as lead guitarist in 1999?',
+        font=('Arial',20)
+    )
+    q19_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q19_button_a = tk.Button(
+        question19_win,
+        text='Andy Bell',
+        font=('Arial'),
+        width=15,
+        command=q19_incorrect
+    )
+    q19_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q19_button_b = tk.Button(
+        question19_win,
+        text='Gem Archer',
+        font=('Arial'),
+        width=15,
+        command=q19_correct
+    )
+    q19_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q19_button_c = tk.Button(
+        question19_win,
+        text='Paul Arthurs',
+        font=('Arial'),
+        width=15,
+        command=q19_incorrect
+    )
+    q19_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q19_button_d = tk.Button(
+        question19_win,
+        text='Noel Gallagher',
+        font=('Arial'),
+        width=15,
+        command=q19_incorrect
+    )
+    q19_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question18_win.destroy()
+
 def question18(question17_win):
     def q18_correct():
         correct()
