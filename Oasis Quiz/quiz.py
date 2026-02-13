@@ -2,6 +2,81 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question20(question19_win):
+    def q20_correct():
+        correct()
+        question21(question20_win)
+
+    def q20_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Champagne Supernova')
+        question21(question20_win)
+
+    question20_win = Toplevel()
+    question20_win.geometry('380x90+0+0')
+    question20_win.resizable(False, False)
+    question20_win.title('Oasis Quiz - Q20')
+
+    q20_label = tk.Label(
+        question20_win,
+        text="What is the final track on (What's the Story) Morning Glory?",
+        font=('Arial',20)
+    )
+    q20_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q20_button_a = tk.Button(
+        question20_win,
+        text='Cast No Shadow',
+        font=('Arial'),
+        width=15,
+        command=q20_incorrect
+    )
+    q20_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q20_button_b = tk.Button(
+        question20_win,
+        text='Morning Glory',
+        font=('Arial'),
+        width=15,
+        command=q20_incorrect
+    )
+    q20_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q20_button_c = tk.Button(
+        question20_win,
+        text='Champagne Supernova',
+        font=('Arial'),
+        width=15,
+        command=q20_correct
+    )
+    q20_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q20_button_d = tk.Button(
+        question20_win,
+        text='Wonderwall',
+        font=('Arial'),
+        width=15,
+        command=q20_incorrect
+    )
+    q20_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question19_win.destroy()
+
 def question19(question18_win):
     def q19_correct():
         correct()
