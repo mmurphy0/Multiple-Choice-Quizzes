@@ -128,7 +128,7 @@ C - Champagne Supernova
 D - Wonderwall
 Answer - C
 
-21 - Which song features Noel Gallagher on lead vocals?
+21 - Which song has Noel Gallagher on lead vocals?
 A - Don’t Look Back in Anger
 B - Supersonic
 C - Slide Away
