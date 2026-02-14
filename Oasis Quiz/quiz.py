@@ -2,6 +2,81 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question23(question22_win):
+    def q23_correct():
+        correct()
+        question24(question23_win)
+    
+    def q23_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Creation Records')
+        question24(question23_win)
+    
+    question23_win = Toplevel()
+    question23_win.geometry('380x90+0+0')
+    question23_win.resizable(False,False)
+    question23_win.title('Oasis Quiz - Q23')
+
+    q23_label = tk.Label(
+        question23_win,
+        text='Which record label released Definitely Maybe?',
+        font=('Arial',20)
+    )
+    q23_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+    
+    q23_button_a = tk.Button(
+        question23_win,
+        text='Creation Records',
+        font=('Arial'),
+        width=15,
+        command=q23_correct
+    )
+    q23_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q23_button_b = tk.Button(
+        question23_win,
+        text='Virgin Records',
+        font=('Arial'),
+        width=15,
+        command=q23_incorrect
+    )
+    q23_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q23_button_c = tk.Button(
+        question23_win,
+        text='Parlophone',
+        font=('Arial'),
+        width=15,
+        command=q23_incorrect
+    )
+    q23_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q23_button_d = tk.Button(
+        question23_win,
+        text='Sony Music',
+        font=('Arial'),
+        width=15,
+        command=q23_incorrect
+    )
+    q23_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question22_win.destroy()
+
 def question22(question21_win):
     def q22_correct():
         correct()
