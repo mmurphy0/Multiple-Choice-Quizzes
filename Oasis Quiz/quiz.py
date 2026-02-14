@@ -2,6 +2,81 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question24(question23_win):
+    def q24_correct():
+        correct()
+        question25(question24_win)
+
+    def q24_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Standing on the Shoulder of Giants')
+        question25(question24_win)
+
+    question24_win = Toplevel()
+    question24_win.geometry('380x90+0+0')
+    question24_win.resizable(False,False)
+    question24_win.title('Oasis Quiz - Q24')
+
+    q24_label = tk.Label(
+        question24_win,
+        text='Which album includes "Go Let It Out"?',
+        font=('Arial',20)
+    )
+    q24_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q24_button_a = tk.Button(
+        question24_win,
+        text='Heathen Chemistry',
+        font=('Arial'),
+        width=15,
+        command=q24_incorrect
+    )
+    q24_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q24_button_b = tk.Button(
+        question24_win,
+        text='Standing on the Shoulder of Giants',
+        font=('Arial'),
+        width=15,
+        command=q24_correct
+    )
+    q24_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q24_button_c = tk.Button(
+        question24_win,
+        text="Don't Believe the Truth",
+        font=('Arial'),
+        width=15,
+        command=q24_incorrect
+    )
+    q24_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q24_button_d = tk.Button(
+        question24_win,
+        text='Be Here Now',
+        font=('Arial'),
+        width=15,
+        command=q24_incorrect
+    )
+    q24_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question23_win.destroy()
+
 def question23(question22_win):
     def q23_correct():
         correct()
@@ -26,7 +101,7 @@ def question23(question22_win):
         column=1,
         columnspan=2
     )
-    
+
     q23_button_a = tk.Button(
         question23_win,
         text='Creation Records',
