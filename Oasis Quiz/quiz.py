@@ -2,6 +2,81 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question28(question27_win):
+    def q28_correct():
+        correct()
+        question29(question28_win)
+
+    def q28_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Alan White')
+        question29(question28_win)
+
+    question28_win = Toplevel()
+    question28_win.geometry('380x90+0+0')
+    question28_win.resizable(False,False)
+    question28_win.title('Oasis Quiz - Q28')
+
+    q28_label = tk.Label(
+        question28_win,
+        text='Who replaced Tony McCarroll as drummer?',
+        font=('Arial',20)
+    )
+    q28_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q28_button_a = tk.Button(
+        question28_win,
+        text='Zak Starkey',
+        font=('Arial'),
+        width=15,
+        command=q28_incorrect
+    )
+    q28_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q28_button_b = tk.Button(
+        question28_win,
+        text='Alan White',
+        font=('Arial'),
+        width=15,
+        command=q28_correct
+    )
+    q28_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q28_button_c = tk.Button(
+        question28_win,
+        text='Chris Sharrock',
+        font=('Arial'),
+        width=15,
+        command=q28_incorrect
+    )
+    q28_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q28_button_d = tk.Button(
+        question28_win,
+        text='Ringo Starr',
+        font=('Arial'),
+        width=15,
+        command=q28_incorrect
+    )
+    q28_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question27_win.destroy()
+
 def question27(question26_win):
     def q27_correct():
         correct()

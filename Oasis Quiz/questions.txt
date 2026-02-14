@@ -173,7 +173,7 @@ A - True
 B - False
 Answer - A
 
-28 - Who replaced Tony McCarroll as Oasis’ drummer
+28 - Who replaced Tony McCarroll as drummer
 A - Zak Starkey
 B - Alan White
 C - Chris Sharrock
