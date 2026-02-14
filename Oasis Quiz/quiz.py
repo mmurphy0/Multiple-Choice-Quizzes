@@ -2,6 +2,81 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question26(question25_win):
+    def q26_correct():
+        correct()
+        question27(question26_win)
+
+    def q26_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Heathen Chemistry')
+        question27(question26_win)
+
+    question26_win = Toplevel()
+    question26_win.geometry('380x90+0+0')
+    question26_win.resizable(False,False)
+    question26_win.title('Oasis Quiz - Q26')
+
+    q26_label = tk.Label(
+        question26_win,
+        text='Which album was releaaed in 2002?',
+        font=('Arial',20)
+    )
+    q26_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q26_button_a = tk.Button(
+        question26_win,
+        text='Heathen Chemistry',
+        font=('Arial'),
+        width=15,
+        command=q26_correct
+    )
+    q26_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q26_button_b = tk.Button(
+        question26_win,
+        text="Don't Believe the Truth",
+        font=('Arial'),
+        width=15,
+        command=q26_incorrect
+    )
+    q26_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q26_button_c = tk.Button(
+        question26_win,
+        text='Standing on the Shoulder of Giants',
+        font=('Arial'),
+        width=15,
+        command=q26_incorrect
+    )
+    q26_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q26_button_d = tk.Button(
+        question26_win,
+        text='Dig Out Your Soul',
+        font=('Arial'),
+        width=15,
+        command=q26_incorrect
+    )
+    q26_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question25_win.destroy()
+
 def question25(question24_win):
     def q25_correct():
         correct()

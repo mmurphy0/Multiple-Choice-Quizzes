@@ -161,9 +161,9 @@ C - Live Forever
 D - Shakermaker
 Answer - C
 
-26 - Which Oasis album was released in 2002
+26 - Which album was released in 2002
 A - Heathen Chemistry
-B - Be Here Now
+B - Don't Believe the Truth
 C - Standing on the Shoulder of Giants
 D - Dig Out Your Soul
 Answer - A
