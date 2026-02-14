@@ -2,6 +2,82 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+
+def question30(question29_win):
+    def q30_correct():
+        correct()
+        results(question30_win)
+
+    def q30_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Dig Out Your Soul')
+        results(question30_win)
+
+    question30_win = Toplevel()
+    question30_win.geometry('380x90+0+0')
+    question30_win.resizable(False,False)
+    question30_win.title('Oasis Quiz - Q30')
+
+    q30_label = tk.Label(
+        question30_win,
+        text='Heathen Chemistry',
+        font=('Arial',20)
+    )
+    q30_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q30_button_a = tk.Button(
+        question30_win,
+        text='Heathen Chemistry',
+        font=('Arial'),
+        width=15,
+        command=q30_incorrect
+    )
+    q30_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q30_button_b = tk.Button(
+        question30_win,
+        text="Don't Believe the Truth",
+        font=('Arial'),
+        width=15,
+        command=q30_incorrect
+    )
+    q30_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q30_button_c = tk.Button(
+        question30_win,
+        text='Be Here Now',
+        font=('Arial'),
+        width=15,
+        command=q30_incorrect
+    )
+    q30_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q30_button_d = tk.Button(
+        question30_win,
+        text='Dig Out Your Soul',
+        font=('Arial'),
+        width=15,
+        command=q30_correct
+    )
+    q30_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question29_win.destroy()
+
 def question29(question28_win):
     def q29_correct():
         correct()
