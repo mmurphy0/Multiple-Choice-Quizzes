@@ -154,11 +154,11 @@ C - Don’t Believe the Truth
 D - Be Here Now
 Answer - B
 
-25 - Which song includes the lyric “You and I are gonna live forever”
+25 - Which song has the lyric “You and I are gonna live forever”
 A - Rock ’n’ Roll Star
 B - Supersonic
 C - Live Forever
-D - Wonderwall
+D - Shakermaker
 Answer - C
 
 26 - Which Oasis album was released in 2002

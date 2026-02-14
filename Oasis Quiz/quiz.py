@@ -2,6 +2,81 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question25(question24_win):
+    def q25_correct():
+        correct()
+        question26(question25_win)
+
+    def q25_incorrect():
+        correct()
+        question26(question25_win)
+
+    question25_win = Toplevel()
+    question25_win.geometry('380x90+0+0')
+    question25_win.resizable(False,False)
+    question25_win.title('Oasis Quiz - Q25')
+    
+    q25_label = tk.Label(
+        question25_win,
+        text='Which song has the lyric "You and I are gonna Live Forever"?',
+        font=('Arial',20)
+    )
+    q25_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q25_button_a = tk.Button(
+        question25_win,
+        text="Rock 'n' Roll Star",
+        font=('Arial'),
+        width=15,
+        command=q25_incorrect
+    )
+    q25_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q25_button_b = tk.Button(
+        question25_win,
+        text='Supersonic',
+        font=('Arial'),
+        width=15,
+        command=q25_incorrect
+    )
+    q25_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q25_button_c = tk.Button(
+        question25_win,
+        text='Live Forever',
+        font=('Arial'),
+        width=15,
+        command=q25_correct
+    )
+    q25_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q25_button_d = tk.Button(
+        question25_win,
+        text='Shakermaker',
+        font=('Arial'),
+        width=15,
+        command=q25_incorrect
+    )
+    q25_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question24_win.destroy()
+
 def question24(question23_win):
     def q24_correct():
         correct()
