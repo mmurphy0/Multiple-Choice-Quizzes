@@ -2,6 +2,81 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def question29(question28_win):
+    def q29_correct():
+        correct()
+        question30(question29_win)
+    
+    def q29_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Hello')
+        question30(question29_win)
+
+    question29_win = Toplevel()
+    question29_win.geometry('380x90+0+0')
+    question29_win.resizable(False,False)
+    question29_win.title('Oasis Quiz - Q29')
+
+    q29_label = tk.Label(
+        question29_win,
+        text="Which song opens (What's the Story) Morning Glory?",
+        font=('Arial',20)
+    )
+    q29_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q29_button_a = tk.Button(
+        question29_win,
+        text='Roll With It',
+        font=('Arial'),
+        width=15,
+        command=q29_incorrect
+    )
+    q29_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q29_button_b = tk.Button(
+        question29_win,
+        text='Wonderwall',
+        font=('Arial'),
+        width=15,
+        command=q29_incorrect
+    )
+    q29_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q29_button_c = tk.Button(
+        question29_win,
+        text='Hello',
+        font=('Arial'),
+        width=15,
+        command=q29_correct
+    )
+    q29_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q29_button_d = tk.Button(
+        question29_win,
+        text='Some Might Say',
+        font=('Arial'),
+        width=15,
+        command=q29_incorrect
+    )
+    q29_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question28_win.destroy()
+
 def question28(question27_win):
     def q28_correct():
         correct()
