@@ -43,6 +43,7 @@ def results(score, question30_win):
     )
     continue_button.pack(anchor='center')
 
+    question30_win.destroy()
 
 def question30(question29_win):
     def q30_correct():
