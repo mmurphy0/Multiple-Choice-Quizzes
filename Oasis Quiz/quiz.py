@@ -2,6 +2,47 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
+def results(score, question30_win):
+    def reset(result_win):
+        global score
+        score = 0
+        result_win.destroy()
+
+    def save():
+        time = strftime('%H:%M:%S %D')
+        with open('Oasis Quiz/scorebook.txt','a') as file:
+            file.write()
+            messagebox.showinfo('Confirmation','Results successfully saved')
+            reset()
+
+    result_win = Toplevel()
+    result_win.geometry('117x90+0+0')
+    result_win.resizable(False,False)
+    result_win.title('Oasis Quiz - Results')
+
+    result_title = tk.Label(
+        result_win,
+        text='Results',
+        font=('Arial',20,'bold')
+    )
+    result_title.pack(anchor='center')
+
+    result_label = tk.Label(
+        result_win,
+        text=(f'Score: {score} /30'),
+        font=('Arial',20)
+    )
+    result_label.pack(anchor='center')
+
+    continue_button = tk.Button(
+        result_win,
+        text='Continue',
+        font=('Arial'),
+        width=20,
+        command=save
+    )
+    continue_button.pack(anchor='center')
+
 
 def question30(question29_win):
     def q30_correct():
