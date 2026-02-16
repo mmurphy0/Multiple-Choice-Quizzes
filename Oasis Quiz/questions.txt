@@ -36,14 +36,14 @@ A - True
 B - False
 Answer - A
 
-7 - Who was the lead singer of Oasis??
+7 - Who was the lead singer of Oasis?
 A - Noel Gallagher
 B - Liam Gallagher
 C - Paul Arthurs
 D - Andy Bell
 Answer - B
 
-8 - Which Oasis single was their first UK number one?
+8 - Which song was their first UK number one?
 A - Some Might Say
 B - Supersonic
 C - Live Forever
@@ -62,14 +62,14 @@ A - True
 B - False
 Answer - A
 
-11 - Which song opens the album Definitely Maybe?
+11 - Which song opens Definitely Maybe?
 A - Supersonic
 B - Rock ’n’ Roll Star
 C - Columbia
 D - Bring It On Down
 Answer - B
 
-12 - Which Oasis song includes the lyric “You gotta roll with it”?
+12 - Which song has the lyric “You gotta roll with it”?
 A - Morning Glory
 B - Cigarettes & Alcohol
 C - Roll With It
@@ -161,7 +161,7 @@ C - Live Forever
 D - Shakermaker
 Answer - C
 
-26 - Which album was released in 2002
+26 - Which album was released in 2002?
 A - Heathen Chemistry
 B - Don't Believe the Truth
 C - Standing on the Shoulder of Giants
@@ -173,7 +173,7 @@ A - True
 B - False
 Answer - A
 
-28 - Who replaced Tony McCarroll as drummer
+28 - Who replaced Tony McCarroll as drummer?
 A - Zak Starkey
 B - Alan White
 C - Chris Sharrock
@@ -187,7 +187,7 @@ C - Hello
 D - Some Might Say
 Answer - C
 
-30 - What was Oasis’ final studio album
+30 - What was their final studio album?
 A - Heathen Chemistry
 B - Don’t Believe the Truth
 C - Be Here Now

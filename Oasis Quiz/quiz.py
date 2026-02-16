@@ -61,7 +61,7 @@ def question30(question29_win):
 
     q30_label = tk.Label(
         question30_win,
-        text='Heathen Chemistry',
+        text='What was their final studio album?',
         font=('Arial',20)
     )
     q30_label.grid(
@@ -1315,7 +1315,7 @@ def question12(question11_win):
 
     q12_label = tk.Label(
         question12_win,
-        text='Which song has the lyrics "You gotta roll with it"?',
+        text='Which song has the lyric "You gotta roll with it"?',
         font=('Arial',20),
     )
     q12_label.grid(
@@ -1465,7 +1465,7 @@ def question10(question9_win):
 
     q10_label = tk.Label(
         question10_win,
-        text='Did Oasis play 2 nights at Knebworth in 1996?',
+        text='Oasis played 2 nights at Knebworth in 1996?',
         font=('Arial',20)
     )
     q10_label.grid(
