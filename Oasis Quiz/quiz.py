@@ -1108,7 +1108,7 @@ def question15(question14_win):
         question16(question15_win)
 
     question15_win = Toplevel()
-    question15_win.geometry('380x90+0+0')
+    question15_win.geometry('312x90+0+0')
     question15_win.resizable(False,False)
     question15_win.title('Oasis Quiz - Q15')
 
@@ -1183,13 +1183,13 @@ def question14(question13_win):
         question15(question14_win)
 
     question14_win = Toplevel()
-    question14_win.geometry('380x90+0+0')
+    question14_win.geometry('375x90+0+0')
     question14_win.resizable(False,False)
     question14_win.title('Oasis Quiz - Q14')
 
     q14_label = tk.Label(
         question14_win,
-        text='Did Andy Bell join before Definitely Maybe?',
+        text='Andy Bell joined before Definitely Maybe',
         font=('Arial',20)
     )
     q14_label.grid(
@@ -1234,13 +1234,13 @@ def question13(question12_win):
         question14(question13_win)
 
     question13_win = Toplevel()
-    question13_win.geometry('380x90+0+0')
+    question13_win.geometry('472x90+0+0')
     question13_win.resizable(False,False)
     question13_win.title('Oasis Quiz - Q14')
 
     q13_label = tk.Label(
         question13_win,
-        text='Which album is Champagne Supernova from?',
+        text='Which album has Champagne Supernova?',
         font=('Arial',20)
     )
     q13_label.grid(
@@ -1309,13 +1309,13 @@ def question12(question11_win):
         question13(question12_win)
 
     question12_win = Toplevel()
-    question12_win.geometry('380x90+0+0')
+    question12_win.geometry('395x90+0+0')
     question12_win.resizable(False,False)
     question12_win.title('Oasis Quiz - Q12')
 
     q12_label = tk.Label(
         question12_win,
-        text='Which song has the lyric "You gotta roll with it"?',
+        text='Which song contains "You gotta roll with it"?',
         font=('Arial',20),
     )
     q12_label.grid(
@@ -1384,7 +1384,7 @@ def question11(question10_win):
         question12(question11_win)
 
     question11_win = Toplevel()
-    question11_win.geometry('380x90+0+0')
+    question11_win.geometry('335x90+0+0')
     question11_win.resizable(False,False)
     question11_win.title('Oasis Quiz - Q11')
 
@@ -1459,13 +1459,13 @@ def question10(question9_win):
         question11(question10_win)
     
     question10_win = Toplevel()
-    question10_win.geometry('380x90+0+0')
+    question10_win.geometry('312x60+0+0')
     question10_win.resizable(False,False)
     question10_win.title('Oasis Quiz - Q10')
 
     q10_label = tk.Label(
         question10_win,
-        text='Oasis played 2 nights at Knebworth in 1996?',
+        text='Oasis played at Knebworth in 1996',
         font=('Arial',20)
     )
     q10_label.grid(
@@ -1510,13 +1510,13 @@ def question9(question8_win):
         question10(question9_win)
 
     question9_win = Toplevel()
-    question9_win.geometry('380x90+0+0')
+    question9_win.geometry('360x90+0+0')
     question9_win.resizable(False,False)
     question9_win.title('Oasis Quiz - Q10')
 
     q9_label = tk.Label(
         question9_win,
-        text='Which instrument did Noel Gallagher mainly play?',
+        text='Noel Gallagher plays which instrument?',
         font=('Arial',20)
     )
     q9_label.grid(
@@ -1585,7 +1585,7 @@ def question8(question7_win):
         question9(question8_win)
 
     question8_win = Toplevel()
-    question8_win.geometry('380x90+0+0')
+    question8_win.geometry('363x90+0+0')
     question8_win.resizable(False,False)
     question8_win.title('Oasis Quiz - Q8')
 
@@ -1660,7 +1660,7 @@ def question7(question6_win):
         question8(question7_win)
 
     question7_win = Toplevel()
-    question7_win.geometry('380x90+0+0')
+    question7_win.geometry('315x90+0+0')
     question7_win.resizable(False,False)
     question7_win.title('Oasis Quiz - Q7')
 
@@ -1735,13 +1735,13 @@ def question6(question5_win):
         question7(question6_win)
 
     question6_win = Toplevel()
-    question6_win.geometry('380x50+0+0')
+    question6_win.geometry('369x60+0+0')
     question6_win.resizable(False,False)
     question6_win.title('Oasis Quiz - Q6')
 
     q6_label = tk.Label(
         question6_win,
-        text='Did Noel Gallagher write the majority of Oasis songs?',
+        text="Noel Gallagher wrote the majority of Oasis' songs",
         font=('Arial',20)
     )
     q6_label.grid(
@@ -1861,7 +1861,7 @@ def question4(question3_win):
         question5(question4_win)
 
     question4_win = Toplevel()
-    question4_win.geometry('380x90+0+0')
+    question4_win.geometry('472x90+0+0')
     question4_win.resizable(False,False)
     question4_win.title('Oasis Quiz - Q4')
 
@@ -1936,7 +1936,7 @@ def question3(question2_win):
         question4(question3_win)
 
     question3_win = Toplevel()
-    question3_win.geometry('380x90+0+0')
+    question3_win.geometry('312x90+0+0')
     question3_win.resizable(False,False)
     question3_win.title('Oasis Quiz - Q3')
 
@@ -2011,7 +2011,7 @@ def question2(question1_win):
         question3(question2_win)
 
     question2_win = Toplevel()
-    question2_win.geometry('380x50+0+0')
+    question2_win.geometry('312x60+0+0')
     question2_win.resizable(False,False)
     question2_win.title('Oasis Quiz - Q2')
 
@@ -2062,14 +2062,14 @@ def question1():
         question2(question1_win)
 
     question1_win = Toplevel()
-    question1_win.geometry('380x90+0+0')
+    question1_win.geometry('312x90+0+0')
     question1_win.resizable(False,False)
     question1_win.title('Oasis Quiz - Q1')
 
     q1_label = tk.Label(
         question1_win,
         text='What year were Oasis formed?',
-        font=('Arial'),
+        font=('Arial',20)
     )
     q1_label.grid(
         row=1,

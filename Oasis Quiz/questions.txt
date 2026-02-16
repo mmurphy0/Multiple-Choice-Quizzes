@@ -50,14 +50,14 @@ C - Live Forever
 D - Wonderwall
 Answer - A
 
-9 - Which instrument did Noel Gallagher mainly play?
+9 - Noel Gallagher plays which instrument?
 A - Drums
 B - Bass
 C - Guitar
 D - Keyboard
 Answer - C
 
-10 - Oasis played two nights at Knebworth in 1996
+10 - Oasis played at Knebworth in 1996
 A - True
 B - False
 Answer - A
@@ -69,21 +69,21 @@ C - Columbia
 D - Bring It On Down
 Answer - B
 
-12 - Which song has the lyric “You gotta roll with it”?
+12 - Which song contains “You gotta roll with it”?
 A - Morning Glory
 B - Cigarettes & Alcohol
 C - Roll With It
 D - Shakermaker
 Answer - C
 
-13 - Which album is Champagne Supernova from?
+13 - Which album has Champagne Supernova?
 A - Be Here Now
 B - Definitely Maybe
 C - Heathen Chemistry
 D - (What’s the Story) Morning Glory?
 Answer - D
 
-14 - Andy Bell joined Oasis before Definitely Maybe
+14 - Andy Bell joined before Definitely Maybe
 A - True
 B - False
 Answer - B
