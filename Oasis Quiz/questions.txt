@@ -121,7 +121,7 @@ C - Paul Arthurs
 D - Noel Gallagher
 Answer - B
 
-20 - What is the final track on (What’s the Story) Morning Glory?
+20 - Which song closes (What’s the Story) Morning Glory?
 A - Cast No Shadow
 B - Morning Glory
 C - Champagne Supernova
@@ -135,7 +135,7 @@ C - Slide Away
 D - Live Forever
 Answer - A
 
-22 - Liam Gallagher was the main songwriter for Oasis?
+22 - Liam Gallagher was the main songwriter
 A - True
 B - False
 Answer - B
@@ -147,14 +147,14 @@ C - Parlophone
 D - Sony Music
 Answer - A
 
-24 - Which album includes the song “Go Let It Out”?
+24 - Which album includes “Go Let It Out”?
 A - Heathen Chemistry
 B - Standing on the Shoulder of Giants
 C - Don’t Believe the Truth
 D - Be Here Now
 Answer - B
 
-25 - Which song has the lyric “You and I are gonna live forever”
+25 - Which song contains “You and I are gonna live forever”?
 A - Rock ’n’ Roll Star
 B - Supersonic
 C - Live Forever

@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
-def results(score, question30_win):
+def results(question30_win, score):
     def reset(result_win):
         global score
         score = 0
@@ -11,12 +11,12 @@ def results(score, question30_win):
     def save():
         time = strftime('%H:%M:%S %D')
         with open('Oasis Quiz/scorebook.txt','a') as file:
-            file.write()
+            file.write(time + '\n' + (f'{str(score)}/30') + '\n' + '----------' + '\n')
             messagebox.showinfo('Confirmation','Results successfully saved')
             reset()
 
     result_win = Toplevel()
-    result_win.geometry('117x90+0+0')
+    result_win.geometry('+0+0')
     result_win.resizable(False,False)
     result_win.title('Oasis Quiz - Results')
 
@@ -55,7 +55,7 @@ def question30(question29_win):
         results(question30_win)
 
     question30_win = Toplevel()
-    question30_win.geometry('380x90+0+0')
+    question30_win.geometry('+0+0')
     question30_win.resizable(False,False)
     question30_win.title('Oasis Quiz - Q30')
 
@@ -130,7 +130,7 @@ def question29(question28_win):
         question30(question29_win)
 
     question29_win = Toplevel()
-    question29_win.geometry('380x90+0+0')
+    question29_win.geometry('+0+0')
     question29_win.resizable(False,False)
     question29_win.title('Oasis Quiz - Q29')
 
@@ -205,7 +205,7 @@ def question28(question27_win):
         question29(question28_win)
 
     question28_win = Toplevel()
-    question28_win.geometry('380x90+0+0')
+    question28_win.geometry('+0+0')
     question28_win.resizable(False,False)
     question28_win.title('Oasis Quiz - Q28')
 
@@ -280,7 +280,7 @@ def question27(question26_win):
         question28(question27_win)
 
     question27_win = Toplevel()
-    question27_win.geometry('380x90+0+0')
+    question27_win.geometry('+0+0')
     question27_win.resizable(False,False)
     question27_win.title('Oasis Quiz - Q27')
 
@@ -331,13 +331,13 @@ def question26(question25_win):
         question27(question26_win)
 
     question26_win = Toplevel()
-    question26_win.geometry('380x90+0+0')
+    question26_win.geometry('+0+0')
     question26_win.resizable(False,False)
     question26_win.title('Oasis Quiz - Q26')
 
     q26_label = tk.Label(
         question26_win,
-        text='Which album was releaaed in 2002?',
+        text='Which album was released in 2002?',
         font=('Arial',20)
     )
     q26_label.grid(
@@ -350,7 +350,7 @@ def question26(question25_win):
         question26_win,
         text='Heathen Chemistry',
         font=('Arial'),
-        width=15,
+        width=25,
         command=q26_correct
     )
     q26_button_a.grid(
@@ -362,7 +362,7 @@ def question26(question25_win):
         question26_win,
         text="Don't Believe the Truth",
         font=('Arial'),
-        width=15,
+        width=25,
         command=q26_incorrect
     )
     q26_button_b.grid(
@@ -374,7 +374,7 @@ def question26(question25_win):
         question26_win,
         text='Standing on the Shoulder of Giants',
         font=('Arial'),
-        width=15,
+        width=25,
         command=q26_incorrect
     )
     q26_button_c.grid(
@@ -386,7 +386,7 @@ def question26(question25_win):
         question26_win,
         text='Dig Out Your Soul',
         font=('Arial'),
-        width=15,
+        width=25,
         command=q26_incorrect
     )
     q26_button_d.grid(
@@ -406,13 +406,13 @@ def question25(question24_win):
         question26(question25_win)
 
     question25_win = Toplevel()
-    question25_win.geometry('380x90+0+0')
+    question25_win.geometry('+0+0')
     question25_win.resizable(False,False)
     question25_win.title('Oasis Quiz - Q25')
     
     q25_label = tk.Label(
         question25_win,
-        text='Which song has the lyric "You and I are gonna Live Forever"?',
+        text='Which song contains "You and I are gonna Live Forever"?',
         font=('Arial',20)
     )
     q25_label.grid(
@@ -481,7 +481,7 @@ def question24(question23_win):
         question25(question24_win)
 
     question24_win = Toplevel()
-    question24_win.geometry('380x90+0+0')
+    question24_win.geometry('+0+0')
     question24_win.resizable(False,False)
     question24_win.title('Oasis Quiz - Q24')
 
@@ -500,7 +500,7 @@ def question24(question23_win):
         question24_win,
         text='Heathen Chemistry',
         font=('Arial'),
-        width=15,
+        width=25,
         command=q24_incorrect
     )
     q24_button_a.grid(
@@ -512,7 +512,7 @@ def question24(question23_win):
         question24_win,
         text='Standing on the Shoulder of Giants',
         font=('Arial'),
-        width=15,
+        width=25,
         command=q24_correct
     )
     q24_button_b.grid(
@@ -524,7 +524,7 @@ def question24(question23_win):
         question24_win,
         text="Don't Believe the Truth",
         font=('Arial'),
-        width=15,
+        width=25,
         command=q24_incorrect
     )
     q24_button_c.grid(
@@ -536,7 +536,7 @@ def question24(question23_win):
         question24_win,
         text='Be Here Now',
         font=('Arial'),
-        width=15,
+        width=25,
         command=q24_incorrect
     )
     q24_button_d.grid(
@@ -556,7 +556,7 @@ def question23(question22_win):
         question24(question23_win)
     
     question23_win = Toplevel()
-    question23_win.geometry('380x90+0+0')
+    question23_win.geometry('+0+0')
     question23_win.resizable(False,False)
     question23_win.title('Oasis Quiz - Q23')
 
@@ -631,13 +631,13 @@ def question22(question21_win):
         question23(question22_win)
 
     question22_win = Toplevel()
-    question22_win.geometry('380x90+0+0')
+    question22_win.geometry('+0+0')
     question22_win.resizable(False,False)
     question22_win.title('Oasis Quiz - Q22')
 
     q22_label = tk.Label(
         question22_win,
-        text='Liam Gallagher was the main songwriter for Oasis?',
+        text='Liam Gallagher was the main songwriter?',
         font=('Arial',20)
     )
     q22_label.grid(
@@ -682,7 +682,7 @@ def question21(question20_win):
         question22(question21_win)
 
     question21_win = Toplevel()
-    question21_win.geometry('380x90+0+0')
+    question21_win.geometry('+0+0')
     question21_win.resizable(False,False)
     question21_win.title('Oasis Quiz - Q21')
 
@@ -701,7 +701,7 @@ def question21(question20_win):
         question21_win,
         text="Don't Look Back in Anger",
         font=('Arial'),
-        width=15,
+        width=20,
         command=q21_correct
     )
     q21_button_a.grid(
@@ -713,7 +713,7 @@ def question21(question20_win):
         question21_win,
         text='Supersonic',
         font=('Arial'),
-        width=15,
+        width=20,
         command=q21_incorrect
     )
     q21_button_b.grid(
@@ -725,7 +725,7 @@ def question21(question20_win):
         question21_win,
         text='Slide Away',
         font=('Arial'),
-        width=15,
+        width=20,
         command=q21_incorrect
     )
     q21_button_c.grid(
@@ -737,7 +737,7 @@ def question21(question20_win):
         question21_win,
         text='Live Forever',
         font=('Arial'),
-        width=15,
+        width=20,
         command=q21_incorrect
     )
     q21_button_d.grid(
@@ -757,13 +757,13 @@ def question20(question19_win):
         question21(question20_win)
 
     question20_win = Toplevel()
-    question20_win.geometry('380x90+0+0')
+    question20_win.geometry('+0+0')
     question20_win.resizable(False, False)
     question20_win.title('Oasis Quiz - Q20')
 
     q20_label = tk.Label(
         question20_win,
-        text="What is the final track on (What's the Story) Morning Glory?",
+        text="What song closes (What's the Story) Morning Glory?",
         font=('Arial',20)
     )
     q20_label.grid(
@@ -832,7 +832,7 @@ def question19(question18_win):
         question20(question19_win)
 
     question19_win = Toplevel()
-    question19_win.geometry('380x90+0+0')
+    question19_win.geometry('+0+0')
     question19_win.resizable(False,False)
     question19_win.title('Oasis Quiz - Q19')
 
@@ -907,7 +907,7 @@ def question18(question17_win):
         question19(question18_win)
 
     question18_win = Toplevel()
-    question18_win.geometry('380x50+0+0')
+    question18_win.geometry('+0+0')
     question18_win.resizable(False,False)
     question18_win.title('Oasis Quiz - Q18')
 
@@ -958,7 +958,7 @@ def question17(question16_win):
         question18(question17_win)
     
     question17_win = Toplevel()
-    question17_win.geometry('380x90+0+0')
+    question17_win.geometry('+0+0')
     question17_win.resizable(False,False)
     question17_win.title('Oasis Quiz - Q17')
 
@@ -977,7 +977,7 @@ def question17(question16_win):
         question17_win,
         text='Half the World Away',
         font=('Arial'),
-        width=15,
+        width=20,
         command=q17_correct
     )
     q17_button_a.grid(
@@ -989,7 +989,7 @@ def question17(question16_win):
         question17_win,
         text='Live Forever',
         font=('Arial'),
-        width=15,
+        width=20,
         command=q17_incorrect
     )
     q17_button_b.grid(
@@ -1001,7 +1001,7 @@ def question17(question16_win):
         question17_win,
         text='Whatever',
         font=('Arial'),
-        width=15,
+        width=20,
         command=q17_incorrect
     )
     q17_button_c.grid(
@@ -1013,7 +1013,7 @@ def question17(question16_win):
         question17_win,
         text="Don't Look Back in Anger",
         font=('Arial'),
-        width=15,
+        width=20,
         command=q17_incorrect
     )
     q17_button_d.grid(
@@ -1033,7 +1033,7 @@ def question16(question15_win):
         question17(question16_win)
 
     question16_win = Toplevel()
-    question16_win.geometry('380x90+0+0')
+    question16_win.geometry('+0+0')
     question16_win.resizable(False,False)
     question16_win.title('Oasis Quiz - Q16')
 
@@ -1052,7 +1052,7 @@ def question16(question15_win):
         question16_win,
         text='Definitely Maybe',
         font=('Arial'),
-        width=15,
+        width=25,
         command=q16_incorrect
     )
     q16_button_a.grid(
@@ -1064,7 +1064,7 @@ def question16(question15_win):
         question16_win,
         text="(What's The Story) Morning Glory?",
         font=('Arial'),
-        width=15,
+        width=25,
         command=q16_incorrect
     )
     q16_button_b.grid(
@@ -1076,7 +1076,7 @@ def question16(question15_win):
         question16_win,
         text='Standing on the Shoulder of Giants',
         font=('Arial'),
-        width=15,
+        width=25,
         command=q16_incorrect
     )
     q16_button_c.grid(
@@ -1088,7 +1088,7 @@ def question16(question15_win):
         question16_win,
         text='Be Here Now',
         font=('Arial'),
-        width=15,
+        width=25,
         command=q16_correct
     )
     q16_button_d.grid(
@@ -1108,7 +1108,7 @@ def question15(question14_win):
         question16(question15_win)
 
     question15_win = Toplevel()
-    question15_win.geometry('312x90+0+0')
+    question15_win.geometry('+0+0')
     question15_win.resizable(False,False)
     question15_win.title('Oasis Quiz - Q15')
 
@@ -1183,7 +1183,7 @@ def question14(question13_win):
         question15(question14_win)
 
     question14_win = Toplevel()
-    question14_win.geometry('375x90+0+0')
+    question14_win.geometry('+0+0')
     question14_win.resizable(False,False)
     question14_win.title('Oasis Quiz - Q14')
 
@@ -1234,9 +1234,9 @@ def question13(question12_win):
         question14(question13_win)
 
     question13_win = Toplevel()
-    question13_win.geometry('472x90+0+0')
+    question13_win.geometry('+0+0')
     question13_win.resizable(False,False)
-    question13_win.title('Oasis Quiz - Q14')
+    question13_win.title('Oasis Quiz - Q13')
 
     q13_label = tk.Label(
         question13_win,
@@ -1253,7 +1253,7 @@ def question13(question12_win):
         question13_win,
         text='Be Here Now',
         font=('Arial'),
-        width=15,
+        width=25,
         command=q13_incorrect
     )
     q13_button_a.grid(
@@ -1265,7 +1265,7 @@ def question13(question12_win):
         question13_win,
         text='Definitely Maybe',
         font=('Arial'),
-        width=15,
+        width=25,
         command=q13_incorrect
     )
     q13_button_b.grid(
@@ -1277,7 +1277,7 @@ def question13(question12_win):
         question13_win,
         text='Heathen Chemistry',
         font=('Arial'),
-        width=15,
+        width=25,
         command=q13_incorrect
     )
     q13_button_c.grid(
@@ -1289,7 +1289,7 @@ def question13(question12_win):
         question13_win,
         text="(What's the Story) Morning Glory?",
         font=('Arial'),
-        width=15,
+        width=25,
         command=q13_correct
     )
     q13_button_d.grid(
@@ -1309,7 +1309,7 @@ def question12(question11_win):
         question13(question12_win)
 
     question12_win = Toplevel()
-    question12_win.geometry('395x90+0+0')
+    question12_win.geometry('+0+0')
     question12_win.resizable(False,False)
     question12_win.title('Oasis Quiz - Q12')
 
@@ -1384,7 +1384,7 @@ def question11(question10_win):
         question12(question11_win)
 
     question11_win = Toplevel()
-    question11_win.geometry('335x90+0+0')
+    question11_win.geometry('+0+0')
     question11_win.resizable(False,False)
     question11_win.title('Oasis Quiz - Q11')
 
@@ -1395,7 +1395,7 @@ def question11(question10_win):
     )
     q11_label.grid(
         row=1,
-        column=2,
+        column=1,
         columnspan=2
     )
 
@@ -1459,13 +1459,13 @@ def question10(question9_win):
         question11(question10_win)
     
     question10_win = Toplevel()
-    question10_win.geometry('312x60+0+0')
+    question10_win.geometry('+0+0')
     question10_win.resizable(False,False)
     question10_win.title('Oasis Quiz - Q10')
 
     q10_label = tk.Label(
         question10_win,
-        text='Oasis played at Knebworth in 1996',
+        text='Oasis were at Knebworth in 1996',
         font=('Arial',20)
     )
     q10_label.grid(
@@ -1483,7 +1483,7 @@ def question10(question9_win):
     )
     q10_button_a.grid(
         row=3,
-        column=2
+        column=1
     )
 
     q10_button_b = tk.Button(
@@ -1510,9 +1510,9 @@ def question9(question8_win):
         question10(question9_win)
 
     question9_win = Toplevel()
-    question9_win.geometry('360x90+0+0')
+    question9_win.geometry('+0+0')
     question9_win.resizable(False,False)
-    question9_win.title('Oasis Quiz - Q10')
+    question9_win.title('Oasis Quiz - Q9')
 
     q9_label = tk.Label(
         question9_win,
@@ -1585,7 +1585,7 @@ def question8(question7_win):
         question9(question8_win)
 
     question8_win = Toplevel()
-    question8_win.geometry('363x90+0+0')
+    question8_win.geometry('+0+0')
     question8_win.resizable(False,False)
     question8_win.title('Oasis Quiz - Q8')
 
@@ -1660,7 +1660,7 @@ def question7(question6_win):
         question8(question7_win)
 
     question7_win = Toplevel()
-    question7_win.geometry('315x90+0+0')
+    question7_win.geometry('+0+0')
     question7_win.resizable(False,False)
     question7_win.title('Oasis Quiz - Q7')
 
@@ -1735,13 +1735,13 @@ def question6(question5_win):
         question7(question6_win)
 
     question6_win = Toplevel()
-    question6_win.geometry('369x60+0+0')
+    question6_win.geometry('+0+0')
     question6_win.resizable(False,False)
     question6_win.title('Oasis Quiz - Q6')
 
     q6_label = tk.Label(
         question6_win,
-        text="Noel Gallagher wrote the majority of Oasis' songs",
+        text="Noel Gallagher wrote most Oasis songs",
         font=('Arial',20)
     )
     q6_label.grid(
@@ -1786,14 +1786,14 @@ def question5(question4_win):
         question6(question5_win)
 
     question5_win = Toplevel()
-    question5_win.geometry('380x90+0+0')
+    question5_win.geometry('+0+0')
     question5_win.resizable(False,False)
     question5_win.title('Oasis Quiz - Q5')
 
     q5_label = tk.Label(
         question5_win,
         text="Who was Oasis' original drummer?",
-        font=('Arial'),
+        font=('Arial',20)
     )
     q5_label.grid(
         row=1,
@@ -1861,7 +1861,7 @@ def question4(question3_win):
         question5(question4_win)
 
     question4_win = Toplevel()
-    question4_win.geometry('472x90+0+0')
+    question4_win.geometry('+0+0')
     question4_win.resizable(False,False)
     question4_win.title('Oasis Quiz - Q4')
 
@@ -1880,7 +1880,7 @@ def question4(question3_win):
         question4_win,
         text='Definitely Maybe',
         font=('Arial'),
-        width=15,
+        width=25,
         command=q4_correct
     )
     q4_button_a.grid(
@@ -1892,7 +1892,7 @@ def question4(question3_win):
         question4_win,
         text='Be Here Now',
         font=('Arial'),
-        width=15,
+        width=25,
         command=q4_incorrect
     )
     q4_button_b.grid(
@@ -1904,7 +1904,7 @@ def question4(question3_win):
         question4_win,
         text="(What's the story) Morning Glory?",
         font=('Arial'),
-        width=15,
+        width=25,
         command=q4_incorrect
     )
     q4_button_c.grid(
@@ -1916,7 +1916,7 @@ def question4(question3_win):
         question4_win,
         text='Standing on the Shoulder of Giants',
         font=('Arial'),
-        width=15,
+        width=25,
         command=q4_incorrect
     )
     q4_button_d.grid(
@@ -1936,7 +1936,7 @@ def question3(question2_win):
         question4(question3_win)
 
     question3_win = Toplevel()
-    question3_win.geometry('312x90+0+0')
+    question3_win.geometry('+0+0')
     question3_win.resizable(False,False)
     question3_win.title('Oasis Quiz - Q3')
 
@@ -2011,7 +2011,7 @@ def question2(question1_win):
         question3(question2_win)
 
     question2_win = Toplevel()
-    question2_win.geometry('312x60+0+0')
+    question2_win.geometry('+0+0')
     question2_win.resizable(False,False)
     question2_win.title('Oasis Quiz - Q2')
 
@@ -2062,7 +2062,7 @@ def question1():
         question2(question1_win)
 
     question1_win = Toplevel()
-    question1_win.geometry('312x90+0+0')
+    question1_win.geometry('+0+0')
     question1_win.resizable(False,False)
     question1_win.title('Oasis Quiz - Q1')
 
@@ -2134,7 +2134,7 @@ def correct():
 score = 0
 
 root = tk.Tk()
-root.geometry('150x60+0+0')
+root.geometry('+0+0')
 root.resizable(False,False)
 root.title('Oasis Quiz')
 
