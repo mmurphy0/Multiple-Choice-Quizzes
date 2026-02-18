@@ -2,17 +2,17 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
-def results(question30_win, score):
-    def reset(result_win):
+def results(question30_win):
+    def reset():
         global score
         score = 0
-        result_win.destroy()
 
-    def save():
+    def save(result_win):
         time = strftime('%H:%M:%S %D')
         with open('Oasis Quiz/scorebook.txt','a') as file:
             file.write(time + '\n' + (f'{str(score)}/30') + '\n' + '----------' + '\n')
             messagebox.showinfo('Confirmation','Results successfully saved')
+            result_win.destroy()
             reset()
 
     result_win = Toplevel()
@@ -2131,6 +2131,7 @@ def correct():
     messagebox.showinfo('Result','Correct!')
     return
 
+global score
 score = 0
 
 root = tk.Tk()
