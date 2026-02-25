@@ -6,14 +6,16 @@ def results(question30_win):
     def reset():
         global score
         score = 0
+        result_win.destroy()
 
-    def save(result_win):
+    def save():
         time = strftime('%H:%M:%S %D')
         with open('Oasis Quiz/scorebook.txt','a') as file:
             file.write(time + '\n' + (f'{str(score)}/30') + '\n' + '----------' + '\n')
             messagebox.showinfo('Confirmation','Results successfully saved')
-            result_win.destroy()
             reset()
+
+    global result_win
 
     result_win = Toplevel()
     result_win.geometry('+0+0')
@@ -402,7 +404,7 @@ def question25(question24_win):
         question26(question25_win)
 
     def q25_incorrect():
-        correct()
+        messagebox.showinfo('Result','Incorrect, The answer is Live Forever')
         question26(question25_win)
 
     question25_win = Toplevel()
