@@ -19,7 +19,7 @@ def save():
     reset()
 
 
-def results():
+def results(question5_win):
     global results_win
 
     results_win = Toplevel()
@@ -52,14 +52,14 @@ def results():
     question5_win.destroy()
 
 
-def question_5():
+def question_5(question4_win):
     def q5_correct():
         correct()
-        results()
+        results(question5_win)
 
     def q5_incorrect():
         messagebox.showinfo('Incorrect','The Answer is Dublin')
-        results()
+        results(question5_win)
 
     global question5_win
 
@@ -130,14 +130,14 @@ def question_5():
     question4_win.destroy()
 
 
-def question_4():
+def question_4(question3_win):
     def q4_correct():
         correct()
-        question_5()
+        question_5(question4_win)
 
     def q4_incorrect():
         messagebox.showinfo('Incorrect','The answer is Belfast')
-        question_5()
+        question_5(question4_win)
 
     global question4_win
 
@@ -208,16 +208,14 @@ def question_4():
     question3_win.destroy()
 
 
-def question_3():
+def question_3(question2_win):
     def q3_correct():
         correct()
-        question_4()
+        question_4(question3_win)
 
     def q3_incorrect():
         messagebox.showinfo('Incorrect','The answer is Edinburgh')
-        question_4()
-
-    global question3_win
+        question_4(question3_win)
 
     question3_win = Toplevel()
     question3_win.geometry('285x90+0+0')
@@ -285,17 +283,14 @@ def question_3():
 
     question2_win.destroy()
 
-
-def question_2():
+def question_2(question1_win):
     def q2_correct():
         correct()
-        question_3()
+        question_3(question2_win)
     
     def q2_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Cardiff')
-        question_3()
-
-    global question2_win
+        question_3(question2_win)
 
     question2_win = Toplevel()
     question2_win.geometry('265x90+0+0')
@@ -367,13 +362,11 @@ def question_2():
 def question_1():
     def q1_correct():
         correct()
-        question_2()
+        question_2(question1_win)
     
     def q1_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is London')
-        question_2()
-
-    global question1_win
+        question_2(question1_win)
 
     question1_win = Toplevel()
     question1_win.geometry('282x90+0+0')
