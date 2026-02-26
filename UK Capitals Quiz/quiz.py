@@ -23,7 +23,7 @@ def results(question5_win):
     global results_win
 
     results_win = Toplevel()
-    results_win.geometry('200x82+0+0')
+    results_win.geometry('+0+0')
     results_win.resizable(False,False)
     results_win.title('UK Capitals Quiz - Results')
 
@@ -64,7 +64,7 @@ def question_5(question4_win):
     global question5_win
 
     question5_win = Toplevel()
-    question5_win.geometry('270x90+0+0')
+    question5_win.geometry('+0+0')
     question5_win.resizable(False,False)
     question5_win.title('UK Capitals Quiz - Question 5')
 
@@ -142,7 +142,7 @@ def question_4(question3_win):
     global question4_win
 
     question4_win = Toplevel()
-    question4_win.geometry('352x90+0+0')
+    question4_win.geometry('+0+0')
     question4_win.resizable(False,False)
     question4_win.title('UK Capitals Quiz - Question 4')
 
@@ -218,7 +218,7 @@ def question_3(question2_win):
         question_4(question3_win)
 
     question3_win = Toplevel()
-    question3_win.geometry('285x90+0+0')
+    question3_win.geometry('+0+0')
     question3_win.resizable(False,False)
     question3_win.title('UK Capitals Quiz - Question 3')
 
@@ -293,7 +293,7 @@ def question_2(question1_win):
         question_3(question2_win)
 
     question2_win = Toplevel()
-    question2_win.geometry('265x90+0+0')
+    question2_win.geometry('+0+0')
     question2_win.resizable(False,False)
     question2_win.title('UK Capitals Quiz - Question 2')
 
@@ -369,7 +369,7 @@ def question_1():
         question_2(question1_win)
 
     question1_win = Toplevel()
-    question1_win.geometry('282x90+0+0')
+    question1_win.geometry('+0+0')
     question1_win.resizable(False,False)
     question1_win.title('UK Capitals Quiz - Question 1')
 
@@ -439,7 +439,7 @@ def correct():
     return
 
 root = tk.Tk()
-root.geometry('170x60+0+0')
+root.geometry('+0+0')
 root.resizable(False,False)
 root.title('UK Capitals Quiz')
 
