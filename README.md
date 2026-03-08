@@ -57,8 +57,6 @@ python3 (quizname).py
 
 ## Future Updates
 
-- Oasis Quiz (Coming Next)
-
 - The Office (US) Quiz - (Coming Soon)
 
 - More quizzes across various topics
