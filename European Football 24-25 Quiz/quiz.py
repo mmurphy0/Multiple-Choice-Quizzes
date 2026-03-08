@@ -1856,10 +1856,8 @@ def question1():
         messagebox.showinfo('Result','Incorrect, The answer is Liverpool')
         question2()
 
-    global question1_win, score
-
-    score = 0
-
+    global question1_win
+    
     question1_win = Toplevel()
     question1_win.geometry('312x90+0+0')
     question1_win.resizable(False,False)
