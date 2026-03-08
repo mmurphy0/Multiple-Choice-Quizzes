@@ -3,7 +3,7 @@ from tkinter import messagebox, Toplevel
 from time import strftime
 score = 0
 
-def result():
+def result(question20_win):
     def reset():
         global score
         score = 0
@@ -52,13 +52,11 @@ def result():
 def question20(question19_win):
     def q20_correct():
         correct()
-        result()
+        result(question20_win)
 
     def q20_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is All of the Above')
-        result()
-
-    global question20_win
+        result(question20_win)
 
     question20_win = Toplevel()
     question20_win.geometry('+0+0')

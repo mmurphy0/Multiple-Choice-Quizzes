@@ -4,7 +4,7 @@ from time import strftime
 
 score = 0
 
-def results():
+def results(question20_win):
     def reset():
         global score
         score = 0
@@ -51,13 +51,11 @@ def results():
 def question20(question19_win):
     def q20_correct():
         correct()
-        results()
+        results(question20_win)
 
     def q20_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Kimi Antonelli')
-        results()
-
-    global question20_win
+        results(question20_win)
 
     question20_win = Toplevel()
     question20_win.geometry('+0+0')

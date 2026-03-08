@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from time import strftime
 
-def results():
+def results(question25_win):
     def reset():
         global score
         score = 0
@@ -50,13 +50,11 @@ def results():
 def question25(question24_win):
     def q25_correct():
         correct()
-        results()
+        results(question25_win)
 
     def q25_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Inter Milan')
-        results()
-
-    global question25_win
+        results(question25_win)
 
     question25_win = Toplevel()
     question25_win.geometry('+0+0')
