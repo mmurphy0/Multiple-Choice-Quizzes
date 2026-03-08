@@ -18,7 +18,7 @@ def results():
     global results_win
 
     results_win = Toplevel()
-    results_win.geometry('117x90+0+0')
+    results_win.geometry('+0+0')
     results_win.resizable(False,False)
     results_win.title('European Football 24-25 Quiz - Results')
 
@@ -59,7 +59,7 @@ def question25():
     global question25_win
 
     question25_win = Toplevel()
-    question25_win.geometry('312x90+0+0')
+    question25_win.geometry('+0+0')
     question25_win.resizable(False,False)
     question25_win.title('European Football 24-25 Quiz - Q25')
 
@@ -136,7 +136,7 @@ def question24():
     global question24_win
 
     question24_win = Toplevel()
-    question24_win.geometry('312x90+0+0')
+    question24_win.geometry('+0+0')
     question24_win.resizable(False,False)
     question24_win.title('European Football 24-25 Quiz - Q24')
 
@@ -213,7 +213,7 @@ def question23():
     global question23_win
 
     question23_win = Toplevel()
-    question23_win.geometry('320x60+0+0')
+    question23_win.geometry('+0+0')
     question23_win.resizable(False,False)
     question23_win.title('European Football 24-25 Quiz - Q23')
 
@@ -266,7 +266,7 @@ def question22():
     global question22_win
 
     question22_win = Toplevel()
-    question22_win.geometry('344x90+0+0')
+    question22_win.geometry('+0+0')
     question22_win.resizable(False,False)
     question22_win.title('European Football 24-25 Quiz - Q22')
 
@@ -343,7 +343,7 @@ def question21():
     global question21_win
 
     question21_win = Toplevel()
-    question21_win.geometry('352x90+0+0')
+    question21_win.geometry('+0+0')
     question21_win.resizable(False,False)
     question21_win.title('European Football 24-25 Quiz - Q21')
 
@@ -420,7 +420,7 @@ def question20():
     global question20_win
 
     question20_win = Toplevel()
-    question20_win.geometry('312x90+0+0')
+    question20_win.geometry('+0+0')
     question20_win.resizable(False,False)
     question20_win.title('European Football 24-25 Quiz - Q20')
 
@@ -497,7 +497,7 @@ def question19():
     global question19_win
 
     question19_win = Toplevel()
-    question19_win.geometry('338x90+0+0')
+    question19_win.geometry('+0+0')
     question19_win.resizable(False,False)
     question19_win.title('European Football 24-25 Quiz - Q19')
 
@@ -574,7 +574,7 @@ def question18():
     global question18_win
 
     question18_win = Toplevel()
-    question18_win.geometry('365x60+0+0')
+    question18_win.geometry('+0+0')
     question18_win.resizable(False,False)
     question18_win.title('European Football 24-25 Quiz - Q18')
 
@@ -627,7 +627,7 @@ def question17():
     global question17_win
 
     question17_win = Toplevel()
-    question17_win.geometry('322x90+0+0')
+    question17_win.geometry('+0+0')
     question17_win.resizable(False,False)
     question17_win.title('European Football 24-25 Quiz - Q17')
 
@@ -704,7 +704,7 @@ def question16():
     global question16_win
 
     question16_win = Toplevel()
-    question16_win.geometry('312x90+0+0')
+    question16_win.geometry('+0+0')
     question16_win.resizable(False,False)
     question16_win.title('European Football 24-25 Quiz - Q16')
 
@@ -781,7 +781,7 @@ def question15():
     global question15_win
 
     question15_win = Toplevel()
-    question15_win.geometry('312x90+0+0')
+    question15_win.geometry('+0+0')
     question15_win.resizable(False,False)
     question15_win.title('European Football 24-25 Quiz - Q15')
 
@@ -858,7 +858,7 @@ def question14():
     global question14_win
 
     question14_win = Toplevel()
-    question14_win.geometry('335x90+0+0')
+    question14_win.geometry('+0+0')
     question14_win.resizable(False,False)
     question14_win.title('European Football 24-25 Quiz - Q14')
 
@@ -935,7 +935,7 @@ def question13():
     global question13_win
 
     question13_win = Toplevel()
-    question13_win.geometry('312x90+0+0')
+    question13_win.geometry('+0+0')
     question13_win.resizable(False,False)
     question13_win.title('European Football 24-25 Quiz - Q13')
 
@@ -1012,7 +1012,7 @@ def question12():
     global question12_win
 
     question12_win = Toplevel()
-    question12_win.geometry('368x90+0+0')
+    question12_win.geometry('+0+0')
     question12_win.resizable(False,False)
     question12_win.title('European Football 24-25 Quiz - Q12')
 
@@ -1089,7 +1089,7 @@ def question11():
     global question11_win
 
     question11_win = Toplevel()
-    question11_win.geometry('368x90+0+0')
+    question11_win.geometry('+0+0')
     question11_win.resizable(False,False)
     question11_win.title('European Football 24-25 Quiz - Q11')
 
@@ -1166,7 +1166,7 @@ def question10():
     global question10_win
 
     question10_win = Toplevel()
-    question10_win.geometry('412x90+0+0')
+    question10_win.geometry('+0+0')
     question10_win.resizable(False,False)
     question10_win.title('European Football 24-25 Quiz - Q10')
 
@@ -1243,7 +1243,7 @@ def question9():
     global question9_win
 
     question9_win = Toplevel()
-    question9_win.geometry('315x90+0+0')
+    question9_win.geometry('+0+0')
     question9_win.resizable(False,False)
     question9_win.title('European Football 24-25 Quiz - Q9')
 
@@ -1320,7 +1320,7 @@ def question8():
     global question8_win
 
     question8_win = Toplevel()
-    question8_win.geometry('312x90+0+0')
+    question8_win.geometry('+0+0')
     question8_win.resizable(False,False)
     question8_win.title('European Football 24-25 Quiz - Q8')
 
@@ -1397,7 +1397,7 @@ def question7():
     global question7_win
 
     question7_win = Toplevel()
-    question7_win.geometry('313x90+0+0')
+    question7_win.geometry('+0+0')
     question7_win.resizable(False,False)
     question7_win.title('European Football 24-25 Quiz - Q7')
 
@@ -1474,7 +1474,7 @@ def question6():
     global question6_win
 
     question6_win = Toplevel()
-    question6_win.geometry('312x90+0+0')
+    question6_win.geometry('+0+0')
     question6_win.resizable(False,False)
     question6_win.title('European Football 24-25 Quiz - Q6')
 
@@ -1551,7 +1551,7 @@ def question5():
     global question5_win
 
     question5_win = Toplevel()
-    question5_win.geometry('312x90+0+0')
+    question5_win.geometry('+0+0')
     question5_win.resizable(False,False)
     question5_win.title('European Football 24-25 Quiz - Q5')
 
@@ -1628,7 +1628,7 @@ def question4():
     global question4_win
 
     question4_win = Toplevel()
-    question4_win.geometry('312x90+0+0')
+    question4_win.geometry('+0+0')
     question4_win.resizable(False,False)
     question4_win.title('European Football 24-25 Quiz - Q4')
 
@@ -1705,7 +1705,7 @@ def question3():
     global question3_win
 
     question3_win = Toplevel()
-    question3_win.geometry('312x90+0+0')
+    question3_win.geometry('+0+0')
     question3_win.resizable(False,False)
     question3_win.title('European Football 24-25 Quiz - Q3')
 
@@ -1782,7 +1782,7 @@ def question2():
     global question2_win
 
     question2_win = Toplevel()
-    question2_win.geometry('340x90+0+0')
+    question2_win.geometry('+0+0')
     question2_win.resizable(False,False)
     question2_win.title('European Football 24-25 Quiz - Q2')
 
@@ -1857,9 +1857,9 @@ def question1():
         question2()
 
     global question1_win
-    
+
     question1_win = Toplevel()
-    question1_win.geometry('312x90+0+0')
+    question1_win.geometry('+0+0')
     question1_win.resizable(False,False)
     question1_win.title('European Football 24-25 Quiz - Q1')
 
@@ -1931,7 +1931,7 @@ def correct():
 score = 0
 
 root = tk.Tk()
-root.geometry('290x60+0+0')
+root.geometry('+0+0')
 root.resizable(False,False)
 root.title('European Football 24-25 Quiz')
 
