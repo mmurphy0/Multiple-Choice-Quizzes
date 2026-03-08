@@ -1154,16 +1154,14 @@ def question11():
 
     question10_win.destroy()
 
-def question10():
+def question10(question9_win):
     def q10_correct():
         correct()
-        question11()
+        question11(question10_win)
 
     def q10_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Mohamed Salah')
-        question11()
-    
-    global question10_win
+        question11(question10_win)
 
     question10_win = Toplevel()
     question10_win.geometry('+0+0')
@@ -1231,16 +1229,14 @@ def question10():
 
     question9_win.destroy()
 
-def question9():
+def question9(question8_win):
     def q9_correct():
         correct()
-        question10()
+        question10(question9_win)
 
     def q9_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Chelsea')
-        question10()
-
-    global question9_win
+        question10(question9_win)
 
     question9_win = Toplevel()
     question9_win.geometry('+0+0')
@@ -1308,16 +1304,14 @@ def question9():
 
     question8_win.destroy()
 
-def question8():
+def question8(question7_win):
     def q8_correct():
         correct()
-        question9()
+        question9(question8_win)
 
     def q8_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Tottenham')
-        question9()
-
-    global question8_win
+        question9(question8_win)
 
     question8_win = Toplevel()
     question8_win.geometry('+0+0')
@@ -1385,16 +1379,14 @@ def question8():
 
     question7_win.destroy()
 
-def question7():
+def question7(question6_win):
     def q7_correct():
         correct()
-        question8()
+        question8(question7_win)
 
     def q7_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is PSG')
-        question8()
-
-    global question7_win
+        question8(question7_win)
 
     question7_win = Toplevel()
     question7_win.geometry('+0+0')
@@ -1462,16 +1454,14 @@ def question7():
 
     question6_win.destroy()
 
-def question6():
+def question6(question5_win):
     def q6_correct():
         correct()
-        question7()
+        question7(question6_win)
 
     def q6_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is PSG')
-        question7()
-
-    global question6_win
+        question7(question6_win)
 
     question6_win = Toplevel()
     question6_win.geometry('+0+0')
@@ -1539,16 +1529,14 @@ def question6():
 
     question5_win.destroy()
 
-def question5():
+def question5(question4_win):
     def q5_correct():
         correct()
-        question6()
+        question6(question5_win)
 
     def q5_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Bayern Munich')
-        question6()
-
-    global question5_win
+        question6(question5_win)
 
     question5_win = Toplevel()
     question5_win.geometry('+0+0')
@@ -1616,16 +1604,14 @@ def question5():
 
     question4_win.destroy()
 
-def question4():
+def question4(question3_win):
     def q4_correct():
         correct()
-        question5()
+        question5(question4_win)
 
     def q4_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Napoli')
-        question5()
-
-    global question4_win
+        question5(question4_win)
 
     question4_win = Toplevel()
     question4_win.geometry('+0+0')
@@ -1693,16 +1679,14 @@ def question4():
 
     question3_win.destroy()
 
-def question3():
+def question3(question2_win):
     def q3_correct():
         correct()
-        question4()
+        question4(question3_win)
 
     def q3_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Barcelona')
-        question4()
-
-    global question3_win
+        question4(question3_win)
 
     question3_win = Toplevel()
     question3_win.geometry('+0+0')
@@ -1770,16 +1754,14 @@ def question3():
 
     question2_win.destroy()
 
-def question2():
+def question2(question1_win):
     def q2_correct():
         correct()
-        question3()
+        question3(question2_win)
 
     def q2_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Arsenal')
-        question3()
-    
-    global question2_win
+        question3(question2_win)
 
     question2_win = Toplevel()
     question2_win.geometry('+0+0')
@@ -1850,13 +1832,11 @@ def question2():
 def question1():
     def q1_correct():
         correct()
-        question2()
+        question2(question1_win)
 
     def q1_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Liverpool')
-        question2()
-
-    global question1_win
+        question2(question1_win)
 
     question1_win = Toplevel()
     question1_win.geometry('+0+0')
