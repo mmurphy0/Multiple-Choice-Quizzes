@@ -59,4 +59,6 @@ python3 (quizname).py
 
 - The Office (US) Quiz - (Coming Soon)
 
+- Global capitals quiz - (Coming Soon)
+
 - More quizzes across various topics
