@@ -5,9 +5,9 @@ The Office (US) Quiz - Questions
 1.	What is the name of the paper company where the show takes place?
 A. Penn Paper
 B. Scranton Paper Co.
-C. Northeast Paper
-D. Dunder Mifflin
-Correct Answer: D
+C. Dunder Mifflin
+D. Northeast Paper
+Correct Answer: C
 
 2.	True or False: Dwight Schrute owns a large beet farm.
 A. True
@@ -15,11 +15,11 @@ B. False
 Correct Answer: True
 
 3.	Who is the regional manager at the start of the series?
-A. Jim Halpert
+A. Michael Scott
 B. Dwight Schrute
-C. Michael Scott
+C. Jim Halpert
 D. Andy Bernard
-Correct Answer: C
+Correct Answer: A
 
 4.	What instrument does Andy Bernard often play?
 A. Piano
@@ -31,66 +31,66 @@ Correct Answer: B
 5.	True or False: Angela Martin is a vegetarian.
 A. True
 B. False
-Correct Answer: False
+Correct Answer: True
 
 6.	What is the name of Pam’s fiancé in the early seasons?
 A. Gabe Lewis
 B. Todd Packer
-C. Roy Anderson
-D. Bob Vance
-Correct Answer: A
+C. Bob Vance
+D. Roy Anderson
+Correct Answer: D
 
 7.	Jim Halpert transfers to which branch in Season 3?
 A. Stamford
 B. Utica
 C. Buffalo
 D. Nashua
-Correct Answer: C
+Correct Answer: A
 
-8.	True or False: Kelly Kapoor works in customer service.
+8.	True or False: Kelly Kapoor works in Customer Service.
 A. True
 B. False
-Correct Answer: True
+Correct Answer: False
 
 9.	Which character says “Bears. Beets. Battlestar Galactica.”?
 A. Jim Halpert
 B. Creed Bratton
-C. Michael Scott
-D. Dwight Schrute
-Correct Answer: D
+C. Dwight Schrute
+D. Michael Scott
+Correct Answer: C
 
 10.	What is Kevin Malone’s famous spilled food?
 A. Soup
-B. Chili
+B. Stew
 C. Spaghetti
-D. Stew
-Correct Answer: B
+D. Chili
+Correct Answer: D
 
 11.	True or False: Ryan Howard starts the series as a temp.
 A. True
 B. False
-Correct Answer: False
+Correct Answer: True
 
 12.	What is the name of the bar the office staff often visits?
 A. The Electric City Bar
 B. Poor Richard’s
 C. Scranton Pub
 D. The Paper Mill
-Correct Answer: C
+Correct Answer: B
 
 13.	Who becomes regional manager after Michael leaves?
-A. Dwight Schrute
+A. Deangelo Vickers
 B. Andy Bernard
 C. Jim Halpert
-D. Robert California
+D. Dwight Schrute
 Correct Answer: A
 
 14.	What is Michael Scott’s movie called?
-A. Threat Level Midnight
+A. Scranton Justice
 B. Secret Agent Michael
-C. Agent Scarn
-D. Scranton Justice
-Correct Answer: D
+C. Threat Level Midnight
+D. Agent Scarn
+Correct Answer: C
 
 15.	True or False: Stanley Hudson enjoys participating in office meetings.
 A. True
@@ -104,12 +104,12 @@ C. Mose Acres
 D. Schrute Beet Ranch
 Correct Answer: B
 
-17.	What city is the Scranton branch located in?
-A. Scranton
-B. Allentown
+17.	What city is the branch located in?
+A. Pittsburgh
+B. Carbondale
 C. Philadelphia
-D. Pittsburgh
-Correct Answer: A
+D. Scranton
+Correct Answer: D
 
 18.	True or False: Oscar Martinez works as an accountant at Dunder Mifflin.
 A. True
@@ -117,18 +117,18 @@ B. False
 Correct Answer: True
 
 19.	Who is the HR representative for most of the series?
-A. Toby Flenderson
+A. Holly Flax
 B. Gabe Lewis
-C. Holly Flax
+C. Toby Flenderson
 D. Clark Green
 Correct Answer: C
 
 20.	What is the name of Michael’s short-lived company in Season 5?
-A. Michael & Co.
-B. Michael Scott Paper Company
+A. Michael Scott Paper Company
+B. Michael & Co.
 C. Scott Paper Co.
-D. Scranton Paper Group
-Correct Answer: B
+D. Michael
+Correct Answer: A
 
 21.	True or False: Meredith Palmer works in accounting.
 A. True
@@ -140,34 +140,34 @@ A. Nate Nickerson
 B. Darryl Philbin
 C. Roy Anderson
 D. Glenn Briggs
-Correct Answer: D
+Correct Answer: B
 
 23.	What is Pam’s job when the series begins?
-A. Receptionist
+A. Salesperson
 B. HR assistant
 C. Accountant
-D. Salesperson
-Correct Answer: A
+D. Receptionist
+Correct Answer: D
 
 24.	Who serves as CEO of Dunder Mifflin during most of the early seasons?
 A. Jo Bennett
 B. David Wallace
-C. Robert California
-D. Alan Brand
+C. Alan Brand
+D. Robert California
 Correct Answer: C
 
 25.	Which character started the fire drill in “Stress Relief”?
-A. Dwight Schrute
-B. Jim Halpert
+A. Jim Halpert
+B. Dwight Schrute
 C. Michael Scott
 D. Stanley Hudson
 Correct Answer: B
 
 26.	Who is known for saying “That’s what she said”?
-A. Michael Scott
+A. Jim Halpert
 B. Andy Bernard
 C. Dwight Schrute
-D. Jim Halpert
+D. Michael Scott
 Correct Answer: D
 
 27.	What is the name of Dwight’s cousin who lives on the farm?
@@ -175,19 +175,19 @@ A. Mose Schrute
 B. Zeke Schrute
 C. Jeb Schrute
 D. Fannie Schrute
-Correct Answer: A
+Correct Answer: D
 
 28.	True or False: Darryl Philbin eventually works upstairs in the office.
 A. True
 B. False
 Correct Answer: True
 
-29.	True or False: Bob Vance owns a company called Vance Refrigeration.
-A. True
-B. False
-Correct Answer: False
-
-30.	True or False: Jim Halpert pulls pranks on Dwight.
+29.	True or False: Jim Halpert pulls pranks on Dwight.
 A. True
 B. False
 Correct Answer: True
+
+30.	True or False: Bob Vance owns a company called Vance Refrigeration.
+A. True
+B. False
+Correct Answer: False
