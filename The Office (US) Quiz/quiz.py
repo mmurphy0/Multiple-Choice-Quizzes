@@ -5,14 +5,63 @@ from tkinter import messagebox
 import time
 from time import strftime
 
+def question2(question1_win):
+    def q2_correct():
+        correct()
+        question3(question2_win)
+
+    def q2_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is True')
+        question3(question2_win)
+
+    question2_win = Toplevel()
+    question2_win.geometry('0+0')
+    question2_win.resizable(False,False)
+    question2_win.title('The Office (US) Quiz - Q2')
+
+    q2_label = tk.Label(
+        question2_win,
+        text='Dwight Schrute owns a large beet farm?',
+        font=('Arial',20)
+    )
+    q2_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q2_button_a = tk.Button(
+        question2_win,
+        text='True',
+        font=('Arial'),
+        width=15,
+        command=q2_correct
+    )
+    q2_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q2_button_b = tk.Button(
+        question2_win,
+        text='False',
+        font=('Arial'),
+        width=15,
+        command=q2_incorrect
+    )
+    q2_button_b.grid(
+        row=3,
+        column=2
+    )
+
 def question1():
     def q1_correct():
         correct()
-        question2()
+        question2(question1_win)
 
     def q1_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Dunder Mifflin')
-        question2()
+        question2(question1_win)
 
     question1_win = Toplevel()
     question1_win.geometry('0+0')
