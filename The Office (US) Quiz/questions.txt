@@ -1,7 +1,5 @@
 The Office (US) Quiz - Questions
 
-# Need to sort the correct answers to make it balanced and in a random order
-
 1.	What is the name of the paper company where the show takes place?
 A. Penn Paper
 B. Scranton Paper Co.
