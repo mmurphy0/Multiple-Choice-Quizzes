@@ -5,6 +5,79 @@ from tkinter import messagebox
 import time
 from time import strftime
 
+def question3(question2_win):
+    def q3_correct():
+        correct()
+        question4(question3_win)
+
+    def q3_incorrect(question2_win):
+        messagebox.showinfo('Result','Incorrect, The answer is Michael Scott')
+        question4(question3_win)
+
+    question3_win = Toplevel()
+    question3_win.geometry('0+0')
+    question3_win.resizable(False,False)
+    question3_win.title('The Office (US) Quiz - Q3')
+
+    q3_label = tk.Label(
+        question3_win,
+        text='Who is the Regional Manager at the start of the show?',
+        font=('Arial',20)
+    )
+    q3_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q3_button_a = tk.Button(
+        question3_win,
+        text='Michael Scott',
+        font=('Arial'),
+        width=15,
+        command=q3_correct
+    )
+    q3_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q3_button_b = tk.Button(
+        question3_win,
+        text='Dwight Schrute',
+        font=('Arial'),
+        width=15,
+        command=q3_incorrect
+    )
+    q3_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q3_button_c = tk.Button(
+        question3_win,
+        text='Jim Halpert',
+        font=('Arial'),
+        width=15,
+        command=q3_incorrect
+    )
+    q3_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q3_button_d = tk.Button(
+        question3_win,
+        text='Andy Bernard',
+        font=('Arial'),
+        width=15,
+        command=q3_incorrect
+    )
+    q3_button_d.grid(
+        row=4,
+        column=2
+    )
+
 def question2(question1_win):
     def q2_correct():
         correct()
