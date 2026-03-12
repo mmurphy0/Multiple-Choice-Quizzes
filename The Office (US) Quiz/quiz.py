@@ -78,6 +78,8 @@ def question3(question2_win):
         column=2
     )
 
+    question2_win.destroy()
+
 def question2(question1_win):
     def q2_correct():
         correct()
@@ -126,6 +128,8 @@ def question2(question1_win):
         row=3,
         column=2
     )
+
+    question1_win.destroy()
 
 def question1():
     def q1_correct():
