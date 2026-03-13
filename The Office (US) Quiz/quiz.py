@@ -5,6 +5,81 @@ from tkinter import messagebox
 import time
 from time import strftime
 
+def question6(question5_win):
+    def q6_correct():
+        correct()
+        question7(question5_win)
+
+    def q6_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Roy Anderson')
+        question7(question5_win)
+
+    question6_win = Toplevel()
+    question6_win.geometry('0+0')
+    question6_win.resizable(False,False)
+    question6_win.title('The Office (US) Quiz - Q6')
+
+    q6_label = tk.Label(
+        question6_win,
+        text="What is the name of Pam's fiancé in early seasons",
+        font=('Arial',20)
+    )
+    q6_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q6_button_a = tk.Button(
+        question6_win,
+        text='Gabe Lewis',
+        font=('Arial'),
+        width=15,
+        command=q6_incorrect
+    )
+    q6_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q6_button_b = tk.Button(
+        question6_win,
+        text='Todd Packer',
+        font=('Arial'),
+        width=15,
+        command=q6_incorrect
+    )
+    q6_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q6_button_c = tk.Button(
+        question6_win,
+        text='Bob Vance',
+        font=('Arial'),
+        width=15,
+        command=q6_incorrect
+    )
+    q6_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q6_button_d = tk.Button(
+        question6_win,
+        text='Roy Anderson',
+        font=('Arial'),
+        width=15,
+        command=q6_correct
+    )
+    q6_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question5_win.destroy()
+
 def question5(question4_win):
     def q5_correct():
         correct()
@@ -12,6 +87,7 @@ def question5(question4_win):
 
     def q5_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is True')
+        question6(question5_win)
 
     question5_win = Toplevel()
     question5_win.geometry('0+0')
