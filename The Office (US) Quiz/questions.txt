@@ -51,9 +51,9 @@ B. False
 Correct Answer: True
 
 9.	Which character says “Bears. Beets. Battlestar Galactica.”?
-A. Jim Halpert
+A. Dwight Schrute
 B. Creed Bratton
-C. Dwight Schrute
+C. Jim Halpert
 D. Michael Scott
 Correct Answer: C
 
