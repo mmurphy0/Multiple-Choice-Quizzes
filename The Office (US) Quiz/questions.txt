@@ -48,7 +48,7 @@ Correct Answer: A
 8.	True or False: Kelly Kapoor works in Customer Service.
 A. True
 B. False
-Correct Answer: False
+Correct Answer: True
 
 9.	Which character says “Bears. Beets. Battlestar Galactica.”?
 A. Jim Halpert
