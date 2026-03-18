@@ -5,6 +5,81 @@ from tkinter import messagebox
 import time
 from time import strftime
 
+def question12(question11_win):
+    def q12_correct():
+        correct()
+        question13(question12_win)
+
+    def q12_incorrect():
+        messagebox.showinfo('Result',"Incorrect, The answer is Poor Richard's")
+        question13(question12_win)
+
+    question12_win = Toplevel()
+    question12_win.geometry('+0+0')
+    question12_win.resizable(False,False)
+    question12_win.title('The Office (US) Quiz - Q12')
+
+    q12_label = tk.Label(
+        question12_win,
+        text='Which bar do the staff often visit?',
+        font=('Arial',20)
+    )
+    q12_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q12_button_a = tk.Button(
+        question12_win,
+        text='The Electric City Bar',
+        font=('Arial'),
+        width=15,
+        command=q12_incorrect
+    )
+    q12_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q12_button_b = tk.Button(
+        question12_win,
+        text="Poor Richard's",
+        font=('Arial'),
+        width=15,
+        command=q12_correct
+    )
+    q12_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q12_button_c = tk.Button(
+        question12_win,
+        text='Scranton Pub',
+        font=('Arial'),
+        width=15,
+        command=q12_incorrect
+    )
+    q12_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q12_button_d = tk.Button(
+        question12_win,
+        text='The Paper Mill',
+        font=('Arial'),
+        width=15,
+        command=q12_incorrect
+    )
+    q12_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question11_win.destroy()
+
 def question11(question10_win):
     def q11_correct():
         correct()
