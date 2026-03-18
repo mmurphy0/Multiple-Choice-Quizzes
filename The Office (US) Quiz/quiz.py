@@ -5,6 +5,81 @@ from tkinter import messagebox
 import time
 from time import strftime
 
+def question13(question12_win):
+    def q13_correct():
+        correct()
+        question14(question13_win)
+
+    def q13_incorrect():
+        messagebox.showinfo('Resukt','Incorrect, The answer is Deangelo Vickers')
+        question14(question13_win)
+
+    question13_win = Toplevel()
+    question13_win.geometry('+0+0')
+    question13_win.resizable(False,False)
+    question13_win.title('The Office (US) Quiz - Q13')
+
+    q13_label = tk.Label(
+        question13_win,
+        text='Who becomes regional manager after Michael?',
+        font=('Arial',20)
+    )
+    q13_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q13_button_a = tk.Button(
+        question13_win,
+        text='Deangelo Vickers',
+        font=('Arial'),
+        width=15,
+        command=q13_correct
+    )
+    q13_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q13_button_b = tk.Button(
+        question13_win,
+        text='Andy Bernard',
+        font=('Arial'),
+        width=15,
+        command=q13_incorrect
+    )
+    q13_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q13_button_c = tk.Button(
+        question13_win,
+        text='Jim Halpert',
+        font=('Arial'),
+        width=15,
+        command=q13_incorrect
+    )
+    q13_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q13_button_d = tk.Button(
+        question13_win,
+        text='Dwight Schrute',
+        font=('Arial'),
+        width=15,
+        command=q13_incorrect
+    )
+    q13_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question12_win.destroy()
+
 def question12(question11_win):
     def q12_correct():
         correct()
