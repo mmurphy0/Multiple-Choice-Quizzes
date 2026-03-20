@@ -5,6 +5,81 @@ from tkinter import messagebox
 import time
 from time import strftime
 
+def question16(question15_win):
+    def q16_correct():
+        correct()
+        question17(question16_win)
+
+    def q16_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Schrute Farm')
+        question17(question16_win)
+
+    question16_win = Toplevel()
+    question16_win.geometry('+0+0')
+    question16_win.resizable(False,False)
+    question16_win.title('The Office (US) Quiz - Q16')
+
+    q16_label = tk.Label(
+        question16_win,
+        text="What is the name of Dwight Schrute's farm?",
+        font=('Arial',20)
+    )
+    q16_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q16_button_a = tk.Button(
+        question16_win,
+        text="Dwight's Beet Farm",
+        font=('Arial'),
+        width=15,
+        command=q16_incorrect
+    )
+    q16_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q16_button_b = tk.Button(
+        question16_win,
+        text='Schrute Farm',
+        font=('Arial'),
+        width=15,
+        command=q16_correct
+    )
+    q16_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q16_button_c = tk.Button(
+        question16_win,
+        text='Mose Acres',
+        font=('Arial'),
+        width=15,
+        command=q16_incorrect
+    )
+    q16_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q16_button_d = tk.Button(
+        question16_win,
+        text='Schrute Beet Ranch',
+        font=('Arial'),
+        width=15,
+        command=q16_incorrect
+    )
+    q16_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question15_win.destroy()
+
 def question15(question14_win):
     def q15_correct():
         correct()
