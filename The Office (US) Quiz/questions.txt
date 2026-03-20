@@ -90,7 +90,7 @@ C. Threat Level Midnight
 D. Agent Scarn
 Correct Answer: C
 
-15.	True or False: Stanley Hudson enjoys participating in office meetings.
+15.	True or False: Stanley Hudson enjoys participating in meetings.
 A. True
 B. False
 Correct Answer: False
