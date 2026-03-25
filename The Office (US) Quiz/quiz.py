@@ -34,7 +34,7 @@ def question20(question19_win):
         question20_win,
         text='Michael Scott Paper Company',
         font=('Arial'),
-        width=15,
+        width=20,
         command=q20_correct
     )
     q20_button_a.grid(
@@ -46,7 +46,7 @@ def question20(question19_win):
         question20_win,
         text='Michael & Co.',
         font=('Arial'),
-        width=15,
+        width=20,
         command=q20_incorrect
     )
     q20_button_b.grid(
@@ -58,7 +58,7 @@ def question20(question19_win):
         question20_win,
         text='Scott Paper Co.',
         font=('Arial'),
-        width=15,
+        width=20,
         command=q20_incorrect
     )
     q20_button_c.grid(
@@ -70,7 +70,7 @@ def question20(question19_win):
         question20_win,
         text='Michael',
         font=('Arial'),
-        width=15,
+        width=20,
         command=q20_incorrect
     )
     q20_button_d.grid(
@@ -213,7 +213,7 @@ def question17(question16_win):
 
     def q17_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Scranton')
-        question18(queston17_win)
+        question18(question17_win)
 
     question17_win = Toplevel()
     question17_win.geometry('+0+0')
@@ -231,7 +231,7 @@ def question17(question16_win):
         columnspan=2
     )
 
-    q17_button_a = tk.Label(
+    q17_button_a = tk.Button(
         question17_win,
         text='Pittsburgh',
         font=('Arial'),
@@ -683,7 +683,7 @@ def question11(question10_win):
 
     question10_win.destroy()
 
-def question10(question9_win):
+def question10():
     def q10_correct():
         correct()
         question11(question10_win)
@@ -756,7 +756,7 @@ def question10(question9_win):
         column=2
     )
 
-    question9_win.destroy()
+    # question9_win.destroy()
 
 def question9(question8_win):
     def q9_correct():
@@ -1383,7 +1383,7 @@ startquiz_button = tk.Button(
     text='Start',
     font=('Arial'),
     width=20,
-    command=question1
+    command=question10
 )
 startquiz_button.pack()
 
