@@ -5,6 +5,81 @@ from tkinter import messagebox
 import time
 from time import strftime
 
+def question22(question21_win):
+    def q22_correct():
+        correct()
+        question23(question22_win)
+
+    def q22_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Darryl Philbin')
+        question23(question22_win)
+
+    question22_win = Toplevel()
+    question22_win.geometry('+0+0')
+    question22_win.resizable(False,False)
+    question22_win.title('The Office (US) Quiz - Q22')
+
+    q22_label = tk.Label(
+        question22_win,
+        text='Who is the warehouse foreman in early seasons?',
+        font=('Arial',20)
+    )
+    q22_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q22_button_a = tk.Button(
+        question22_win,
+        text='Nate Nickerson',
+        font=('Arial'),
+        width=15,
+        command=q22_incorrect
+    )
+    q22_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q22_button_b = tk.Button(
+        question22_win,
+        text='Darryl Philbin',
+        font=('Arial'),
+        width=15,
+        command=q22_correct
+    )
+    q22_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q22_button_c = tk.Button(
+        question22_win,
+        text='Roy Anderson',
+        font=('Arial'),
+        width=15,
+        command=q22_incorrect
+    )
+    q22_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q22_button_d = tk.Button(
+        question22_win,
+        text='Glenn Briggs',
+        font=('Arial'),
+        width=15,
+        command=q22_incorrect
+    )
+    q22_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question21_win.destroy()
+
 def question21(question20_win):
     def q21_correct():
         correct()
