@@ -5,6 +5,81 @@ from tkinter import messagebox
 import time
 from time import strftime
 
+def question27(question26_win):
+    def q27_correct():
+        correct()
+        question28(question27_win)
+
+    def q27_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Mose Schrute')
+        question28(question27_win)
+
+    question27_win = Toplevel()
+    question27_win.geometry('+0+0')
+    question27_win.resizable(False,False)
+    question27_win.title('The Office (US) Quiz - Q27')
+
+    q27_label = tk.Label(
+        question27_win,
+        text='Who lives with Dwight on the farm?',
+        font=('Arial',20)
+    )
+    q27_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q27_button_a = tk.Button(
+        question27_win,
+        text='Aunt Shirley',
+        font=('Arial'),
+        width=15,
+        command=q27_incorrect
+    )
+    q27_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q27_button_b = tk.Button(
+        question27_win,
+        text='Zeke Schrute',
+        font=('Arial'),
+        width=15,
+        command=q27_incorrect
+    )
+    q27_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q27_button_c = tk.Button(
+        question27_win,
+        text='Jeb Schrute',
+        font=('Arial'),
+        width=15,
+        command=q27_incorrect
+    )
+    q27_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q27_button_d = tk.Button(
+        question27_win,
+        text='Mose Schrute',
+        font=('Arial'),
+        width=15,
+        command=q27_correct
+    )
+    q27_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question26_win.destroy()
+
 def question26(question25_win):
     def q26_correct():
         correct()
