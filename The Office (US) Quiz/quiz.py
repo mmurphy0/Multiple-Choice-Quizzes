@@ -5,6 +5,51 @@ from tkinter import messagebox
 import time
 from time import strftime
 
+def result(question30_win):
+    def reset():
+        global score
+        score = 0
+        result_win.destroy()
+
+    def save():
+        time = strftime('%H:%M:%S %D')
+        with open('The Office (US) Quiz/scores.txt','a') as file:
+            file.write(time + '\n' + (f'Score: {score}/30') + '\n' + '----------' + '\n')
+            messagebox.showinfo('Confirmation','Score successfully saved')
+            reset()
+
+    global result_win
+
+    result_win = Toplevel()
+    result_win.geometry('+0+0')
+    result_win.resizable(False,False)
+    result_win.title('The Office (US) Quiz - Results')
+
+    result_title = tk.Label(
+        result_win,
+        text='Results',
+        font=('Arial',20,'bold')
+    )
+    result_title.pack()
+
+    result_label = tk.Label(
+        result_win,
+        text=(f'Score: {score}/30'),
+        font=('Arial',20)
+    )
+    result_label.pack()
+
+    continue_button = tk.Button(
+        result_win,
+        text='Continue',
+        font=('Arial'),
+        width=20,
+        command=save
+    )
+    continue_button.pack()
+
+    question30_win.destroy()
+
 def question30(question29_win):
     def q30_correct():
         correct()
@@ -153,7 +198,7 @@ def question28(question27_win):
     )
     q28_button_b.grid(
         row=3,
-        column=1
+        column=2
     )
 
     question27_win.destroy()
@@ -296,7 +341,7 @@ def question26(question25_win):
 
     q26_button_d = tk.Button(
         question26_win,
-        text='Michael',
+        text='Michael Scott',
         font=('Arial'),
         width=15,
         command=q26_correct
@@ -336,7 +381,9 @@ def question25(question24_win):
     q25_button_a = tk.Button(
         question25_win,
         text='Jim Halpert',
-        font=('Arial',20)
+        font=('Arial'),
+        width=15,
+        command=q25_incorrect
     )
     q25_button_a.grid(
         row=3,
@@ -1335,7 +1382,7 @@ def question11(question10_win):
 
     question10_win.destroy()
 
-def question10():
+def question10(question9_win):
     def q10_correct():
         correct()
         question11(question10_win)
@@ -1408,7 +1455,7 @@ def question10():
         column=2
     )
 
-    # question9_win.destroy()
+    question9_win.destroy()
 
 def question9(question8_win):
     def q9_correct():
@@ -2035,7 +2082,7 @@ startquiz_button = tk.Button(
     text='Start',
     font=('Arial'),
     width=20,
-    command=question10
+    command=question1
 )
 startquiz_button.pack()
 
