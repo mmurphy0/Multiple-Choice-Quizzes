@@ -5,6 +5,8 @@ This is a collection of multiple choice quizzes i have made using the python tki
 
 ### Please Note - On the scorebooks for each quiz, the date is in the MM/DD/YYYY format
 
+### Please be aware - questions.txt & Test Log.pdf in the quiz files contain spoilers for the answers
+
 ### Avaliable Quizzes
 
 - UK Capitals Quiz
@@ -26,6 +28,8 @@ Every quiz has its own file and each file is set out the same way with 3 files
 
 - scorebook.txt (Keeps record of all scores and sessions date & time)
 
+- Test Log (On The Office (US) Quiz onwards)
+
 ## Usage
 - The user is welcomed with a startup window which has the title of the quiz and start quiz button
 
@@ -37,7 +41,7 @@ Every quiz has its own file and each file is set out the same way with 3 files
   
   - Incorrect = 'Incorrect, The answer was (answer)'
 
-- After the questions have been answered, the user is given their results which are then saved to results.txt with the date and time of the game.
+- After the questions have been answered, the user is given their results which are then saved to scores.txt with the date and time of the game.
 
 ## Installation
 git clone (repo)
@@ -56,8 +60,6 @@ python3 (quizname).py
 - Tkinter
 
 ## Future Updates
-
-- The Office (US) Quiz - (Coming Soon)
 
 - Global capitals quiz - (Coming Soon)
 
