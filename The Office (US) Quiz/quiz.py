@@ -5,6 +5,57 @@ from tkinter import messagebox
 import time
 from time import strftime
 
+def question30(question29_win):
+    def q30_correct():
+        correct()
+        result(question30_win)
+
+    def q30_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is False')
+        result(question30_win)
+
+    question30_win = Toplevel()
+    question30_win.geometry('+0+0')
+    question30_win.resizable(False,False)
+    question30_win.title('The Office (US) Quiz - Q30')
+
+    q30_label = tk.Label(
+        question30_win,
+        text='Andy Bernard is the top salesperson',
+        font=('Arial',20)
+    )
+    q30_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q30_button_a = tk.Button(
+        question30_win,
+        text='True',
+        font=('Arial'),
+        width=15,
+        command=q30_incorrect
+    )
+    q30_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q30_button_b = tk.Button(
+        question30_win,
+        text='False',
+        font=('Arial'),
+        width=15,
+        command=q30_correct
+    )
+    q30_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    question29_win.destroy()
+
 def question29(question28_win):
     def q29_correct():
         correct()
