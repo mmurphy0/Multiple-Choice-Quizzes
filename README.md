@@ -61,6 +61,8 @@ python3 (quizname).py
 
 ## Future Updates
 
+- Premier League 24/25 Stadiums Quiz (Coming Soon)
+
 - Global capitals quiz - (Coming Soon)
 
 - More quizzes across various topics
