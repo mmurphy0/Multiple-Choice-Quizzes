@@ -1,139 +1,139 @@
 1.	Liverpool
-A) Anfield Stadium
-B) Old Trafford
-C) Etihad Stadium
-D) Villa Park
+A- Anfield
+B- Old Trafford
+C- Etihad Stadium
+D- Villa Park
 Answer: A
 	
 2.	Arsenal
-A) Stamford Bridge
-B) London Stadium
-C) Emirates Stadium
-D) Craven Cottage
+A- Stamford Bridge
+B- London Stadium
+C- Emirates Stadium
+D- Craven Cottage
 Answer: C
 	
 3.	Manchester City
-A) Old Trafford
-B) American Express Stadium
-C) Selhurst Park
-D) Etihad Stadium
+A- Old Trafford
+B- American Express Stadium
+C- Selhurst Park
+D- Etihad Stadium
 Answer: D
 
 4.	Manchester United
-A) Villa Park
-B) Old Trafford
-C) Turf Moor
-D) City Ground
+A- Villa Park
+B- Old Trafford
+C- Turf Moor
+D- City Ground
 Answer: B
 	
 5.	Aston Villa
-A) Emirates Stadium
-B) Elland Road
-C) Villa Park
-D) Gtech Community Stadium
+A- Emirates Stadium
+B- Elland Road
+C- Villa Park
+D- Gtech Community Stadium
 Answer: C
 
 6.	Chelsea
-A) Craven Cottage
-B) Stamford Bridge
-C) Anfield Stadium
-D) London Stadium
+A- Craven Cottage
+B- Stamford Bridge
+C- Anfield
+D- London Stadium
 Answer: B
 
 7.	Brentford
-A) Gtech Community Stadium Stadium
-B) Old Trafford
-C) Selhurst Park
-D) Vitality Stadium
+A- Gtech Community Stadium Stadium
+B- Old Trafford
+C- Selhurst Park
+D- Vitality Stadium
 Answer: D
 
 8.	Everton
-A) Hill Dickinson Stadium
-B) Goodison Park
-C) Anfield Stadium
-D) Turf Moor
+A- Hill Dickinson Stadium
+B- Goodison Park
+C- Anfield
+D- Turf Moor
 Answer: A
 
 9.	Fulham
-A) Emirates Stadium
-B) Old Trafford
-C) Villa Park
-D) Craven Cottage
+A- Emirates Stadium
+B- Old Trafford
+C- Villa Park
+D- Craven Cottage
 Answer: D
 
 10.	Brighton
-A) Stamford Bridge
-B) American Express Stadium
-C) Etihad Stadium
-D) London Stadium
+A- Stamford Bridge
+B- American Express Stadium
+C- Etihad Stadium
+D- London Stadium
 Answer: B
 
 11.	Sunderland
-A) Selhurst Park
-B) St James’ Park
-C) Stadium of Light
-D) Elland Road
+A- Selhurst Park
+B- St James’ Park
+C- Stadium of Light
+D- Elland Road
 Answer: C
 	
 12.	Newcastle
-A) St James’ Park
-B) Villa Park
-C) Turf Moor
-D) Molineux Stadium
+A- St James’ Park
+B- Villa Park
+C- Turf Moor
+D- Molineux Stadium
 Answer: A
 
 13.	Bournemouth
-A) American Express Stadium
-B) Old Trafford
-C) City Ground
-D) Vitality Stadium
+A- American Express Stadium
+B- Old Trafford
+C- City Ground
+D- Vitality Stadium
 Answer: D
 
 14.	Crystal Palace
-A) Elland Road
-B) London Stadium
-C) Selhurst Park
-D) Craven Cottage
+A- Elland Road
+B- London Stadium
+C- Selhurst Park
+D- Craven Cottage
 Answer: C
 
 15.	Leeds
-A) Villa Park
-B) Elland Road
-C) Stamford Bridge
-D) Etihad Stadium
+A- Villa Park
+B- Elland Road
+C- Stamford Bridge
+D- Etihad Stadium
 Answer: B
 
 16.	Nottingham Forest
-A) City Ground
-B) Old Trafford
-C) Turf Moor
-D) Gtech Community Stadium
+A- City Ground
+B- Old Trafford
+C- Turf Moor
+D- Gtech Community Stadium
 Answer: A
 
 17.	Tottenham
-A) Emirates Stadium
-B) Selhurst Park
-C) Tottenham Hotspur Stadium
-D) American Express Stadium
+A- Emirates Stadium
+B- Selhurst Park
+C- Tottenham Hotspur Stadium
+D- American Express Stadium
 Answer: C
 
 18.	West Ham
-A) Villa Park
-B) Old Trafford
-C) St James’ Park
-D) London Stadium
+A- Villa Park
+B- Old Trafford
+C- St James’ Park
+D- London Stadium
 Answer: D
 
 19.	Burnley
-A) Turf Moor
-B) Elland Road
-C) Stamford Bridge
-D) Anfield Stadium
+A- Turf Moor
+B- Elland Road
+C- Stamford Bridge
+D- Anfield
 Answer: B
 
 20.	Wolves
-A) Selhurst Park
-B) Old Trafford
-C) American Express Stadium
-D) Molineux Stadium
+A- Selhurst Park
+B- Old Trafford
+C- American Express Stadium
+D- Molineux Stadium
 Answer: D
