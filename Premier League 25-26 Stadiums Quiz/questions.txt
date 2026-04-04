@@ -4,117 +4,136 @@ B) Old Trafford
 C) Etihad Stadium
 D) Villa Park
 Answer: A
-	2.	Arsenal
+	
+2.	Arsenal
 A) Stamford Bridge
 B) London Stadium
 C) Emirates Stadium
 D) Craven Cottage
 Answer: C
-	3.	Manchester City
+	
+3.	Manchester City
 A) Old Trafford
-B) AMEX Stadium
+B) American Express Stadium
 C) Selhurst Park
 D) Etihad Stadium
 Answer: D
-	4.	Manchester United
+
+4.	Manchester United
 A) Villa Park
 B) Old Trafford
 C) Turf Moor
 D) City Ground
 Answer: B
-	5.	Aston Villa
+	
+5.	Aston Villa
 A) Emirates Stadium
 B) Elland Road
 C) Villa Park
-D) Gtech Community
+D) Gtech Community Stadium
 Answer: C
-	6.	Chelsea
+
+6.	Chelsea
 A) Craven Cottage
 B) Stamford Bridge
 C) Anfield Stadium
 D) London Stadium
 Answer: B
-	7.	Brentford
-A) Gtech Community Stadium
+
+7.	Brentford
+A) Gtech Community Stadium Stadium
 B) Old Trafford
 C) Selhurst Park
 D) Vitality Stadium
 Answer: D
-	8.	Everton
+
+8.	Everton
 A) Hill Dickinson Stadium
 B) Goodison Park
 C) Anfield Stadium
 D) Turf Moor
 Answer: A
-	9.	Fulham
+
+9.	Fulham
 A) Emirates Stadium
 B) Old Trafford
 C) Villa Park
 D) Craven Cottage
 Answer: D
-	10.	Brighton
+
+10.	Brighton
 A) Stamford Bridge
-B) AMEX Stadium
+B) American Express Stadium
 C) Etihad Stadium
 D) London Stadium
 Answer: B
-	11.	Sunderland
+
+11.	Sunderland
 A) Selhurst Park
 B) St James’ Park
 C) Stadium of Light
 D) Elland Road
 Answer: C
-	12.	Newcastle
+	
+12.	Newcastle
 A) St James’ Park
 B) Villa Park
 C) Turf Moor
 D) Molineux Stadium
 Answer: A
-	13.	Bournemouth
-A) AMEX Stadium
+
+13.	Bournemouth
+A) American Express Stadium
 B) Old Trafford
 C) City Ground
 D) Vitality Stadium
 Answer: D
-	14.	Crystal Palace
+
+14.	Crystal Palace
 A) Elland Road
 B) London Stadium
 C) Selhurst Park
 D) Craven Cottage
 Answer: C
-	15.	Leeds
+
+15.	Leeds
 A) Villa Park
 B) Elland Road
 C) Stamford Bridge
 D) Etihad Stadium
 Answer: B
-	16.	Nottingham Forest
+
+16.	Nottingham Forest
 A) City Ground
 B) Old Trafford
 C) Turf Moor
-D) Gtech Community
+D) Gtech Community Stadium
 Answer: A
-	17.	Tottenham
+
+17.	Tottenham
 A) Emirates Stadium
 B) Selhurst Park
 C) Tottenham Hotspur Stadium
-D) AMEX Stadium
+D) American Express Stadium
 Answer: C
-	18.	West Ham
+
+18.	West Ham
 A) Villa Park
-B) London Stadium
+B) Old Trafford
 C) St James’ Park
-D) Old Trafford
+D) London Stadium
 Answer: D
-	19.	Burnley
+
+19.	Burnley
 A) Turf Moor
 B) Elland Road
 C) Stamford Bridge
 D) Anfield Stadium
 Answer: B
-	20.	Wolves
+
+20.	Wolves
 A) Selhurst Park
 B) Old Trafford
-C) Molineux Stadium
-D) AMEX Stadium
+C) American Express Stadium
+D) Molineux Stadium
 Answer: D
