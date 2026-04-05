@@ -4,14 +4,89 @@ from tkinter import messagebox
 
 from time import strftime
 
+def question2(question1_win):
+    def q2_correct():
+        correct()
+        question3(question2_win)
+
+    def q2_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is the Emirates Stadium')
+        question3(question2_win)
+
+    question2_win = Toplevel()
+    question2_win.geometry('+0+0')
+    question2_win.resizable(False,False)
+    question2_win.title('Premier League 25/26 Stadiums Quiz - Q2')
+
+    q2_label = tk.Label(
+        question2_win,
+        text='What is the Arsenal stadium called?',
+        font=('Arial',20)
+    )
+    q2_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q2_button_a = tk.Button(
+        question2_win,
+        text='Stamford Bridge',
+        font=('Arial'),
+        width=20,
+        command=q2_incorrect
+    )
+    q2_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q2_button_b = tk.Button(
+        question2_win,
+        text='London Stadium',
+        font=('Arial'),
+        width=20,
+        command=q2_incorrect
+    )
+    q2_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q2_button_c = tk.Button(
+        question2_win,
+        text='Emirates Stadium',
+        font=('Arial'),
+        width=20,
+        command=q2_correct
+    )
+    q2_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q2_button_d = tk.Button(
+        question2_win,
+        text='Craven Cottage',
+        font=('Arial'),
+        width=20,
+        command=q2_incorrect
+    )
+    q2_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question1_win.destroy()
+
 def question1():
     def q1_correct():
         correct()
-        question2()
+        question2(question1_win)
 
     def q1_incorrect():
         messagebox.showinfo('Result','Incorrect, The answer is Anfield')
-        question2()
+        question2(question1_win)
 
     question1_win = Toplevel()
     question1_win.geometry('+0+0')
@@ -82,6 +157,8 @@ def correct():
     global score
     score += 1
     return
+
+score = 0
 
 root = tk.Tk()
 root.geometry('+0+0')
