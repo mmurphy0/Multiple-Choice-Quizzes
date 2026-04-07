@@ -4,6 +4,81 @@ from tkinter import messagebox
 
 from time import strftime
 
+def question6(question5_win):
+    def q6_correct():
+        correct()
+        question7(question6_win)
+
+    def q6_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Stamford Bridge')
+        question7(question6_win)
+
+    question6_win = Toplevel()
+    question6_win.geometry('+0+0')
+    question6_win.resizable(False,False)
+    question6_win.title('Premier League 25/26 Stadiums Quiz - Q6')
+
+    q6_label = tk.Label(
+        question6_win,
+        text='What is the Chelsea stadium called?',
+        font=('Arial',20)
+    )
+    q6_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q6_button_a = tk.Button(
+        question6_win,
+        text='Craven Cottage',
+        font=('Arial'),
+        width=20,
+        command=q6_incorrect
+    )
+    q6_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q6_button_b = tk.Button(
+        question6_win,
+        text='Stamford Bridge',
+        font=('Arial'),
+        width=20,
+        command=q6_correct
+    )
+    q6_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q6_button_c = tk.Button(
+        question6_win,
+        text='Emirates Stadium',
+        font=('Arial'),
+        width=20,
+        command=q6_incorrect
+    )
+    q6_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q6_button_d = tk.Button(
+        question6_win,
+        text='London Stadium',
+        font=('Arial'),
+        width=20,
+        command=q6_incorrect
+    )
+    q6_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question5_win.destroy()
+
 def question5(question4_win):
     def q5_correct():
         correct()
@@ -25,7 +100,7 @@ def question5(question4_win):
     )
     q5_label.grid(
         row=1,
-        columm=1,
+        column=1,
         columnspan=2
     )
 
@@ -132,7 +207,7 @@ def question4(question3_win):
         question4_win,
         text='Turf Moor',
         font=('Arial'),
-        width=15,
+        width=20,
         command=q4_incorrect
     )
     q4_button_c.grid(
@@ -357,7 +432,7 @@ def question1():
         question1_win,
         text='Etihad Stadium',
         font=('Arial'),
-        width=15,
+        width=20,
         command=q1_incorrect
     )
     q1_button_c.grid(
@@ -369,7 +444,7 @@ def question1():
         question1_win,
         text='Villa Park',
         font=('Arial'),
-        width=15,
+        width=20,
         command=q1_incorrect
     )
     q1_button_d.grid(
@@ -393,7 +468,7 @@ root.title('Premier League 25/26 Stadiums Quiz')
 root_title = tk.Label(
     root,
     text='Premier League 25/26 Stadiums Quiz',
-    font=('Arial',20)
+    font=('Arial',20,'bold')
 )
 root_title.pack(anchor='center')
 
@@ -401,7 +476,7 @@ startquiz_button = tk.Button(
     root,
     text='Start',
     font=('Arial'),
-    width=15,
+    width=20,
     command=question1
 )
 startquiz_button.pack(anchor='center')
