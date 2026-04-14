@@ -4,7 +4,80 @@ from tkinter import messagebox
 
 from time import strftime
 
+def question12(question11_win):
+    def q12_correct():
+        correct()
+        question13(question12_win)
     
+    def q12_incorrect():
+        messagebox.showinfo('Result',"Incorrect, The answer is St James' Park")
+        question13(question12_win)
+
+    question12_win = Toplevel()
+    question12_win.geometry('+0+0')
+    question12_win.resizable(False,False)
+    question12_win.title('Premier League 25/26 Stadiums Quiz - Results')
+
+    q12_label = tk.Label(
+        question12_win,
+        text='What is the Newcastle United stadium called?',
+        font=('Arial',20)
+    )
+    q12_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q12_button_a = tk.Button(
+        question12_win,
+        text='St James Park',
+        font=('Arial'),
+        width=20,
+        command=q12_correct
+    )
+    q12_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q12_button_b = tk.Button(
+        question12_win,
+        text='Villa Park',
+        font=('Arial'),
+        width=20,
+        command=q12_incorrect
+    )
+    q12_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q12_button_c = tk.Button(
+        question12_win,
+        text='Turf Moor',
+        font=('Arial'),
+        width=20,
+        command=q12_incorrect
+    )
+    q12_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q12_button_d = tk.Button(
+        question12_win,
+        text='Molineux Stadium',
+        font=('Arial'),
+        width=20,
+        command=q12_incorrect
+    )
+    q12_button_d.grid(
+        row=4,
+        column=2
+    )
+    question11_win.destroy()
+
 def question11(question10_win):
     def q11_correct():
         correct()
@@ -59,7 +132,7 @@ def question11(question10_win):
         text='Stadium of Light',
         font=('Arial'),
         width=20,
-        command=q11_incorrect
+        command=q11_correct
     )
     q11_button_c.grid(
         row=4,
