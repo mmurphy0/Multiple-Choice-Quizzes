@@ -4,6 +4,81 @@ from tkinter import messagebox
 
 from time import strftime
 
+def question20(question19_win):
+    def q20_correct():
+        correct()
+        results(question20_win)
+
+    def q20_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is the Molineux Stadium')
+        results(question20_win)
+
+    question20_win = Toplevel()
+    question20_win.geometry('+0+0')
+    question20_win.resizable(False,False)
+    question20_win.title('Premier League 25/26 Stadiums Quiz - Q20')
+
+    q20_label = tk.label(
+        question20_win,
+        text='What is the Wolves stadium called?',
+        font=('Arial',20)
+    )
+    q20_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q20_button_a = tk.Button(
+        question20_win,
+        text='Selhurst Park',
+        font=('Arial'),
+        width=20,
+        command=q20_incorrect
+    )
+    q20_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q20_button_b = tk.Button(
+        question20_win,
+        text='Old Trafford',
+        font=('Arial'),
+        width=20,
+        command=q20_incorrect
+    )
+    q20_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q20_button_c = tk.Button(
+        question20_win,
+        text='American Express Stadium',
+        font=('Arial'),
+        width=20,
+        command=q20_incorrect
+    )
+    q20_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q20_button_d = tk.Button(
+        question20_win,
+        text='Molineux Stadium',
+        font=('Arial'),
+        width=20,
+        command=q20_correct
+    )
+    q20_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question20_win.destroy()
+
 def question19(question18_win):
     def q19_correct():
         correct()
