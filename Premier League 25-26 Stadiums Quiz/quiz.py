@@ -4,6 +4,49 @@ from tkinter import messagebox
 
 from time import strftime
 
+def results(question20_win):
+    def reset():
+        global score
+        score = 0
+        result_win.destroy()
+    
+    def save_score():
+        time = strftime('%H:%M:%S %D')
+        with open('Premier League 25-26 Stadiums Quiz/scores.txt','a') as file:
+            file.write(time + '\n' + (f'Score: {score}/20') + '\n' + '----------' + '\n')
+            messagebox.showinfo('Confirmation','Result successfully saved')
+            reset()
+
+    result_win = Toplevel()
+    result_win.geometry('+0+0')
+    result_win.resizable(False,False)
+    result_win.title('Results')
+
+    result_title = tk.Label(
+        result_win,
+        text='Results',
+        font=('Arial',20,'bold')
+    )
+    result_title.pack()
+
+    result_label = tk.Label(
+        result_win,
+        text=f'Score: {score}/20',
+        font=('Arial',20)
+    )
+    result_label.pack()
+
+    continue_button = tk.Button(
+        result_win,
+        text='Continue',
+        font=('Arial'),
+        width=20,
+        command=save_score
+    )
+    continue_button.pack()
+
+    question20_win.destroy()
+
 def question20(question19_win):
     def q20_correct():
         correct()
@@ -18,7 +61,7 @@ def question20(question19_win):
     question20_win.resizable(False,False)
     question20_win.title('Premier League 25/26 Stadiums Quiz - Q20')
 
-    q20_label = tk.label(
+    q20_label = tk.Label(
         question20_win,
         text='What is the Wolves stadium called?',
         font=('Arial',20)
@@ -77,7 +120,7 @@ def question20(question19_win):
         column=2
     )
 
-    question20_win.destroy()
+    question19_win.destroy()
 
 def question19(question18_win):
     def q19_correct():
@@ -616,7 +659,7 @@ def question12(question11_win):
     question12_win = Toplevel()
     question12_win.geometry('+0+0')
     question12_win.resizable(False,False)
-    question12_win.title('Premier League 25/26 Stadiums Quiz - Results')
+    question12_win.title('Premier League 25/26 Stadiums Quiz - Q12')
 
     q12_label = tk.Label(
         question12_win,
