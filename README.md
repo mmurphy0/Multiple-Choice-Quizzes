@@ -19,6 +19,12 @@ This is a collection of multiple choice quizzes i have made using the python tki
 
 - European Football 24-25 Quiz
 
+- Oasis Quiz
+
+- The Office (US) Quiz
+
+- Premier League 25-26 Stadiums Quiz
+
 ### File Contents
 Every quiz has its own file and each file is set out the same way with 3 files
 
