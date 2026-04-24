@@ -1,11 +1,11 @@
 # Multiple Choice Quizzes
 
 ## Description
-This is a collection of multiple choice quizzes i have made using the python tkinter module these quizzes will eventually cover a variety of topics so it is welcome to more people who enjoy quizzes.
+This is a collection of multiple choice quizzes i have made using the python tkinter module these quizzes will eventually cover a variety of topics and welcome to all people who enjoy quizzes.
 
 ### Please Note - On the scorebooks for each quiz, the date is in the MM/DD/YYYY format
 
-### Please be aware - questions.txt & Test Log.pdf in the quiz files contain spoilers for the answers
+### Please be aware - questions.txt & (quizname)Test Log.pdf in the quiz files contain spoilers for the answers
 
 ### Avaliable Quizzes
 
@@ -67,8 +67,10 @@ python3 (quizname).py
 
 ## Future Updates
 
-- Premier League 24/25 Stadiums Quiz (Coming Soon)
+- Bundesliga 25-26 Stadiums Quiz (Coming Soon)
 
-- Global capitals quiz - (Coming Soon)
+- LaLiga 25-26 Stadiums Quiz (Coming Soon)
+
+- Ligue 1 25-26 Stadiums Quiz (Coming Soon)
 
 - More quizzes across various topics
