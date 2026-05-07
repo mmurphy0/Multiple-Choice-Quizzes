@@ -4,6 +4,81 @@ from tkinter import Toplevel
 
 from time import strftime
 
+def question5(question4_win):
+    def q5_correct():
+        correct()
+        question6(question5_win)
+
+    def q5_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is the PreZero Arena')
+        question6(question5_win)
+
+    question5_win = Toplevel()
+    question5_win.geometry('+0+0')
+    question5_win.resizable(False,False)
+    question5_win.title('Bundesliga 25-26 Stadiums Quiz - Q5')
+
+    q5_label = tk.Label(
+        question5_win,
+        text='What is the Hoffenheim Stadium called?',
+        font=('Arial',20)
+    )
+    q5_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q5_button_a = tk.Button(
+        question5_win,
+        text='PreZero Arena',
+        font=('Arial'),
+        width=20,
+        command=q5_correct
+    )
+    q5_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q5_button_b = tk.Button(
+        question5_win,
+        text='Mewa Arena',
+        font=('Arial'),
+        width=20,
+        command=q5_incorrect
+    )
+    q5_button_b.grid(
+        row=3,
+        column=1
+    )
+
+    q5_button_c = tk.Button(
+        question5_win,
+        text='Allianz Arena',
+        font=('Arial'),
+        width=20,
+        command=q5_incorrect
+    )
+    q5_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q5_button_d = tk.Button(
+        question5_win,
+        text='BayArena',
+        font=('Arial'),
+        width=20,
+        command=q5_incorrect
+    )
+    q5_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question4_win.destroy()
+
 def question4(question3_win):
     def q4_correct():
         correct()
@@ -16,7 +91,7 @@ def question4(question3_win):
     question4_win = Toplevel()
     question4_win.geometry('+0+0')
     question4_win.resizable(False,False)
-    question4_win.title('Bundesliga 25-26 Stadiums Quiz')
+    question4_win.title('Bundesliga 25-26 Stadiums Quiz - Q4')
 
     q4_label = tk.Label(
         question4_win,
