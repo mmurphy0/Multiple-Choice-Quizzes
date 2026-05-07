@@ -4,6 +4,81 @@ from tkinter import Toplevel
 
 from time import strftime
 
+def question4(question3_win):
+    def q4_correct():
+        correct()
+        question5(question4_win)
+
+    def q4_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is the MHP Arena')
+        question5(question4_win)
+
+    question4_win = Toplevel()
+    question4_win.geometry('+0+0')
+    question4_win.resizable(False,False)
+    question4_win.title('Bundesliga 25-26 Stadiums Quiz')
+
+    q4_label = tk.Label(
+        question4_win,
+        text='What is the VfB Stuttgart Stadium called?',
+        font=('Arial',20)
+    )
+    q4_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q4_button_a = tk.Button(
+        question4_win,
+        text='Volksparkstadion',
+        font=('Arial'),
+        width=20,
+        command=q4_incorrect
+    )
+    q4_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q4_button_b = tk.Button(
+        question4_win,
+        text='MHP Arena',
+        font=('Arial'),
+        width=20,
+        command=q4_correct
+    )
+    q4_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q4_button_c = tk.Button(
+        question4_win,
+        text='Europa-Park Stadion',
+        font=('Arial'),
+        width=20,
+        command=q4_incorrect
+    )
+    q4_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q4_button_d = tk.Button(
+        question4_win,
+        text='Weserstadion',
+        font=('Arial'),
+        width=20,
+        command=q4_incorrect
+    )
+    q4_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question3_win.destroy()
+
 def question3(question2_win):
     def q3_correct():
         correct()
@@ -232,6 +307,8 @@ def correct():
     score += 1
     messagebox.showinfo('Result','Correct!')
 
+score = 0
+
 root_win = tk.Tk()
 root_win.geometry('+0+0')
 root_win.resizable(False,False)
@@ -247,7 +324,8 @@ root_label.pack()
 startquiz_button = tk.Button(
     root_win,
     text='Start',
-    font=('Arial')
+    font=('Arial'),
+    command=question1
 )
 startquiz_button.pack()
 
