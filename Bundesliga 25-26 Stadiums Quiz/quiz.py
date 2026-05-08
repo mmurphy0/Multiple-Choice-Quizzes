@@ -4,6 +4,81 @@ from tkinter import Toplevel
 
 from time import strftime
 
+def question7(question6_win):
+    def q7_correct():
+        correct()
+        question8(question7_win)
+
+    def q7_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is Europa-Park Stadion')
+        question8(question7_win)
+
+    question7_win = Toplevel()
+    question7_win.geometry('+0+0')
+    question7_win.resizable(False,False)
+    question7_win.title('Bundesliga 25-26 Stadiums Quiz - Q7')
+
+    q7_label = tk.Label(
+        question7_win,
+        text='What is the SC Freiburg Stadium called?',
+        font=('Arial',20)
+    )
+    q7_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q7_button_a = tk.Button(
+        question7_win,
+        text='Signal Iduna Park',
+        font=('Arial'),
+        width=20,
+        command=q7_incorrect
+    )
+    q7_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q7_button_b = tk.Button(
+        question7_win,
+        text='Weserstadion',
+        font=('Arial'),
+        width=20,
+        command=q7_incorrect
+    )
+    q7_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q7_button_c = tk.Button(
+        question7_win,
+        text='Europa-Park Stadion',
+        font=('Arial'),
+        width=20,
+        command=q7_correct
+    )
+    q7_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q7_button_d = tk.Button(
+        question7_win,
+        text='WWK Arena',
+        font=('Arial'),
+        width=20,
+        command=q7_incorrect
+    )
+    q7_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question6_win.destroy()
+
 def question6(question5_win):
     def q6_correct():
         correct()
@@ -125,7 +200,7 @@ def question5(question4_win):
     )
     q5_button_b.grid(
         row=3,
-        column=1
+        column=2
     )
 
     q5_button_c = tk.Button(
