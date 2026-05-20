@@ -9,9 +9,9 @@ def results(question18_win):
         global score
         score = 0
         results_win.destroy()
-        
+
     def save():
-        current_time = strftime('%H:%M:%S :D')
+        current_time = strftime('%H:%M:%S %D')
         with open('Bundesliga 25-26 Stadiums Quiz/scores.txt','a') as file:
             file.write((f'Score:{score}/18') + '\n' + current_time + '\n' + ('-'*10) + '\n')
             messagebox.showinfo('Confirmation','Score saved successfully')
