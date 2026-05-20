@@ -4,6 +4,49 @@ from tkinter import Toplevel
 
 from time import strftime
 
+def results(question18_win):
+    def reset():
+        global score
+        score = 0
+        results_win.destroy()
+        
+    def save():
+        current_time = strftime('%H:%M:%S :D')
+        with open('Bundesliga 25-26 Stadiums Quiz/scores.txt','a') as file:
+            file.write((f'Score:{score}/18') + '\n' + current_time + '\n' + ('-'*10) + '\n')
+            messagebox.showinfo('Confirmation','Score saved successfully')
+            reset()
+    
+    results_win = Toplevel()
+    results_win.geometry('+0+0')
+    results_win.resizable(False,False)
+    results_win.title('Bundesliga 25-26 Stadiums Quiz - Results')
+
+    results_title = tk.Label(
+        results_win,
+        text='Results',
+        font=('Arial',20,'bold')
+    )
+    results_title.pack()
+
+    results_label = tk.Label(
+        results_win,
+        text=f'Score: {score}/18',
+        font=('Arial',20)
+    )
+    results_label.pack()
+
+    continue_button = tk.Button(
+        results_win,
+        text='Continue',
+        font=('Arial'),
+        width=20,
+        command=save
+    )
+    continue_button.pack()
+
+    question18_win.destroy()
+
 def question18(question17_win):
     def q18_correct():
         correct()
