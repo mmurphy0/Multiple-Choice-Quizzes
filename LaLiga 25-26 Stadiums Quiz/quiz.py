@@ -4,6 +4,79 @@ from tkinter import messagebox
 
 from time import strftime
 
+def question1():
+    def q1_correct():
+        correct()
+        question2(question1_win)
+
+    def q1_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is the Camp Nou')
+        question2(question1_win)
+
+    question1_win = Toplevel()
+    question1_win.geometry('+0+0')
+    question1_win.resizable(False,False)
+    question1_win.title('LaLiga 25-26 Stadiums Quiz - Q1')
+
+    q1_label = tk.Label(
+        question1_win,
+        text='What is the Barcelona Stadium called?',
+        font=('Arial',20)
+    )
+    q1_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q1_button_a = tk.Button(
+        question1_win,
+        text='Camp Nou',
+        font=('Arial'),
+        width=20,
+        command=q1_correct
+    )
+    q1_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q1_button_b = tk.Button(
+        question1_win,
+        text='Reale Arena',
+        font=('Arial'),
+        width=20,
+        command=q1_incorrect
+    )
+    q1_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q1_button_c = tk.Button(
+        question1_win,
+        text='Mestalla Stadium',
+        font=('Arial'),
+        width=20,
+        command=q1_incorrect
+    )
+    q1_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q1_button_d = tk.Button(
+        question1_win,
+        text='Coliseum Stadium',
+        font=('Arial'),
+        width=20,
+        command=q1_incorrect
+    )
+    q1_button_d.grid(
+        row=4,
+        column=2
+    )
+
 def correct():
     global score
     score += 1
