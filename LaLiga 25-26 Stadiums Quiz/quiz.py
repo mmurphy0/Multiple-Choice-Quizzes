@@ -183,7 +183,7 @@ def question4(question3_win):
         question4_win,
         text='Ramón Sánchez-Pizjuán Stadium',
         font=('Arial'),
-        width=20,
+        width=25,
         command=q4_incorrect
     )
     q4_button_a.grid(
@@ -195,7 +195,7 @@ def question4(question3_win):
         question4_win,
         text='Metropolitano Stadium',
         font=('Arial'),
-        width=20,
+        width=25,
         command=q4_correct
     )
     q4_button_b.grid(
@@ -207,7 +207,7 @@ def question4(question3_win):
         question4_win,
         text='Reale Arena',
         font=('Arial'),
-        width=20,
+        width=25,
         command=q4_incorrect
     )
     q4_button_c.grid(
@@ -219,7 +219,7 @@ def question4(question3_win):
         question4_win,
         text='Mestalla Stadium',
         font=('Arial'),
-        width=20,
+        width=25,
         command=q4_incorrect
     )
     q4_button_d.grid(
