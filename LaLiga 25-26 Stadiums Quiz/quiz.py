@@ -4,6 +4,81 @@ from tkinter import messagebox
 
 from time import strftime
 
+def question7(question6_win):
+    def q7_correct():
+        correct()
+        question8(question7_win)
+
+    def q7_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is the Coliseum Stadium')
+        question8(question7_win)
+
+    question7_win = Toplevel()
+    question7_win.geometry('+0+0')
+    question7_win.resizable(False,False)
+    question7_win.title('LaLiga 25-26 Stadiums Quiz - Q7')
+
+    q7_label = tk.Label(
+        question7_win,
+        text='WHat is the Getafe Stadium called?',
+        font=('Arial',20)
+    )
+    q7_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q7_button_a = tk.Button(
+        question7_win,
+        text='Son Moix',
+        font=('Arial'),
+        width=20,
+        command=q7_incorrect
+    )
+    q7_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q7_button_b = tk.Button(
+        question7_win,
+        text='Coliseum Stadium',
+        font=('Arial'),
+        width=20,
+        command=q7_correct
+    )
+    q7_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q7_button_c = tk.Button(
+        question7_win,
+        text='Bernabéu',
+        font=('Arial'),
+        width=20,
+        command=q7_incorrect
+    )
+    q7_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q7_button_d = tk.Button(
+        question7_win,
+        text='Vallecas Stadium',
+        font=('Arial'),
+        width=20,
+        command=q7_incorrect
+    )
+    q7_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question6_win.destroy()
+
 def question6(question5_win):
     def q6_correct():
         correct()
