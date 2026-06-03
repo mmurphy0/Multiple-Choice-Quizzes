@@ -4,6 +4,81 @@ from tkinter import messagebox
 
 from time import strftime
 
+def question9(question8_win):
+    def q9_correct():
+        correct()
+        question10(question9_win)
+
+    def q9_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is the Mestalla Stadium')
+        question10(question9_win)
+
+    question9_win = Toplevel()
+    question9_win.geometry('+0+0')
+    question9_win.resizable(False,False)
+    question9_win.title('LaLiga 25-26 Stadiums Quiz - Q9')
+
+    q9_label = tk.Label(
+        question9_win,
+        text='What is the Valencia Stadium called?',
+        font=('Arial',20)
+    )
+    q9_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q9_button_a = tk.Button(
+        question9_win,
+        text='Montilivi Stadium',
+        font=('Arial'),
+        width=20,
+        command=q9_incorrect
+    )
+    q9_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q9_button_b = tk.Button(
+        question9_win,
+        text='Estadio Ciudad de Valencia',
+        font=('Arial'),
+        width=20,
+        command=q9_incorrect
+    )
+    q9_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q9_button_c = tk.Button(
+        question9_win,
+        text='Mestalla Stadium',
+        font=('Arial'),
+        width=20,
+        command=q9_correct
+    )
+    q9_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q9_button_d = tk.Button(
+        question9_win,
+        text='Camp Nou',
+        font=('Arial'),
+        width=20,
+        command=q9_incorrect
+    )
+    q9_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question8_win.destroy()
+
 def question8(question7_win):
     def q8_correct():
         correct()
