@@ -108,7 +108,7 @@ def question8(question7_win):
         question8_win,
         text='Vallecas Stadium',
         font=('Arial'),
-        width=20,
+        width=25,
         command=q8_correct
     )
     q8_button_a.grid(
@@ -120,7 +120,7 @@ def question8(question7_win):
         question8_win,
         text='Ramón Sánchez-Pizjuán Stadium',
         font=('Arial'),
-        width=20,
+        width=25,
         command=q8_incorrect
     )
     q8_button_b.grid(
@@ -132,7 +132,7 @@ def question8(question7_win):
         question8_win,
         text='Reale Arena',
         font=('Arial'),
-        width=20,
+        width=25,
         command=q8_incorrect
     )
     q8_button_c.grid(
@@ -144,7 +144,7 @@ def question8(question7_win):
         question8_win,
         text='RCDE Stadium',
         font=('Arial'),
-        width=20,
+        width=25,
         command=q8_incorrect
     )
     q8_button_d.grid(
