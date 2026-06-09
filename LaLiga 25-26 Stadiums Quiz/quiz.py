@@ -77,6 +77,8 @@ def question12(question11_win):
         column=2
     )
 
+    question11_win.destroy()
+
 
 def question11(question10_win):
     def q11_correct():
