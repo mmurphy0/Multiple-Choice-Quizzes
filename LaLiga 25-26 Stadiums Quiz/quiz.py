@@ -57,7 +57,7 @@ def question15(question14_win):
         question15_win,
         text='Estadio de Balaidos',
         font=('Arial'),
-        width=20,
+        width=25,
         command=q15_incorrect
     )
     q15_button_c.grid(
@@ -69,7 +69,7 @@ def question15(question14_win):
         question15_win,
         text='Metropolitano Stadium',
         font=('Arial'),
-        width=20,
+        width=25,
         command=q15_incorrect
     )
     q15_button_d.grid(
@@ -183,7 +183,7 @@ def question13(question12_win):
         question13_win,
         text='Reale Arena',
         font=('Arial'),
-        width=20,
+        width=25,
         command=q13_incorrect
     )
     q13_button_a.grid(
@@ -195,7 +195,7 @@ def question13(question12_win):
         question13_win,
         text='Mestalla Stadium',
         font=('Arial'),
-        width=20,
+        width=25,
         command=q13_incorrect
     )
     q13_button_b.grid(
@@ -207,7 +207,7 @@ def question13(question12_win):
         question13_win,
         text='Ramón Sánchez-Pizjuán Stadium',
         font=('Arial'),
-        width=20,
+        width=25,
         command=q13_correct
     )
     q13_button_c.grid(
@@ -219,7 +219,7 @@ def question13(question12_win):
         question13_win,
         text='Son Moix',
         font=('Arial'),
-        width=20,
+        width=25,
         command=q13_incorrect
     )
     q13_button_d.grid(
