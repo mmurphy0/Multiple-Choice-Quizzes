@@ -4,6 +4,81 @@ from tkinter import messagebox
 
 from time import strftime
 
+def question15(question14_win):
+    def q15_correct():
+        correct()
+        question16(question15_win)
+
+    def q15_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is the Manuel Martínez Valero Stadium')
+        question16(question15_win)
+
+    question15_win = Toplevel()
+    question15_win.geometry('+0+0')
+    question15_win.resizable(False,False)
+    question15_win.title('LaLiga 25-26 Stadiums Quiz - Q15')
+
+    q15_label = tk.Label(
+        question15_win,
+        text='What is the Elche Stadium called?',
+        font=('Arial',20)
+    )
+    q15_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q15_button_a = tk.Button(
+        question15_win,
+        text='Manuel Martínez Valero Stadium',
+        font=('Arial'),
+        width=25,
+        command=q15_correct
+    )
+    q15_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q15_button_b = tk.Button(
+        question15_win,
+        text='Camp Nou',
+        font=('Arial'),
+        width=25,
+        command=q15_incorrect
+    )
+    q15_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q15_button_c = tk.Button(
+        question15_win,
+        text='Estadio de Balaidos',
+        font=('Arial'),
+        width=20,
+        command=q15_incorrect
+    )
+    q15_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q15_button_d = tk.Button(
+        question15_win,
+        text='Metropolitano Stadium',
+        font=('Arial'),
+        width=20,
+        command=q15_incorrect
+    )
+    q15_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question14_win.destroy()
+
 def question14(question13_win):
     def q14_correct():
         correct()
@@ -77,7 +152,7 @@ def question14(question13_win):
         column=2
     )
 
-    question15_win.destroy()
+    question13_win.destroy()
 
 def question13(question12_win):
     def q13_correct():
