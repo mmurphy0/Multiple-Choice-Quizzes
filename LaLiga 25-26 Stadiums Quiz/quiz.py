@@ -4,6 +4,81 @@ from tkinter import messagebox
 
 from time import strftime
 
+def question17(question16_win):
+    def q17_correct():
+        correct()
+        question18(question17_win)
+
+    def q17_incorrect():
+        messagebox.showinfo('Result','Incorrect, The answer is the El Sadar Stadium')
+        question18(question17_win)
+
+    question17_win = Toplevel()
+    question17_win.geometry('+0+0')
+    question17_win.resizable(False,False)
+    question17_win.title('LaLiga 25-26 Stadiums Quiz - Q17')
+
+    q17_label = tk.Label(
+        question17_win,
+        text='What is the Osasuna Stadium called?',
+        font=('Arial',20)
+    )
+    q17_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q17_button_a = tk.Button(
+        question17_win,
+        text='Coliseum Stadium',
+        font=('Arial'),
+        width=25,
+        command=q17_incorrect
+    )
+    q17_button_a.grid(
+        row=3,
+        column=1
+    )
+
+    q17_button_b = tk.Button(
+        question17_win,
+        text='Ramón Sánchez-Pizjuán Stadium',
+        font=('Arial'),
+        width=25,
+        command=q17_incorrect
+    )
+    q17_button_b.grid(
+        row=3,
+        column=2
+    )
+
+    q17_button_c = tk.Button(
+        question17_win,
+        text='Carlos Tartiere Stadium',
+        font=('Arial'),
+        width=25,
+        command=q17_incorrect
+    )
+    q17_button_c.grid(
+        row=4,
+        column=1
+    )
+
+    q17_button_d = tk.Button(
+        question17_win,
+        text='El Sadar Stadium',
+        font=('Arial'),
+        width=20,
+        command=q17_correct
+    )
+    q17_button_d.grid(
+        row=4,
+        column=2
+    )
+
+    question16_win.destroy()
+
 def question16(question15_win):
     def q16_correct():
         correct()
