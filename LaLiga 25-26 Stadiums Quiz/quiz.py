@@ -4,6 +4,49 @@ from tkinter import messagebox
 
 from time import strftime
 
+def results(question20_win):
+    def reset():
+        global score
+        score = 0
+        results_win.destroy()
+
+    def save():
+        current_time = strftime('%H:%M:%S %D')
+        with open('LaLiga 25-26 Stadiums Quiz/scores.txt','a') as file:
+            file.write(current_time + '\n' + f'Score: {score}/20' + '\n' + ('-'*10) + '\n')
+            messagebox.showinfo('Confirmation','Score saved successfully')
+            reset()
+    
+    results_win = Toplevel()
+    results_win.geometry('+0+0')
+    results_win.resizable(False,False)
+    results_win.title('LaLiga 25-26 Stadiums Quiz - Results')
+
+    results_title = tk.Label(
+        results_win,
+        text='Results',
+        font=('Arial',20,'bold')
+    )
+    results_title.pack()
+
+    results_label = tk.Label(
+        results_win,
+        text=f'Score: {score}/20',
+        font=('Arial',20)
+    )
+    results_label.pack()
+
+    continue_button = tk.Button(
+        results_win,
+        text='Continue',
+        font=('Arial'),
+        width=20,
+        command=save
+    )
+    continue_button.pack()
+
+    question20_win.destroy()
+
 def question20(question19_win):
     def q20_correct():
         correct()
