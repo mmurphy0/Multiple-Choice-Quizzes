@@ -27,6 +27,8 @@ This is a collection of multiple choice quizzes i have made using the python tki
 
 - Bundesliga 25-26 Stadiums Quiz
 
+- LaLiga 25-26 Stadiums Quiz
+
 ### File Contents
 Every quiz has its own file and each file is set out the same way with 3 files
 
@@ -69,9 +71,9 @@ python3 (quizname).py
 
 ## Future Updates
 
-- LaLiga 25-26 Stadiums Quiz (Coming Soon)
-
 - Ligue 1 25-26 Stadiums Quiz (Coming Soon)
+
+- Serie A 25-26 Stadiums Quiz (Coming Soon)
 
 - UFC Quiz
 
