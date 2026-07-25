@@ -1,8 +1,11 @@
 import tkinter as tk
 from tkinter import messagebox
 from tkinter import Toplevel
+from tkinter import ttk
 
 from time import strftime
+
+import platform 
 
 def question1():
     def q1_correct():
@@ -20,8 +23,8 @@ def question1():
 
     q1_label = tk.Label(
         question1_win,
+        style='Title.TLabel',
         text='What is the PSG Stadium called?',
-        font=('Arial',20)
     )
     q1_label.grid(
         row=1,
@@ -31,8 +34,8 @@ def question1():
 
     q1_button_a = tk.Button(
         question1_win,
+        style='Button.TButton',
         text='Stade Bollaert-Delelis',
-        font=('Arial'),
         width=20,
         command=q1_incorrect
     )
@@ -43,8 +46,8 @@ def question1():
 
     q1_button_b = tk.Button(
         question1_win,
+        style='Button.TButton',
         text='Parc des Princes',
-        font=('Arial'),
         width=20,
         command=q1_correct
     )
@@ -55,8 +58,8 @@ def question1():
 
     q1_button_c = tk.Button(
         question1_win,
+        style='Button.TButton',
         text='Groupama Stadium',
-        font=('Arial'),
         width=20,
         command=q1_incorrect
     )
@@ -67,8 +70,8 @@ def question1():
 
     q1_button_d = tk.Button(
         question1_win,
+        style='Button.TButton',
         text='Orange Vélodrome',
-        font=('Arial'),
         width=20,
         command=q1_incorrect
     )
@@ -83,12 +86,45 @@ def correct():
     messagebox.showinfo('Result','Correct!')
     return
 
+def initialise_styles():
+    button_style = ttk.Style()
+    title_style = ttk.Style()
+
+    current_os = platform.system()
+
+    if current_os == 'Windows':
+        button_style.theme_use('vista')
+        button_style.configure(
+            'Button.TButton',
+            font=('Arial',10),
+            bg='White',
+            fg='Black'
+        )
+
+        title_style.configure(
+            'Title.TLabel',
+            font=('Arial',15,'bold')
+        )
+
+    elif current_os == 'Darwin':
+        button_style.configure(
+            'Button.TButton',
+            font=('Arial')
+        )
+
+        title_style.configure(
+            'Title.TLabel',
+            font=('Arial',20,'bold')
+        )
+
 score = 0
 
 root = tk.Tk()
 root.geometry('+0+0')
 root.resizable(False,False)
 root.title('Ligue 1 25-26 Stadiums Quiz')
+
+initialise_styles()
 
 root_title = tk.Label(
     root,
