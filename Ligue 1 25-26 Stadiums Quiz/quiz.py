@@ -21,7 +21,7 @@ def question1():
     question1_win.resizable(False,False)
     question1_win.title('Ligue 1 25-26 Stadiums Quiz')
 
-    q1_label = tk.Label(
+    q1_label = ttk.Label(
         question1_win,
         style='Title.TLabel',
         text='What is the PSG Stadium called?',
@@ -32,7 +32,7 @@ def question1():
         columnspan=2
     )
 
-    q1_button_a = tk.Button(
+    q1_button_a = ttk.Button(
         question1_win,
         style='Button.TButton',
         text='Stade Bollaert-Delelis',
@@ -44,7 +44,7 @@ def question1():
         column=1
     )
 
-    q1_button_b = tk.Button(
+    q1_button_b = ttk.Button(
         question1_win,
         style='Button.TButton',
         text='Parc des Princes',
@@ -56,7 +56,7 @@ def question1():
         column=2
     )
 
-    q1_button_c = tk.Button(
+    q1_button_c = ttk.Button(
         question1_win,
         style='Button.TButton',
         text='Groupama Stadium',
@@ -68,7 +68,7 @@ def question1():
         column=1
     )
 
-    q1_button_d = tk.Button(
+    q1_button_d = ttk.Button(
         question1_win,
         style='Button.TButton',
         text='Orange Vélodrome',
@@ -126,17 +126,17 @@ root.title('Ligue 1 25-26 Stadiums Quiz')
 
 initialise_styles()
 
-root_title = tk.Label(
+root_title = ttk.Label(
     root,
+    style='Title.TLabel',
     text='Ligue 1 25-26 Stadiums Quiz',
-    font=('Arial',20,'bold')
 )
 root_title.pack()
 
-start_button = tk.Button(
+start_button = ttk.Button(
     root,
+    style='Button.TButton',
     text='Start',
-    font=('Arial'),
     width=20,
     command=question1
 )
