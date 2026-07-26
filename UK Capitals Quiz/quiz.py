@@ -31,28 +31,28 @@ def results(question5_win):
     results_win.resizable(False,False)
     results_win.title('UK Capitals Quiz - Results')
 
-    results_title = tk.Label(
+    results_title = ttk.Label(
         results_win,
         text='Results',
         style='Title.TLabel'
     )
     results_title.pack()
 
-    results_display = tk.Label(
+    results_display = ttk.Label(
         results_win,
         text=(f'Score: {score}/5'),
         style='Title.TLabel'
     )
     results_display.pack()
 
-    continue_button = tk.Button(
+    continue_button = ttk.Button(
         results_win,
         text='Continue',
         style='Button.TButton',
         width=20,
         command=save
     )
-    continue_button.pack()
+    continue_button.pack(padx=10, pady=10)
 
     question5_win.destroy()
 
@@ -71,7 +71,7 @@ def question_5(question4_win):
     question5_win.resizable(False,False)
     question5_win.title('UK Capitals Quiz - Question 5')
 
-    question5_label = tk.Label(
+    question5_label = ttk.Label(
         question5_win,
         text='What is the capital of Ireland?',
         style='Title.TLabel'
@@ -82,7 +82,7 @@ def question_5(question4_win):
         columnspan=2
     )
 
-    question5_button_a = tk.Button(
+    question5_button_a = ttk.Button(
         question5_win,
         text='Limerick',
         style='Button.TButton',
@@ -94,7 +94,7 @@ def question_5(question4_win):
         column=1
     )
 
-    question5_button_b = tk.Button(
+    question5_button_b = ttk.Button(
         question5_win,
         text='Cork',
         style='Button.TButton',
@@ -106,7 +106,7 @@ def question_5(question4_win):
         column=2
     )
 
-    question5_button_c = tk.Button(
+    question5_button_c = ttk.Button(
         question5_win,
         text='Galway',
         style='Button.TButton',
@@ -118,7 +118,7 @@ def question_5(question4_win):
         column=1
     )
 
-    question5_button_d = tk.Button(
+    question5_button_d = ttk.Button(
         question5_win,
         text='Dublin',
         style='Button.TButton',
@@ -147,7 +147,7 @@ def question_4(question3_win):
     question4_win.resizable(False,False)
     question4_win.title('UK Capitals Quiz - Question 4')
 
-    question4_label = tk.Label(
+    question4_label = ttk.Label(
         question4_win,
         text='What is the capital of Northern Ireland?',
         style='Title.TLabel'
@@ -158,7 +158,7 @@ def question_4(question3_win):
         columnspan=2
     )
 
-    question4_button_a = tk.Button(
+    question4_button_a = ttk.Button(
         question4_win,
         text='Belfast',
         style='Button.TButton',
@@ -170,7 +170,7 @@ def question_4(question3_win):
         column=1
     )
 
-    question4_button_b = tk.Button(
+    question4_button_b = ttk.Button(
         question4_win,
         text='Londonderry',
         style='Button.TButton',
@@ -182,7 +182,7 @@ def question_4(question3_win):
         column=2
     )
 
-    question4_button_c = tk.Button(
+    question4_button_c = ttk.Button(
         question4_win,
         text='Lisburn',
         style='Button.TButton',
@@ -194,7 +194,7 @@ def question_4(question3_win):
         column=1
     )
 
-    question4_button_d = tk.Button(
+    question4_button_d = ttk.Button(
         question4_win,
         text='Newtownabbey',
         style='Button.TButton',
@@ -223,7 +223,7 @@ def question_3(question2_win):
     question3_win.resizable(False,False)
     question3_win.title('UK Capitals Quiz - Question 3')
 
-    question3_label = tk.Label(
+    question3_label = ttk.Label(
         question3_win,
         text='What is the capital of Scotland?',
         style='Title.TLabel',
@@ -234,7 +234,7 @@ def question_3(question2_win):
         columnspan=2
     )
 
-    question3_button_a = tk.Button(
+    question3_button_a = ttk.Button(
         question3_win,
         text='Glasgow',
         style='Button.TButton',
@@ -246,7 +246,7 @@ def question_3(question2_win):
         column=1
     )
 
-    question3_button_b = tk.Button(
+    question3_button_b = ttk.Button(
         question3_win,
         text='Edinburgh',
         style='Button.TButton',
@@ -258,7 +258,7 @@ def question_3(question2_win):
         column=2
     )
 
-    question3_button_c = tk.Button(
+    question3_button_c = ttk.Button(
         question3_win,
         text='Aberdeen',
         style='Button.TButton',
@@ -270,7 +270,7 @@ def question_3(question2_win):
         column=1
     )
 
-    question3_button_d = tk.Button(
+    question3_button_d = ttk.Button(
         question3_win,
         text='Inverness',
         style='Button.TButton',
@@ -298,7 +298,7 @@ def question_2(question1_win):
     question2_win.resizable(False,False)
     question2_win.title('UK Capitals Quiz - Question 2')
 
-    question2_label = tk.Label(
+    question2_label = ttk.Label(
         question2_win,
         text='What is the capital of Wales?',
         style='Title.TLabel'
@@ -309,7 +309,7 @@ def question_2(question1_win):
         columnspan=2
     )
 
-    question2_button_a = tk.Button(
+    question2_button_a = ttk.Button(
         question2_win,
         text='Swansea',
         style='Button.TButton',
@@ -321,7 +321,7 @@ def question_2(question1_win):
         column=1
     )
 
-    question2_button_b = tk.Button(
+    question2_button_b = ttk.Button(
         question2_win,
         text='Flint',
         style='Button.TButton',
@@ -333,7 +333,7 @@ def question_2(question1_win):
         column=2
     )
 
-    question2_button_c = tk.Button(
+    question2_button_c = ttk.Button(
         question2_win,
         text='Cardiff',
         style='Button.TButton',
@@ -345,7 +345,7 @@ def question_2(question1_win):
         column=1
     )
 
-    question2_button_d = tk.Button(
+    question2_button_d = ttk.Button(
         question2_win,
         text='Llandudno',
         style='Button.TButton',
@@ -374,7 +374,7 @@ def question_1():
     question1_win.resizable(False,False)
     question1_win.title('UK Capitals Quiz - Question 1')
 
-    question1_label = tk.Label(
+    question1_label = ttk.Label(
         question1_win,
         style='Title.TLabel',
         text='What is the capital of England?',
@@ -385,7 +385,7 @@ def question_1():
         columnspan=2
     )
 
-    question1_button_a = tk.Button(
+    question1_button_a = ttk.Button(
         question1_win,
         text='London',
         style='Button.TButton',
@@ -397,7 +397,7 @@ def question_1():
         column=1
     )
 
-    question1_button_b = tk.Button(
+    question1_button_b = ttk.Button(
         question1_win,
         text='Liverpool',
         style='Button.TButton',
@@ -409,7 +409,7 @@ def question_1():
         column=1
     )
 
-    question1_button_c = tk.Button(
+    question1_button_c = ttk.Button(
         question1_win,
         text='Manchester',
         style='Button.TButton',
@@ -421,7 +421,7 @@ def question_1():
         column=2
     )
 
-    question1_button_d = tk.Button(
+    question1_button_d = ttk.Button(
         question1_win,
         text='Birmingham',
         style='Button.TButton',
