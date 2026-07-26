@@ -1,6 +1,10 @@
 import tkinter as tk
 from tkinter import messagebox, Toplevel
+from tkinter import ttk
+
 from time import strftime
+
+import platform
 
 score = int(0)
 
@@ -30,20 +34,21 @@ def results(question5_win):
     results_title = tk.Label(
         results_win,
         text='Results',
-        font=('Arial',20,'bold')
+        style='Title.TLabel'
     )
     results_title.pack()
 
     results_display = tk.Label(
         results_win,
         text=(f'Score: {score}/5'),
-        font=('Arial',15)
+        style='Title.TLabel'
     )
     results_display.pack()
 
     continue_button = tk.Button(
         results_win,
         text='Continue',
+        style='Button.TButton',
         width=20,
         command=save
     )
@@ -69,7 +74,7 @@ def question_5(question4_win):
     question5_label = tk.Label(
         question5_win,
         text='What is the capital of Ireland?',
-        font=('Arial',20)
+        style='Title.TLabel'
     )
     question5_label.grid(
         row=1,
@@ -80,7 +85,7 @@ def question_5(question4_win):
     question5_button_a = tk.Button(
         question5_win,
         text='Limerick',
-        font=('Arial'),
+        style='Button.TButton',
         width=10,
         command=q5_incorrect
     )
@@ -92,7 +97,7 @@ def question_5(question4_win):
     question5_button_b = tk.Button(
         question5_win,
         text='Cork',
-        font=('Arial'),
+        style='Button.TButton',
         width=10,
         command=q5_incorrect
     )
@@ -104,7 +109,7 @@ def question_5(question4_win):
     question5_button_c = tk.Button(
         question5_win,
         text='Galway',
-        font=('Arial'),
+        style='Button.TButton',
         width=10,
         command=q5_incorrect
     )
@@ -116,7 +121,7 @@ def question_5(question4_win):
     question5_button_d = tk.Button(
         question5_win,
         text='Dublin',
-        font=('Arial'),
+        style='Button.TButton',
         width=10,
         command=q5_correct
     )
@@ -145,7 +150,7 @@ def question_4(question3_win):
     question4_label = tk.Label(
         question4_win,
         text='What is the capital of Northern Ireland?',
-        font=('Arial',20)
+        style='Title.TLabel'
     )
     question4_label.grid(
         row=1,
@@ -156,7 +161,7 @@ def question_4(question3_win):
     question4_button_a = tk.Button(
         question4_win,
         text='Belfast',
-        font=('Arial'),
+        style='Button.TButton',
         width=10,
         command=q4_correct
     )
@@ -168,7 +173,7 @@ def question_4(question3_win):
     question4_button_b = tk.Button(
         question4_win,
         text='Londonderry',
-        font=('Arial'),
+        style='Button.TButton',
         width=10,
         command=q4_incorrect
     )
@@ -180,7 +185,7 @@ def question_4(question3_win):
     question4_button_c = tk.Button(
         question4_win,
         text='Lisburn',
-        font=('Arial'),
+        style='Button.TButton',
         width=10,
         command=q4_incorrect
     )
@@ -192,7 +197,7 @@ def question_4(question3_win):
     question4_button_d = tk.Button(
         question4_win,
         text='Newtownabbey',
-        font=('Arial'),
+        style='Button.TButton',
         width=10,
         command=q4_incorrect
     )
@@ -221,7 +226,7 @@ def question_3(question2_win):
     question3_label = tk.Label(
         question3_win,
         text='What is the capital of Scotland?',
-        font=('Arial',20)
+        style='Title.TLabel',
     )
     question3_label.grid(
         row=1,
@@ -232,7 +237,7 @@ def question_3(question2_win):
     question3_button_a = tk.Button(
         question3_win,
         text='Glasgow',
-        font=('Arial'),
+        style='Button.TButton',
         width=10,
         command=q3_incorrect
     )
@@ -244,7 +249,7 @@ def question_3(question2_win):
     question3_button_b = tk.Button(
         question3_win,
         text='Edinburgh',
-        font=('Arial'),
+        style='Button.TButton',
         width=10,
         command=q3_correct
     )
@@ -256,7 +261,7 @@ def question_3(question2_win):
     question3_button_c = tk.Button(
         question3_win,
         text='Aberdeen',
-        font=('Arial'),
+        style='Button.TButton',
         width=10,
         command=q3_incorrect
     )
@@ -268,7 +273,7 @@ def question_3(question2_win):
     question3_button_d = tk.Button(
         question3_win,
         text='Inverness',
-        font=('Arial'),
+        style='Button.TButton',
         width=10,
         command=q3_incorrect
     )
@@ -296,7 +301,7 @@ def question_2(question1_win):
     question2_label = tk.Label(
         question2_win,
         text='What is the capital of Wales?',
-        font=('Arial',20)
+        style='Title.TLabel'
     )
     question2_label.grid(
         row=1,
@@ -307,7 +312,7 @@ def question_2(question1_win):
     question2_button_a = tk.Button(
         question2_win,
         text='Swansea',
-        font=('Arial'),
+        style='Button.TButton',
         width=10,
         command=q2_incorrect
     )
@@ -319,7 +324,7 @@ def question_2(question1_win):
     question2_button_b = tk.Button(
         question2_win,
         text='Flint',
-        font=('Arial'),
+        style='Button.TButton',
         width=10,
         command=q2_incorrect
     )
@@ -331,7 +336,7 @@ def question_2(question1_win):
     question2_button_c = tk.Button(
         question2_win,
         text='Cardiff',
-        font=('Arial'),
+        style='Button.TButton',
         width=10,
         command=q2_correct
     )
@@ -343,7 +348,7 @@ def question_2(question1_win):
     question2_button_d = tk.Button(
         question2_win,
         text='Llandudno',
-        font=('Arial'),
+        style='Button.TButton',
         width=10,
         command=q2_incorrect
     )
@@ -371,8 +376,8 @@ def question_1():
 
     question1_label = tk.Label(
         question1_win,
+        style='Title.TLabel',
         text='What is the capital of England?',
-        font=('Arial',20)
     )
     question1_label.grid(
         row=1,
@@ -383,7 +388,7 @@ def question_1():
     question1_button_a = tk.Button(
         question1_win,
         text='London',
-        font=('Arial'),
+        style='Button.TButton',
         width=10,
         command=q1_correct
     )
@@ -395,7 +400,7 @@ def question_1():
     question1_button_b = tk.Button(
         question1_win,
         text='Liverpool',
-        font=('Arial'),
+        style='Button.TButton',
         width=10,
         command=q1_incorrect
     )
@@ -407,7 +412,7 @@ def question_1():
     question1_button_c = tk.Button(
         question1_win,
         text='Manchester',
-        font=('Arial'),
+        style='Button.TButton',
         width=10,
         command=q1_incorrect
     )
@@ -419,7 +424,7 @@ def question_1():
     question1_button_d = tk.Button(
         question1_win,
         text='Birmingham',
-        font=('Arial'),
+        style='Button.TButton',
         width=10,
         command=q1_incorrect
     )
@@ -434,22 +439,55 @@ def correct():
     messagebox.showinfo('Result','Correct!')
     return
 
+def initiate_styles():
+    button_style = ttk.Style()
+    title_style = ttk.Style()
+
+    current_os = platform.system()
+
+    if current_os == 'Windows':
+        button_style.theme_use('vista')
+        button_style.configure(
+            'Button.TButton',
+            font=('Arial',10),
+            bg='White',
+            fg='Black'
+        )
+
+        title_style.configure(
+            'Title.TLabel',
+            font=('Arial',15,'bold')
+        )
+
+    elif current_os == 'Darwin':
+        button_style.configure(
+            'Button.TButton',
+            font=('Arial')
+        )
+
+        title_style.configure(
+            'Title.TLabel',
+            font=('Arial',20,'bold')
+        )
+
 root = tk.Tk()
 root.geometry('+0+0')
 root.resizable(False,False)
 root.title('UK Capitals Quiz')
 
-root_title = tk.Label(
+initiate_styles()
+
+root_title = ttk.Label(
     root,
-    text='UK Capitals Quiz',
-    font=('Arial',20,'bold')
+    style='Title.TLabel',
+    text='UK Capitals Quiz'
 )
 root_title.pack()
 
-start_button = tk.Button(
+start_button = ttk.Button(
     root,
+    style='Button.TButton',
     text='Start Quiz',
-    font=('Arial'),
     command=question_1
 )
 start_button.pack()

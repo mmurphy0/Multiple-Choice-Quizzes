@@ -41,7 +41,8 @@ def question1():
     )
     q1_button_a.grid(
         row=3,
-        column=1
+        column=1,
+        padx=10
     )
 
     q1_button_b = ttk.Button(
@@ -53,7 +54,8 @@ def question1():
     )
     q1_button_b.grid(
         row=3,
-        column=2
+        column=2,
+        padx=10
     )
 
     q1_button_c = ttk.Button(
@@ -65,7 +67,8 @@ def question1():
     )
     q1_button_c.grid(
         row=4,
-        column=1
+        column=1,
+        padx=10
     )
 
     q1_button_d = ttk.Button(
@@ -77,7 +80,8 @@ def question1():
     )
     q1_button_d.grid(
         row=4,
-        column=2
+        column=2,
+        padx=10
     )
 
 def correct():
