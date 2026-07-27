@@ -7,6 +7,84 @@ from time import strftime
 
 import platform 
 
+def question3(question2_win):
+    def q3_correct():
+        correct()
+        question4(question3_win)
+
+    def q3_incorrect():
+        messagebox.showinfo('Result','The answer is the Decathlon Arena')
+        question4(question3_win)
+
+    question3_win = Toplevel()
+    question3_win.geometry('+0+0')
+    question3_win.resizable(False,False)
+    question3_win.title('Ligue 1 25-26 Stadiums Quiz')
+
+    q3_label = ttk.Label(
+        question3_win,
+        text='What is the LOSC Stadium called?',
+        style='Title.TLabel'
+    )
+    q3_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q3_button_a = ttk.Button(
+        question3_win,
+        text='Roazhon Park',
+        style='Button.TButton',
+        width=20,
+        command=q3_incorrect
+    )
+    q3_button_a.grid(
+        row=3,
+        column=1,
+        padx=10
+    )
+
+    q3_button_b = ttk.Button(
+        question3_win,
+        text='Stade Francis-Le Blé',
+        style='Button.TButton',
+        width=20,
+        command=q3_incorrect
+    )
+    q3_button_b.grid(
+        row=4,
+        column=1,
+        padx=10
+    )
+
+    q3_button_c = ttk.Button(
+        question3_win,
+        text='Decathlon Arena',
+        style='Button.TButton',
+        width=20,
+        command=q3_correct
+    )
+    q3_button_c.grid(
+        row=3,
+        column=2,
+        padx=10
+    )
+
+    q3_button_d = ttk.Button(
+        question3_win,
+        text='Stade Jean-Bouin',
+        style='Button.TButton',
+        width=20
+    )
+    q3_button_d.grid(
+        row=4,
+        column=2,
+        padx=10
+    )
+
+    question2_win.destroy()
+
 def question2(question1_win):
     def q2_correct():
         correct()
@@ -36,7 +114,8 @@ def question2(question1_win):
         question2_win,
         text='Stade Bollaert-Delelis',
         style='Button.TButton',
-        width=20
+        width=20,
+        command=q2_correct
     )
     q2_button_a.grid(
         row=3,
@@ -48,7 +127,8 @@ def question2(question1_win):
         question2_win,
         text='Decathlon Arena',
         style='Button.TButton',
-        width=20
+        width=20,
+        command=q2_incorrect
     )
     q2_button_b.grid(
         row=4,
@@ -60,7 +140,8 @@ def question2(question1_win):
         question2_win,
         text='Stade de la Meinau',
         style='Button.TButton',
-        width=20
+        width=20,
+        command=q2_incorrect
     )
     q2_button_c.grid(
         row=3,
@@ -72,13 +153,16 @@ def question2(question1_win):
         question2_win,
         text='Stade Louis II',
         style='Button.TButton',
-        width=20
+        width=20,
+        command=q2_incorrect
     )
     q2_button_d.grid(
         row=4,
         column=2,
         padx=10
     )
+
+    question1_win.destroy()
 
 def question1():
     def q1_correct():
