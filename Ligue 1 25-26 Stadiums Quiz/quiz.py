@@ -7,6 +7,85 @@ from time import strftime
 
 import platform 
 
+def question5(question4_win):
+    def q5_correct():
+        correct()
+        question6(question5_win)
+
+    def q5_incorrect():
+        messagebox.showinfo('Result','The answer is the Orange Vélodrome')
+        question6(question5_win)
+
+    question5_win = Toplevel()
+    question5_win.geometry('+0+0')
+    question5_win.resizable(False,False)
+    question5_win.title('Ligue 1 25-26 Stadiums Quiz - Q5')
+
+    q5_label = ttk.Label(
+        question5_win,
+        text='What is the Marseille Stadium called?',
+        style='Title.TLabel'
+    ) 
+    q5_label.grid(
+        row=1,
+        column=1,
+        columnspan=2
+    )
+
+    q5_button_a = ttk.Button(
+        question5_win,
+        text='Orange Vélodrome',
+        style='Button.TButton',
+        width=20,
+        command=q5_correct
+    )
+    q5_button_a.grid(
+        row=3,
+        column=1,
+        padx=10
+    )
+
+    q5_button_b = ttk.Button(
+        question5_win,
+        text='Parc des Princes',
+        style='Button.TButton',
+        width=20,
+        command=q5_incorrect
+    )
+    q5_button_b.grid(
+        row=4,
+        column=1,
+        padx=10
+    )
+
+    q5_button_c = ttk.Button(
+        question5_win,
+        text='Stade de la Beaujoire',
+        style='Button.TButton',
+        width=20,
+        command=q5_incorrect
+    )
+    q5_button_c.grid(
+        row=3,
+        column=1,
+        padx=10
+    )
+
+    q5_button_d = ttk.Button(
+        question5_win,
+        text='Stade Saint-Symphorien',
+        style='Button.TButton',
+        width=20,
+        command=q5_incorrect
+    )
+    q5_button_d.grid(
+        row=4,
+        column=2,
+        padx=10
+    )
+
+    question4_win.destroy()
+
 def question4(question3_win):
     def q4_correct():
         correct()
